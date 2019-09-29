@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (4.9.0)
   - ObjectMapper (3.5.1)
+  - Toast-Swift (5.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.9.0)
   - ObjectMapper (~> 3.5.1)
+  - Toast-Swift (~> 5.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - ObjectMapper
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
 
-PODFILE CHECKSUM: afa3af20292e40349bc581b28f4e3bf147bcacdc
+PODFILE CHECKSUM: 28222fd0ede0bbc54c241f03dc026d3f1a908059
 
 COCOAPODS: 1.7.5

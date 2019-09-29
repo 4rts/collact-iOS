@@ -12,13 +12,13 @@
 		9E46B692D5DB33C97525AA4D /* Pods_collactTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0386E3A3C9CE037B6F2EB33A /* Pods_collactTests.framework */; };
 		B5192879233C7AA300BBFBCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5192878233C7AA300BBFBCD /* AppDelegate.swift */; };
 		B519287B233C7AA300BBFBCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B519287A233C7AA300BBFBCD /* SceneDelegate.swift */; };
-		B519287D233C7AA300BBFBCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B519287C233C7AA300BBFBCD /* ViewController.swift */; };
-		B5192880233C7AA300BBFBCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B519287E233C7AA300BBFBCD /* Main.storyboard */; };
 		B5192883233C7AA300BBFBCD /* collact.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5192881233C7AA300BBFBCD /* collact.xcdatamodeld */; };
 		B5192885233C7AA500BBFBCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5192884233C7AA500BBFBCD /* Assets.xcassets */; };
 		B5192888233C7AA500BBFBCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5192886233C7AA500BBFBCD /* LaunchScreen.storyboard */; };
 		B5192893233C7AA500BBFBCD /* collactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5192892233C7AA500BBFBCD /* collactTests.swift */; };
 		B519289E233C7AA500BBFBCD /* collactUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B519289D233C7AA500BBFBCD /* collactUITests.swift */; };
+		B51E1D632340ADFE004AFDA2 /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E1D622340ADFE004AFDA2 /* NetworkAPI.swift */; };
+		B51E1D652340AE67004AFDA2 /* CodePreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E1D642340AE67004AFDA2 /* CodePreference.swift */; };
 		B57ABB6A23409EA90057964E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57ABB6923409EA90057964E /* Profile.storyboard */; };
 		B57ABB6C23409EB60057964E /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57ABB6B23409EB60057964E /* Search.storyboard */; };
 		B57ABB6E23409EBF0057964E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57ABB6D23409EBF0057964E /* Home.storyboard */; };
@@ -63,8 +63,6 @@
 		B5192875233C7AA300BBFBCD /* collact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = collact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5192878233C7AA300BBFBCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B519287A233C7AA300BBFBCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B519287C233C7AA300BBFBCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B519287F233C7AA300BBFBCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5192882233C7AA300BBFBCD /* collact.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = collact.xcdatamodel; sourceTree = "<group>"; };
 		B5192884233C7AA500BBFBCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5192887233C7AA500BBFBCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,6 +73,8 @@
 		B5192899233C7AA500BBFBCD /* collactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = collactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B519289D233C7AA500BBFBCD /* collactUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collactUITests.swift; sourceTree = "<group>"; };
 		B519289F233C7AA500BBFBCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B51E1D622340ADFE004AFDA2 /* NetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
+		B51E1D642340AE67004AFDA2 /* CodePreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePreference.swift; sourceTree = "<group>"; };
 		B57ABB6923409EA90057964E /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		B57ABB6B23409EB60057964E /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		B57ABB6D23409EBF0057964E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -167,10 +167,9 @@
 			children = (
 				B5192878233C7AA300BBFBCD /* AppDelegate.swift */,
 				B519287A233C7AA300BBFBCD /* SceneDelegate.swift */,
-				B519287E233C7AA300BBFBCD /* Main.storyboard */,
-				B519287C233C7AA300BBFBCD /* ViewController.swift */,
 				B5FFB7B62340A84E0098B113 /* Model */,
 				B5FFB7B82340A84E0098B113 /* Network */,
+				B51E1D622340ADFE004AFDA2 /* NetworkAPI.swift */,
 				B57ABB6123409A770057964E /* Sign */,
 				B57ABB6323409AD30057964E /* Home */,
 				B57ABB6423409ADF0057964E /* Search */,
@@ -202,6 +201,7 @@
 		B57ABB6023409A630057964E /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				B51E1D642340AE67004AFDA2 /* CodePreference.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -408,7 +408,6 @@
 				B5192885233C7AA500BBFBCD /* Assets.xcassets in Resources */,
 				B57ABB6A23409EA90057964E /* Profile.storyboard in Resources */,
 				B57ABB6E23409EBF0057964E /* Home.storyboard in Resources */,
-				B5192880233C7AA300BBFBCD /* Main.storyboard in Resources */,
 				B57ABB6C23409EB60057964E /* Search.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,12 +520,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5FFB7BF2340A84E0098B113 /* BaseModel.swift in Sources */,
-				B519287D233C7AA300BBFBCD /* ViewController.swift in Sources */,
+				B51E1D632340ADFE004AFDA2 /* NetworkAPI.swift in Sources */,
 				B5192879233C7AA300BBFBCD /* AppDelegate.swift in Sources */,
 				B5192883233C7AA300BBFBCD /* collact.xcdatamodeld in Sources */,
 				B57ABB7423409F140057964E /* HomeVC.swift in Sources */,
 				B57ABB7823409F440057964E /* ProfileVC.swift in Sources */,
 				B519287B233C7AA300BBFBCD /* SceneDelegate.swift in Sources */,
+				B51E1D652340AE67004AFDA2 /* CodePreference.swift in Sources */,
 				B57ABB7223409EFD0057964E /* SignInVC.swift in Sources */,
 				B5FFB7C02340A84E0098B113 /* BaseForm.swift in Sources */,
 				B5FFB7C12340A84E0098B113 /* BaseResponse.swift in Sources */,
@@ -567,14 +567,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B519287E233C7AA300BBFBCD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B519287F233C7AA300BBFBCD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B5192886233C7AA500BBFBCD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -708,7 +700,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K557UV74SU;
-				INFOPLIST_FILE = collact/Resource/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/collact/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -729,7 +721,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K557UV74SU;
-				INFOPLIST_FILE = collact/Resource/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/collact/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
