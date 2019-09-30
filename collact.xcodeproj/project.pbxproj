@@ -22,7 +22,6 @@
 		B51E1D672340B163004AFDA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51E1D662340B163004AFDA2 /* Main.storyboard */; };
 		B51E1D692340B1C7004AFDA2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E1D682340B1C7004AFDA2 /* MainVC.swift */; };
 		B572A2F82340D66100C3C88E /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572A2F72340D66100C3C88E /* BaseVC.swift */; };
-		B572A2FA2340D6EC00C3C88E /* SignUp1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572A2F92340D6EC00C3C88E /* SignUp1VC.swift */; };
 		B57ABB6A23409EA90057964E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57ABB6923409EA90057964E /* Profile.storyboard */; };
 		B57ABB6C23409EB60057964E /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57ABB6B23409EB60057964E /* Search.storyboard */; };
 		B57ABB6E23409EBF0057964E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57ABB6D23409EBF0057964E /* Home.storyboard */; };
@@ -31,6 +30,8 @@
 		B57ABB7423409F140057964E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57ABB7323409F140057964E /* HomeVC.swift */; };
 		B57ABB7623409F2F0057964E /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57ABB7523409F2F0057964E /* SearchVC.swift */; };
 		B57ABB7823409F440057964E /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57ABB7723409F440057964E /* ProfileVC.swift */; };
+		B5AF432E2340ECDA00EFAA7E /* ChooseCreativeColorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF432D2340ECDA00EFAA7E /* ChooseCreativeColorVC.swift */; };
+		B5AF43322342218A00EFAA7E /* Fontfabric - Mont Heavy DEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5AF43312342218A00EFAA7E /* Fontfabric - Mont Heavy DEMO.otf */; };
 		B5FFB7BF2340A84E0098B113 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFB7B72340A84E0098B113 /* BaseModel.swift */; };
 		B5FFB7C02340A84E0098B113 /* BaseForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFB7BA2340A84E0098B113 /* BaseForm.swift */; };
 		B5FFB7C12340A84E0098B113 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFB7BC2340A84E0098B113 /* BaseResponse.swift */; };
@@ -82,7 +83,6 @@
 		B51E1D662340B163004AFDA2 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B51E1D682340B1C7004AFDA2 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B572A2F72340D66100C3C88E /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
-		B572A2F92340D6EC00C3C88E /* SignUp1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp1VC.swift; sourceTree = "<group>"; };
 		B57ABB6923409EA90057964E /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		B57ABB6B23409EB60057964E /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		B57ABB6D23409EBF0057964E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -91,6 +91,8 @@
 		B57ABB7323409F140057964E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		B57ABB7523409F2F0057964E /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		B57ABB7723409F440057964E /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		B5AF432D2340ECDA00EFAA7E /* ChooseCreativeColorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCreativeColorVC.swift; sourceTree = "<group>"; };
+		B5AF43312342218A00EFAA7E /* Fontfabric - Mont Heavy DEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Mont Heavy DEMO.otf"; sourceTree = "<group>"; };
 		B5FFB7B72340A84E0098B113 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		B5FFB7BA2340A84E0098B113 /* BaseForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseForm.swift; sourceTree = "<group>"; };
 		B5FFB7BC2340A84E0098B113 /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
@@ -222,7 +224,7 @@
 			children = (
 				B57ABB6F23409ECA0057964E /* Sign.storyboard */,
 				B57ABB7123409EFD0057964E /* SignInVC.swift */,
-				B572A2F92340D6EC00C3C88E /* SignUp1VC.swift */,
+				B5AF432D2340ECDA00EFAA7E /* ChooseCreativeColorVC.swift */,
 			);
 			path = Sign;
 			sourceTree = "<group>";
@@ -257,6 +259,7 @@
 		B57ABB6523409B130057964E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				B5AF43312342218A00EFAA7E /* Fontfabric - Mont Heavy DEMO.otf */,
 				B5192886233C7AA500BBFBCD /* LaunchScreen.storyboard */,
 				B5192884233C7AA500BBFBCD /* Assets.xcassets */,
 				B5192881233C7AA300BBFBCD /* collact.xcdatamodeld */,
@@ -419,6 +422,7 @@
 				B57ABB7023409ECA0057964E /* Sign.storyboard in Resources */,
 				B5192888233C7AA500BBFBCD /* LaunchScreen.storyboard in Resources */,
 				B5192885233C7AA500BBFBCD /* Assets.xcassets in Resources */,
+				B5AF43322342218A00EFAA7E /* Fontfabric - Mont Heavy DEMO.otf in Resources */,
 				B57ABB6A23409EA90057964E /* Profile.storyboard in Resources */,
 				B57ABB6E23409EBF0057964E /* Home.storyboard in Resources */,
 				B57ABB6C23409EB60057964E /* Search.storyboard in Resources */,
@@ -534,6 +538,7 @@
 			files = (
 				B5FFB7BF2340A84E0098B113 /* BaseModel.swift in Sources */,
 				B51E1D632340ADFE004AFDA2 /* NetworkAPI.swift in Sources */,
+				B5AF432E2340ECDA00EFAA7E /* ChooseCreativeColorVC.swift in Sources */,
 				B5192879233C7AA300BBFBCD /* AppDelegate.swift in Sources */,
 				B5192883233C7AA300BBFBCD /* collact.xcdatamodeld in Sources */,
 				B572A2F82340D66100C3C88E /* BaseVC.swift in Sources */,
@@ -542,7 +547,6 @@
 				B519287B233C7AA300BBFBCD /* SceneDelegate.swift in Sources */,
 				B51E1D652340AE67004AFDA2 /* CodePreference.swift in Sources */,
 				B57ABB7223409EFD0057964E /* SignInVC.swift in Sources */,
-				B572A2FA2340D6EC00C3C88E /* SignUp1VC.swift in Sources */,
 				B5FFB7C02340A84E0098B113 /* BaseForm.swift in Sources */,
 				B5FFB7C12340A84E0098B113 /* BaseResponse.swift in Sources */,
 				B5FFB7C22340A84E0098B113 /* BaseController.swift in Sources */,
