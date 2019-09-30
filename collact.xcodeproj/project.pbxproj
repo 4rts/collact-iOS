@@ -32,6 +32,11 @@
 		B57ABB7823409F440057964E /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57ABB7723409F440057964E /* ProfileVC.swift */; };
 		B5AF432E2340ECDA00EFAA7E /* ChooseCreativeColorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF432D2340ECDA00EFAA7E /* ChooseCreativeColorVC.swift */; };
 		B5AF43322342218A00EFAA7E /* Fontfabric - Mont Heavy DEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5AF43312342218A00EFAA7E /* Fontfabric - Mont Heavy DEMO.otf */; };
+		B5AF433923422A1E00EFAA7E /* DeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF433423422A1E00EFAA7E /* DeviceExtension.swift */; };
+		B5AF433A23422A1E00EFAA7E /* BottomBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF433523422A1E00EFAA7E /* BottomBorderView.swift */; };
+		B5AF433B23422A1E00EFAA7E /* TextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF433623422A1E00EFAA7E /* TextExtension.swift */; };
+		B5AF433C23422A1E00EFAA7E /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF433723422A1E00EFAA7E /* ViewExtension.swift */; };
+		B5AF433D23422A1E00EFAA7E /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF433823422A1E00EFAA7E /* ColorExtension.swift */; };
 		B5FFB7BF2340A84E0098B113 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFB7B72340A84E0098B113 /* BaseModel.swift */; };
 		B5FFB7C02340A84E0098B113 /* BaseForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFB7BA2340A84E0098B113 /* BaseForm.swift */; };
 		B5FFB7C12340A84E0098B113 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFB7BC2340A84E0098B113 /* BaseResponse.swift */; };
@@ -93,6 +98,11 @@
 		B57ABB7723409F440057964E /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		B5AF432D2340ECDA00EFAA7E /* ChooseCreativeColorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCreativeColorVC.swift; sourceTree = "<group>"; };
 		B5AF43312342218A00EFAA7E /* Fontfabric - Mont Heavy DEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Mont Heavy DEMO.otf"; sourceTree = "<group>"; };
+		B5AF433423422A1E00EFAA7E /* DeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceExtension.swift; sourceTree = "<group>"; };
+		B5AF433523422A1E00EFAA7E /* BottomBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBorderView.swift; sourceTree = "<group>"; };
+		B5AF433623422A1E00EFAA7E /* TextExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextExtension.swift; sourceTree = "<group>"; };
+		B5AF433723422A1E00EFAA7E /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		B5AF433823422A1E00EFAA7E /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		B5FFB7B72340A84E0098B113 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		B5FFB7BA2340A84E0098B113 /* BaseForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseForm.swift; sourceTree = "<group>"; };
 		B5FFB7BC2340A84E0098B113 /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
@@ -212,6 +222,7 @@
 		B57ABB6023409A630057964E /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				B5AF433323422A1E00EFAA7E /* Extension */,
 				B51E1D642340AE67004AFDA2 /* CodePreference.swift */,
 				B51E1D682340B1C7004AFDA2 /* MainVC.swift */,
 				B572A2F72340D66100C3C88E /* BaseVC.swift */,
@@ -259,12 +270,32 @@
 		B57ABB6523409B130057964E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				B5AF43312342218A00EFAA7E /* Fontfabric - Mont Heavy DEMO.otf */,
+				B5AF433E23422A3700EFAA7E /* Font */,
 				B5192886233C7AA500BBFBCD /* LaunchScreen.storyboard */,
 				B5192884233C7AA500BBFBCD /* Assets.xcassets */,
 				B5192881233C7AA300BBFBCD /* collact.xcdatamodeld */,
 			);
 			name = Resource;
+			sourceTree = "<group>";
+		};
+		B5AF433323422A1E00EFAA7E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B5AF433423422A1E00EFAA7E /* DeviceExtension.swift */,
+				B5AF433523422A1E00EFAA7E /* BottomBorderView.swift */,
+				B5AF433623422A1E00EFAA7E /* TextExtension.swift */,
+				B5AF433723422A1E00EFAA7E /* ViewExtension.swift */,
+				B5AF433823422A1E00EFAA7E /* ColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B5AF433E23422A3700EFAA7E /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				B5AF43312342218A00EFAA7E /* Fontfabric - Mont Heavy DEMO.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		B5FFB7B62340A84E0098B113 /* Model */ = {
@@ -536,6 +567,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5AF433923422A1E00EFAA7E /* DeviceExtension.swift in Sources */,
 				B5FFB7BF2340A84E0098B113 /* BaseModel.swift in Sources */,
 				B51E1D632340ADFE004AFDA2 /* NetworkAPI.swift in Sources */,
 				B5AF432E2340ECDA00EFAA7E /* ChooseCreativeColorVC.swift in Sources */,
@@ -547,11 +579,15 @@
 				B519287B233C7AA300BBFBCD /* SceneDelegate.swift in Sources */,
 				B51E1D652340AE67004AFDA2 /* CodePreference.swift in Sources */,
 				B57ABB7223409EFD0057964E /* SignInVC.swift in Sources */,
+				B5AF433D23422A1E00EFAA7E /* ColorExtension.swift in Sources */,
 				B5FFB7C02340A84E0098B113 /* BaseForm.swift in Sources */,
 				B5FFB7C12340A84E0098B113 /* BaseResponse.swift in Sources */,
+				B5AF433C23422A1E00EFAA7E /* ViewExtension.swift in Sources */,
 				B5FFB7C22340A84E0098B113 /* BaseController.swift in Sources */,
 				B57ABB7623409F2F0057964E /* SearchVC.swift in Sources */,
 				B51E1D692340B1C7004AFDA2 /* MainVC.swift in Sources */,
+				B5AF433B23422A1E00EFAA7E /* TextExtension.swift in Sources */,
+				B5AF433A23422A1E00EFAA7E /* BottomBorderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
