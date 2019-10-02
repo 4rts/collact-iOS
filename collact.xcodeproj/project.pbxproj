@@ -33,10 +33,12 @@
 		B5AF432E2340ECDA00EFAA7E /* ChooseCreativeColorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF432D2340ECDA00EFAA7E /* ChooseCreativeColorVC.swift */; };
 		B5AF43322342218A00EFAA7E /* Fontfabric - Mont Heavy DEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5AF43312342218A00EFAA7E /* Fontfabric - Mont Heavy DEMO.otf */; };
 		B5AF433923422A1E00EFAA7E /* DeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF433423422A1E00EFAA7E /* DeviceExtension.swift */; };
-		B5AF433A23422A1E00EFAA7E /* BottomBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF433523422A1E00EFAA7E /* BottomBorderView.swift */; };
-		B5AF433B23422A1E00EFAA7E /* TextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF433623422A1E00EFAA7E /* TextExtension.swift */; };
+		B5AF433A23422A1E00EFAA7E /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF433523422A1E00EFAA7E /* BorderView.swift */; };
+		B5AF433B23422A1E00EFAA7E /* LabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF433623422A1E00EFAA7E /* LabelExtension.swift */; };
 		B5AF433C23422A1E00EFAA7E /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF433723422A1E00EFAA7E /* ViewExtension.swift */; };
 		B5AF433D23422A1E00EFAA7E /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF433823422A1E00EFAA7E /* ColorExtension.swift */; };
+		B5AF434023422AE300EFAA7E /* InsertUserNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF433F23422AE300EFAA7E /* InsertUserNameVC.swift */; };
+		B5AF434323422E9000EFAA7E /* MontTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF434223422E9000EFAA7E /* MontTextFieldView.swift */; };
 		B5FFB7BF2340A84E0098B113 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFB7B72340A84E0098B113 /* BaseModel.swift */; };
 		B5FFB7C02340A84E0098B113 /* BaseForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFB7BA2340A84E0098B113 /* BaseForm.swift */; };
 		B5FFB7C12340A84E0098B113 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFB7BC2340A84E0098B113 /* BaseResponse.swift */; };
@@ -99,10 +101,12 @@
 		B5AF432D2340ECDA00EFAA7E /* ChooseCreativeColorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCreativeColorVC.swift; sourceTree = "<group>"; };
 		B5AF43312342218A00EFAA7E /* Fontfabric - Mont Heavy DEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Mont Heavy DEMO.otf"; sourceTree = "<group>"; };
 		B5AF433423422A1E00EFAA7E /* DeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceExtension.swift; sourceTree = "<group>"; };
-		B5AF433523422A1E00EFAA7E /* BottomBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBorderView.swift; sourceTree = "<group>"; };
-		B5AF433623422A1E00EFAA7E /* TextExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextExtension.swift; sourceTree = "<group>"; };
+		B5AF433523422A1E00EFAA7E /* BorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
+		B5AF433623422A1E00EFAA7E /* LabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelExtension.swift; sourceTree = "<group>"; };
 		B5AF433723422A1E00EFAA7E /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		B5AF433823422A1E00EFAA7E /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		B5AF433F23422AE300EFAA7E /* InsertUserNameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertUserNameVC.swift; sourceTree = "<group>"; };
+		B5AF434223422E9000EFAA7E /* MontTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontTextFieldView.swift; sourceTree = "<group>"; };
 		B5FFB7B72340A84E0098B113 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		B5FFB7BA2340A84E0098B113 /* BaseForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseForm.swift; sourceTree = "<group>"; };
 		B5FFB7BC2340A84E0098B113 /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
@@ -222,6 +226,7 @@
 		B57ABB6023409A630057964E /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				B5AF434123422E2200EFAA7E /* Components */,
 				B5AF433323422A1E00EFAA7E /* Extension */,
 				B51E1D642340AE67004AFDA2 /* CodePreference.swift */,
 				B51E1D682340B1C7004AFDA2 /* MainVC.swift */,
@@ -235,6 +240,7 @@
 			children = (
 				B57ABB6F23409ECA0057964E /* Sign.storyboard */,
 				B57ABB7123409EFD0057964E /* SignInVC.swift */,
+				B5AF433F23422AE300EFAA7E /* InsertUserNameVC.swift */,
 				B5AF432D2340ECDA00EFAA7E /* ChooseCreativeColorVC.swift */,
 			);
 			path = Sign;
@@ -282,8 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				B5AF433423422A1E00EFAA7E /* DeviceExtension.swift */,
-				B5AF433523422A1E00EFAA7E /* BottomBorderView.swift */,
-				B5AF433623422A1E00EFAA7E /* TextExtension.swift */,
+				B5AF433623422A1E00EFAA7E /* LabelExtension.swift */,
 				B5AF433723422A1E00EFAA7E /* ViewExtension.swift */,
 				B5AF433823422A1E00EFAA7E /* ColorExtension.swift */,
 			);
@@ -296,6 +301,15 @@
 				B5AF43312342218A00EFAA7E /* Fontfabric - Mont Heavy DEMO.otf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		B5AF434123422E2200EFAA7E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B5AF433523422A1E00EFAA7E /* BorderView.swift */,
+				B5AF434223422E9000EFAA7E /* MontTextFieldView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		B5FFB7B62340A84E0098B113 /* Model */ = {
@@ -583,11 +597,13 @@
 				B5FFB7C02340A84E0098B113 /* BaseForm.swift in Sources */,
 				B5FFB7C12340A84E0098B113 /* BaseResponse.swift in Sources */,
 				B5AF433C23422A1E00EFAA7E /* ViewExtension.swift in Sources */,
+				B5AF434323422E9000EFAA7E /* MontTextFieldView.swift in Sources */,
 				B5FFB7C22340A84E0098B113 /* BaseController.swift in Sources */,
 				B57ABB7623409F2F0057964E /* SearchVC.swift in Sources */,
 				B51E1D692340B1C7004AFDA2 /* MainVC.swift in Sources */,
-				B5AF433B23422A1E00EFAA7E /* TextExtension.swift in Sources */,
-				B5AF433A23422A1E00EFAA7E /* BottomBorderView.swift in Sources */,
+				B5AF433B23422A1E00EFAA7E /* LabelExtension.swift in Sources */,
+				B5AF434023422AE300EFAA7E /* InsertUserNameVC.swift in Sources */,
+				B5AF433A23422A1E00EFAA7E /* BorderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
