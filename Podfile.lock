@@ -1,11 +1,13 @@
 PODS:
   - Alamofire (4.9.0)
   - ObjectMapper (3.5.1)
+  - Spring (1.0.6)
   - Toast-Swift (5.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.9.0)
   - ObjectMapper (~> 3.5.1)
+  - Spring (from `https://github.com/MengTo/Spring.git`)
   - Toast-Swift (~> 5.0.0)
 
 SPEC REPOS:
@@ -14,11 +16,21 @@ SPEC REPOS:
     - ObjectMapper
     - Toast-Swift
 
+EXTERNAL SOURCES:
+  Spring:
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: 50d92a5b9e08848387ae95bf44c6ad20834f7083
+    :git: https://github.com/MengTo/Spring.git
+
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  Spring: 3d113f14575ef79aec9c5f906dfa4f5001c03254
   Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
 
-PODFILE CHECKSUM: 28222fd0ede0bbc54c241f03dc026d3f1a908059
+PODFILE CHECKSUM: 6ad517b4b4a8b75f27e52aff2fe91498d565ab3f
 
 COCOAPODS: 1.7.5

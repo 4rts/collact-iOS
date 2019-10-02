@@ -9,6 +9,7 @@ target 'collact' do
   pod 'Alamofire', '~> 4.9.0'
   pod 'ObjectMapper', '~> 3.5.1'
   pod 'Toast-Swift', '~> 5.0.0'
+  pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
 
   target 'collactTests' do
     inherit! :search_paths
