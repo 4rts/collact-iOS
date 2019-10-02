@@ -14,6 +14,7 @@ class MontTextFieldView: UIView {
         var textField = UITextField(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height))
         textField.borderStyle = .none
         textField.minimumFontSize = 20
+        textField.autocapitalizationType = .none
         textField.font = UIFont(name: "Mont", size: 20)!
         textField.attributedPlaceholder = changeAttributedString(string: textField.placeholder, color: UIColor.montGray)
         textField.attributedText = changeAttributedString(string: textField.text, color: UIColor.black)
