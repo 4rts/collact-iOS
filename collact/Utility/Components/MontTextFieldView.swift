@@ -9,17 +9,25 @@
 import UIKit
 
 class MontTextFieldView: UIView {
-    
-    override lazy var attributedPlaceholder: NSAttributedString = {
-        var attributedPlaceholder = NSAttributedString()
-        var placeHolder = NSMutableAttributedString()
-        // Set the Font
-        placeHolder = NSMutableAttributedString(string: self.placeholder ?? "", attributes: [NSAttributedString.Key.font: UIFont(name: "Mont", size: 20.0)!])
 
-        // Set the color
-        placeHolder.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range:NSRange(location:0, length: self.placeholder?.count ?? 0))
+    lazy var textField: UITextField = {
+        var textField = UITextField(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height))
+        textField.borderStyle = .none
+        textField.minimumFontSize = 20
+        textField.font = UIFont(name: "Mont", size: 20)!
+        textField.attributedPlaceholder = changeAttributedString(string: textField.placeholder, color: UIColor.montGray)
+        textField.attributedText = changeAttributedString(string: textField.text, color: UIColor.black)
         
-        attributedPlaceholder = placeHolder
-        return attributedPlaceholder
+        return textField
     }()
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        self.addSubview(textField)
+    }
+    
+    func changeAttributedString(string: String?, color: UIColor) -> NSMutableAttributedString {
+        return NSMutableAttributedString(string: string ?? "", attributes: [NSAttributedString.Key.font: UIFont(name: "Mont", size: 20)!, NSAttributedString.Key.foregroundColor: color])
+    }
 }
