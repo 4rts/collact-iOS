@@ -14,5 +14,6 @@ class BottomBorderView: UIView {
         super.layoutSubviews()
         self.addBorder(side: .bottom, thickness: 1.0, color: UIColor(hex: "#ffffff") ?? UIColor(white: 1, alpha: 1))
     }
-
+    
+    
 }
