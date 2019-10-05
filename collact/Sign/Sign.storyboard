@@ -37,13 +37,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uas-hT-IaZ">
-                                <rect key="frame" x="139" y="244" width="136" height="32"/>
+                                <rect key="frame" x="139" y="244" width="136" height="32.5"/>
                                 <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1a-Bh-qnN">
-                                <rect key="frame" x="40" y="492" width="334" height="60"/>
+                                <rect key="frame" x="40" y="492.5" width="334" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Ryb-9A-PrN"/>
@@ -63,7 +63,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilk-bI-Akk">
-                                <rect key="frame" x="36" y="568" width="342" height="60"/>
+                                <rect key="frame" x="36" y="568.5" width="342" height="60"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="PHJ-n5-BYc"/>
@@ -83,14 +83,14 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CVn-zc-95F" customClass="MontTextFieldView" customModule="collact" customModuleProvider="target">
-                                <rect key="frame" x="36" y="340" width="342" height="60"/>
+                                <rect key="frame" x="36" y="340.5" width="342" height="60"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="MuW-kJ-dPr"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kd9-D6-c6j" customClass="MontTextFieldView" customModule="collact" customModuleProvider="target">
-                                <rect key="frame" x="36" y="416" width="342" height="60"/>
+                                <rect key="frame" x="36" y="416.5" width="342" height="60"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="IJz-jc-Jdz"/>
@@ -166,10 +166,10 @@ your creative field </string>
             </objects>
             <point key="canvasLocation" x="306" y="465"/>
         </scene>
-        <!--Insert User NameVC-->
+        <!--Sign Up1VC-->
         <scene sceneID="DxS-jL-RO9">
             <objects>
-                <viewController storyboardIdentifier="InsertUserName" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ref-RS-uSb" customClass="InsertUserNameVC" customModule="collact" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InsertUserName" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ref-RS-uSb" customClass="SignUp1VC" customModule="collact" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Adk-zh-7B2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -260,10 +260,10 @@ your creative field </string>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="-273.21428571428572"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up2VC-->
         <scene sceneID="Zqf-uV-AVN">
             <objects>
-                <viewController id="qvH-t0-XIR" sceneMemberID="viewController">
+                <viewController id="qvH-t0-XIR" customClass="SignUp2VC" customModule="collact" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6eI-FN-0CX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -275,15 +275,18 @@ your creative field </string>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="22" minY="22" maxX="22" maxY="22"/>
                                 <state key="normal" title="Button" image="icBack"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="qvH-t0-XIR" eventType="touchUpInside" id="MWy-Wa-i3m"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text your email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMd-W4-efI">
-                                <rect key="frame" x="36" y="364" width="210" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일을 입력하세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMd-W4-efI">
+                                <rect key="frame" x="36" y="364" width="240" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPO-rb-OQm">
-                                <rect key="frame" x="36" y="500" width="137" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="패스워드를 입력하세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPO-rb-OQm">
+                                <rect key="frame" x="36" y="494" width="266" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -292,55 +295,58 @@ your creative field </string>
                                 <rect key="frame" x="226" y="796" width="188" height="100"/>
                                 <state key="normal" image="icBtnSide"/>
                                 <connections>
-                                    <segue destination="ieQ-Aq-YYt" kind="show" id="CHC-kc-jJH"/>
+                                    <action selector="nextButtonAction:" destination="qvH-t0-XIR" eventType="touchUpInside" id="SOq-7a-g5P"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="id@email.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wF2-ZB-IhZ">
-                                <rect key="frame" x="36" y="424" width="342" height="56"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDt-j4-5Ol" customClass="MontTextFieldView" customModule="collact" customModuleProvider="target">
+                                <rect key="frame" x="36" y="414" width="342" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="lYf-Lu-aef"/>
+                                    <constraint firstAttribute="height" constant="60" id="Hfx-tB-u63"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="id@email.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f38-La-WVg">
-                                <rect key="frame" x="36" y="552" width="342" height="56"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tk-qo-uzt" customClass="MontTextFieldView" customModule="collact" customModuleProvider="target">
+                                <rect key="frame" x="36" y="554" width="342" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="2lh-lM-Usp"/>
+                                    <constraint firstAttribute="height" constant="60" id="Qj8-T2-qTE"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="wF2-ZB-IhZ" firstAttribute="top" secondItem="eMd-W4-efI" secondAttribute="bottom" constant="24" id="0aa-au-xtM"/>
-                            <constraint firstItem="aPO-rb-OQm" firstAttribute="top" secondItem="wF2-ZB-IhZ" secondAttribute="bottom" constant="20" id="5AY-Vt-xig"/>
+                            <constraint firstItem="5tk-qo-uzt" firstAttribute="leading" secondItem="7ER-gc-fxE" secondAttribute="leading" constant="36" id="0tk-N5-vWu"/>
+                            <constraint firstItem="7ER-gc-fxE" firstAttribute="trailing" secondItem="qDt-j4-5Ol" secondAttribute="trailing" constant="36" id="9TV-Uf-J3D"/>
                             <constraint firstItem="eMd-W4-efI" firstAttribute="top" secondItem="7ER-gc-fxE" secondAttribute="top" constant="276" id="B3B-92-FPD"/>
-                            <constraint firstItem="7ER-gc-fxE" firstAttribute="trailing" secondItem="f38-La-WVg" secondAttribute="trailing" constant="36" id="G3e-VC-UpV"/>
                             <constraint firstItem="eMd-W4-efI" firstAttribute="leading" secondItem="7ER-gc-fxE" secondAttribute="leading" constant="36" id="MvZ-wl-Pd8"/>
-                            <constraint firstItem="f38-La-WVg" firstAttribute="top" secondItem="aPO-rb-OQm" secondAttribute="bottom" constant="16" id="OaK-UH-Nch"/>
-                            <constraint firstItem="7ER-gc-fxE" firstAttribute="trailing" secondItem="wF2-ZB-IhZ" secondAttribute="trailing" constant="36" id="WAL-80-thm"/>
+                            <constraint firstItem="qDt-j4-5Ol" firstAttribute="top" secondItem="eMd-W4-efI" secondAttribute="bottom" constant="14" id="Myh-H1-4Xh"/>
+                            <constraint firstItem="qDt-j4-5Ol" firstAttribute="leading" secondItem="7ER-gc-fxE" secondAttribute="leading" constant="36" id="OUe-Z7-k5t"/>
+                            <constraint firstItem="7ER-gc-fxE" firstAttribute="trailing" secondItem="5tk-qo-uzt" secondAttribute="trailing" constant="36" id="PIZ-Vo-Ekt"/>
+                            <constraint firstItem="5tk-qo-uzt" firstAttribute="top" secondItem="aPO-rb-OQm" secondAttribute="bottom" constant="24" id="bet-ut-cek"/>
                             <constraint firstItem="aPO-rb-OQm" firstAttribute="leading" secondItem="7ER-gc-fxE" secondAttribute="leading" constant="36" id="lSs-Pj-ddN"/>
+                            <constraint firstItem="aPO-rb-OQm" firstAttribute="top" secondItem="qDt-j4-5Ol" secondAttribute="bottom" constant="20" id="ljf-NK-bRv"/>
                             <constraint firstItem="pCj-DL-On4" firstAttribute="trailing" secondItem="7ER-gc-fxE" secondAttribute="trailing" id="oSQ-Ui-JtI"/>
-                            <constraint firstItem="f38-La-WVg" firstAttribute="leading" secondItem="7ER-gc-fxE" secondAttribute="leading" constant="36" id="q3H-eo-9zG"/>
                             <constraint firstItem="9Ph-ll-UCN" firstAttribute="top" secondItem="7ER-gc-fxE" secondAttribute="top" id="vgv-2w-6dW"/>
-                            <constraint firstItem="wF2-ZB-IhZ" firstAttribute="leading" secondItem="7ER-gc-fxE" secondAttribute="leading" constant="36" id="wOl-3c-ZpL"/>
                             <constraint firstAttribute="bottom" secondItem="pCj-DL-On4" secondAttribute="bottom" id="wRj-tj-e2Q"/>
                             <constraint firstItem="9Ph-ll-UCN" firstAttribute="leading" secondItem="6eI-FN-0CX" secondAttribute="leading" constant="10" id="zQo-df-wVy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7ER-gc-fxE"/>
                     </view>
                     <navigationItem key="navigationItem" id="YeT-sy-CYQ"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="qDt-j4-5Ol" id="dzO-ax-bjf"/>
+                        <outlet property="passwordTextField" destination="5tk-qo-uzt" id="AIL-pd-80M"/>
+                        <segue destination="ieQ-Aq-YYt" kind="show" identifier="NextStep" id="RKv-OY-sqJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KUQ-eL-G3O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1814" y="-273"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up3VC-->
         <scene sceneID="1eL-Dp-8Mp">
             <objects>
-                <viewController id="ieQ-Aq-YYt" sceneMemberID="viewController">
+                <viewController id="ieQ-Aq-YYt" customClass="SignUp3VC" customModule="collact" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IzP-U8-sPS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -352,9 +358,12 @@ your creative field </string>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="22" minY="22" maxX="22" maxY="22"/>
                                 <state key="normal" title="Button" image="icBack"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="ieQ-Aq-YYt" eventType="touchUpInside" id="Q07-Cg-Bgm"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you an artist?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMX-97-H3P">
-                                <rect key="frame" x="36" y="364" width="244" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당신은 아티스트인가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMX-97-H3P">
+                                <rect key="frame" x="36" y="364" width="283" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -363,7 +372,8 @@ your creative field </string>
                                 <rect key="frame" x="226" y="796" width="188" height="100"/>
                                 <state key="normal" image="icBtnSide"/>
                                 <connections>
-                                    <segue destination="iV3-el-vtD" kind="show" id="4bj-mf-I5L"/>
+                                    <action selector="nextButtonAction:" destination="ieQ-Aq-YYt" eventType="touchUpInside" id="J4O-BQ-4kF"/>
+                                    <segue destination="iV3-el-vtD" kind="show" identifier="NextStep" id="4bj-mf-I5L"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ZU-QQ-KNs">
@@ -371,15 +381,18 @@ your creative field </string>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhd-9S-GF0">
                                         <rect key="frame" x="0.0" y="0.0" width="342" height="50"/>
+                                        <connections>
+                                            <action selector="pickButtonAction:" destination="ieQ-Aq-YYt" eventType="touchUpInside" id="vLa-Qi-AwH"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes, I am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPa-4L-Fmy">
-                                        <rect key="frame" x="16" y="13" width="82" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="네, 맞습니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPa-4L-Fmy">
+                                        <rect key="frame" x="16" y="13" width="96" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <color key="textColor" red="0.89411764705882346" green="0.90980392156862744" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="sPa-4L-Fmy" firstAttribute="leading" secondItem="2ZU-QQ-KNs" secondAttribute="leading" constant="16" id="6Py-cL-0mN"/>
                                     <constraint firstItem="sPa-4L-Fmy" firstAttribute="centerY" secondItem="2ZU-QQ-KNs" secondAttribute="centerY" id="7Bd-f7-Yun"/>
@@ -389,15 +402,23 @@ your creative field </string>
                                     <constraint firstAttribute="bottom" secondItem="hhd-9S-GF0" secondAttribute="bottom" id="bf0-as-c5f"/>
                                     <constraint firstItem="hhd-9S-GF0" firstAttribute="leading" secondItem="2ZU-QQ-KNs" secondAttribute="leading" id="sxM-G9-oeH"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lzy-Vc-0Cg">
                                 <rect key="frame" x="36" y="482" width="342" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPw-Bt-JFd">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPw-Bt-JFd">
                                         <rect key="frame" x="0.0" y="0.0" width="342" height="50"/>
+                                        <connections>
+                                            <action selector="pickButtonAction:" destination="ieQ-Aq-YYt" eventType="touchUpInside" id="h8e-W0-4Qg"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No, just Interestd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Pu-Lf-n70">
-                                        <rect key="frame" x="16" y="13" width="160.5" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아니요, 둘러보러 왔어요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Pu-Lf-n70">
+                                        <rect key="frame" x="16" y="13" width="187" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" red="0.89411764709999997" green="0.90980392160000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -413,6 +434,11 @@ your creative field </string>
                                     <constraint firstItem="gPw-Bt-JFd" firstAttribute="leading" secondItem="Lzy-Vc-0Cg" secondAttribute="leading" id="hB1-uc-YTf"/>
                                     <constraint firstAttribute="trailing" secondItem="gPw-Bt-JFd" secondAttribute="trailing" id="m8T-CF-LzF"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -433,6 +459,12 @@ your creative field </string>
                         <viewLayoutGuide key="safeArea" id="owF-JY-1lH"/>
                     </view>
                     <navigationItem key="navigationItem" id="pKY-fe-rez"/>
+                    <connections>
+                        <outlet property="noButtonView" destination="Lzy-Vc-0Cg" id="kWw-qe-cUI"/>
+                        <outlet property="noTextLabel" destination="8Pu-Lf-n70" id="otf-r2-zMN"/>
+                        <outlet property="yesButtonView" destination="2ZU-QQ-KNs" id="Fl2-yP-Nh9"/>
+                        <outlet property="yesTextLabel" destination="sPa-4L-Fmy" id="tSx-YM-lnY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7oZ-tQ-GMG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -454,8 +486,10 @@ your creative field </string>
                                 <inset key="contentEdgeInsets" minX="22" minY="22" maxX="22" maxY="22"/>
                                 <state key="normal" title="Button" image="icBack"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose fields you're interested in" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDJ-7F-uxP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDJ-7F-uxP">
                                 <rect key="frame" x="36" y="184" width="342" height="72"/>
+                                <string key="text">관심있는 분야를
+선택하세요</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
