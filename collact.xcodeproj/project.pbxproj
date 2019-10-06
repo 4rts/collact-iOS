@@ -43,6 +43,8 @@
 		B5AF43832348E49600EFAA7E /* SignUp3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF43822348E49600EFAA7E /* SignUp3VC.swift */; };
 		B5AF4387234905FC00EFAA7E /* SignUp4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF4386234905FC00EFAA7E /* SignUp4VC.swift */; };
 		B5AF43892349062000EFAA7E /* SignUp5VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF43882349062000EFAA7E /* SignUp5VC.swift */; };
+		B5AF43942349C8C800EFAA7E /* GenrePickerCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF43922349C8C800EFAA7E /* GenrePickerCVC.swift */; };
+		B5AF43952349C8C800EFAA7E /* GenrePickerCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5AF43932349C8C800EFAA7E /* GenrePickerCVC.xib */; };
 		B5FFB7BF2340A84E0098B113 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFB7B72340A84E0098B113 /* BaseModel.swift */; };
 		B5FFB7C02340A84E0098B113 /* BaseForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFB7BA2340A84E0098B113 /* BaseForm.swift */; };
 		B5FFB7C12340A84E0098B113 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFB7BC2340A84E0098B113 /* BaseResponse.swift */; };
@@ -115,6 +117,8 @@
 		B5AF43822348E49600EFAA7E /* SignUp3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp3VC.swift; sourceTree = "<group>"; };
 		B5AF4386234905FC00EFAA7E /* SignUp4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp4VC.swift; sourceTree = "<group>"; };
 		B5AF43882349062000EFAA7E /* SignUp5VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp5VC.swift; sourceTree = "<group>"; };
+		B5AF43922349C8C800EFAA7E /* GenrePickerCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenrePickerCVC.swift; sourceTree = "<group>"; };
+		B5AF43932349C8C800EFAA7E /* GenrePickerCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenrePickerCVC.xib; sourceTree = "<group>"; };
 		B5FFB7B72340A84E0098B113 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		B5FFB7BA2340A84E0098B113 /* BaseForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseForm.swift; sourceTree = "<group>"; };
 		B5FFB7BC2340A84E0098B113 /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
@@ -319,10 +323,20 @@
 		B5AF434123422E2200EFAA7E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B5AF43912349C88F00EFAA7E /* GenrePickerCVC */,
 				B5AF433523422A1E00EFAA7E /* BorderView.swift */,
 				B5AF434223422E9000EFAA7E /* MontTextFieldView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		B5AF43912349C88F00EFAA7E /* GenrePickerCVC */ = {
+			isa = PBXGroup;
+			children = (
+				B5AF43932349C8C800EFAA7E /* GenrePickerCVC.xib */,
+				B5AF43922349C8C800EFAA7E /* GenrePickerCVC.swift */,
+			);
+			path = GenrePickerCVC;
 			sourceTree = "<group>";
 		};
 		B5FFB7B62340A84E0098B113 /* Model */ = {
@@ -479,6 +493,7 @@
 				B57ABB7023409ECA0057964E /* Sign.storyboard in Resources */,
 				B5192888233C7AA500BBFBCD /* LaunchScreen.storyboard in Resources */,
 				B5192885233C7AA500BBFBCD /* Assets.xcassets in Resources */,
+				B5AF43952349C8C800EFAA7E /* GenrePickerCVC.xib in Resources */,
 				B5AF43322342218A00EFAA7E /* Fontfabric - Mont Heavy DEMO.otf in Resources */,
 				B57ABB6A23409EA90057964E /* Profile.storyboard in Resources */,
 				B57ABB6E23409EBF0057964E /* Home.storyboard in Resources */,
@@ -595,6 +610,7 @@
 			files = (
 				B5AF433923422A1E00EFAA7E /* DeviceExtension.swift in Sources */,
 				B5FFB7BF2340A84E0098B113 /* BaseModel.swift in Sources */,
+				B5AF43942349C8C800EFAA7E /* GenrePickerCVC.swift in Sources */,
 				B5AF43832348E49600EFAA7E /* SignUp3VC.swift in Sources */,
 				B51E1D632340ADFE004AFDA2 /* NetworkAPI.swift in Sources */,
 				B5AF432E2340ECDA00EFAA7E /* ChooseCreativeColorVC.swift in Sources */,
