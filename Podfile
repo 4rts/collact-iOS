@@ -10,6 +10,7 @@ target 'collact' do
   pod 'ObjectMapper', '~> 3.5.1'
   pod 'Toast-Swift', '~> 5.0.0'
   pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
+  pod 'lottie-ios', '~> 3.1.3'
 
   target 'collactTests' do
     inherit! :search_paths
