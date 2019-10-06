@@ -171,3 +171,12 @@ extension UIView {
         }
     }
 }
+
+extension UIStackView{
+    func removeAllSubview() {
+        for item in arrangedSubviews {
+            removeArrangedSubview(item)
+            item.removeFromSuperview()
+        }
+    }
+}

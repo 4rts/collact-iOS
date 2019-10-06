@@ -41,6 +41,8 @@
 		B5AF434323422E9000EFAA7E /* MontTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF434223422E9000EFAA7E /* MontTextFieldView.swift */; };
 		B5AF43812348E48B00EFAA7E /* SignUp2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF43802348E48B00EFAA7E /* SignUp2VC.swift */; };
 		B5AF43832348E49600EFAA7E /* SignUp3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF43822348E49600EFAA7E /* SignUp3VC.swift */; };
+		B5AF4387234905FC00EFAA7E /* SignUp4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF4386234905FC00EFAA7E /* SignUp4VC.swift */; };
+		B5AF43892349062000EFAA7E /* SignUp5VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF43882349062000EFAA7E /* SignUp5VC.swift */; };
 		B5FFB7BF2340A84E0098B113 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFB7B72340A84E0098B113 /* BaseModel.swift */; };
 		B5FFB7C02340A84E0098B113 /* BaseForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFB7BA2340A84E0098B113 /* BaseForm.swift */; };
 		B5FFB7C12340A84E0098B113 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFB7BC2340A84E0098B113 /* BaseResponse.swift */; };
@@ -111,6 +113,8 @@
 		B5AF434223422E9000EFAA7E /* MontTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontTextFieldView.swift; sourceTree = "<group>"; };
 		B5AF43802348E48B00EFAA7E /* SignUp2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp2VC.swift; sourceTree = "<group>"; };
 		B5AF43822348E49600EFAA7E /* SignUp3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp3VC.swift; sourceTree = "<group>"; };
+		B5AF4386234905FC00EFAA7E /* SignUp4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp4VC.swift; sourceTree = "<group>"; };
+		B5AF43882349062000EFAA7E /* SignUp5VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp5VC.swift; sourceTree = "<group>"; };
 		B5FFB7B72340A84E0098B113 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		B5FFB7BA2340A84E0098B113 /* BaseForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseForm.swift; sourceTree = "<group>"; };
 		B5FFB7BC2340A84E0098B113 /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 				B5192889233C7AA500BBFBCD /* Info.plist */,
 				B5FFB7B62340A84E0098B113 /* Model */,
 				B5FFB7B82340A84E0098B113 /* Network */,
+				B5FFB7B92340A84E0098B113 /* Form */,
 				B57ABB6123409A770057964E /* Sign */,
 				B57ABB6323409AD30057964E /* Home */,
 				B57ABB6423409ADF0057964E /* Search */,
@@ -247,6 +252,8 @@
 				B5AF433F23422AE300EFAA7E /* SignUp1VC.swift */,
 				B5AF43802348E48B00EFAA7E /* SignUp2VC.swift */,
 				B5AF43822348E49600EFAA7E /* SignUp3VC.swift */,
+				B5AF4386234905FC00EFAA7E /* SignUp4VC.swift */,
+				B5AF43882349062000EFAA7E /* SignUp5VC.swift */,
 				B5AF432D2340ECDA00EFAA7E /* ChooseCreativeColorVC.swift */,
 			);
 			path = Sign;
@@ -329,7 +336,6 @@
 		B5FFB7B82340A84E0098B113 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				B5FFB7B92340A84E0098B113 /* Form */,
 				B5FFB7BB2340A84E0098B113 /* Response */,
 				B5FFB7BD2340A84E0098B113 /* Controller */,
 				B51E1D622340ADFE004AFDA2 /* NetworkAPI.swift */,
@@ -601,6 +607,8 @@
 				B51E1D652340AE67004AFDA2 /* CodePreference.swift in Sources */,
 				B57ABB7223409EFD0057964E /* SignInVC.swift in Sources */,
 				B5AF433D23422A1E00EFAA7E /* ColorExtension.swift in Sources */,
+				B5AF43892349062000EFAA7E /* SignUp5VC.swift in Sources */,
+				B5AF4387234905FC00EFAA7E /* SignUp4VC.swift in Sources */,
 				B5FFB7C02340A84E0098B113 /* BaseForm.swift in Sources */,
 				B5FFB7C12340A84E0098B113 /* BaseResponse.swift in Sources */,
 				B5AF433C23422A1E00EFAA7E /* ViewExtension.swift in Sources */,
