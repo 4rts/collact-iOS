@@ -10,7 +10,17 @@ import UIKit
 import Spring
 
 class BaseVC: UIViewController {
-
+    
+    var genreArray = [
+        ["name": "Image", "color": #colorLiteral(red: 0.9018599987, green: 0.0006837341934, blue: 0.1164185181, alpha: 1)],
+        ["name": "Video", "color": #colorLiteral(red: 0.9478152394, green: 0.410014689, blue: 0, alpha: 1)],
+        ["name": "Programming", "color": #colorLiteral(red: 0.9497713447, green: 0.7923770547, blue: 0.01942691952, alpha: 1)],
+        ["name": "Music", "color": #colorLiteral(red: 0.3339171708, green: 0.8689348102, blue: 0, alpha: 1)],
+        ["name": "Performance", "color": #colorLiteral(red: 0.00416468177, green: 0.71829319, blue: 0.8336349726, alpha: 1)],
+        ["name": "Object", "color": #colorLiteral(red: 0, green: 0.2390471101, blue: 0.901499033, alpha: 1)],
+        ["name": "Idea", "color": #colorLiteral(red: 0.378341198, green: 0, blue: 0.9022763371, alpha: 1)]
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

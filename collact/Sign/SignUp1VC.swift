@@ -19,7 +19,6 @@ class SignUp1VC: BaseVC {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var nameTextField: MontTextFieldView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
