@@ -16,6 +16,7 @@ class SignUp6VC: BaseVC {
     @IBOutlet weak var scrollContainerView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var genreLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,30 +34,36 @@ class SignUp6VC: BaseVC {
     }
     
     func setScrollViewLayout() {
+        let centerWidth = (self.view.frame.width / 2 - 24)
         pageControl.isHidden = true
         pageControl.numberOfPages = genreArray.count
         pageControl.currentPage = 0
         pageControl.isUserInteractionEnabled = false
         
         scrollView.delegate = self
-        scrollView.contentSize = CGSize(width: CGFloat(genreArray.count) * (48 + 40), height: 70)
+        scrollView.contentSize = CGSize(width: (CGFloat(genreArray.count) * (48 + 40) + (centerWidth * 2) - 30), height: 48)
         
         scrollView.decelerationRate = UIScrollView.DecelerationRate.fast
         self.scrollContainerView.backgroundColor = .none
         
-        for i in 0 ..< genreArray.count {
-            let view: UIView = UIView(frame: CGRect(x: CGFloat(i) * (48 + 8) + 16, y: 0, width: 48, height: 48))
+        for (index, genre) in genreArray.enumerated() {
+            let view: UIView = UIView(frame: CGRect(x: CGFloat(index) * (48 + 40) + centerWidth, y: 0, width: 48, height: 48))
             view.layer.masksToBounds = true
-            view.layer.cornerRadius = 5
+            view.layer.cornerRadius = 24
             view.isUserInteractionEnabled = true
-            view.backgroundColor = UIColor.black
+            view.backgroundColor = genre["color"] as? UIColor
             view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(buttonAction)))
             scrollView.addSubview(view)
+            genreLabel.text = genreArray[0]["name"] as? String
         }
     }
-    @objc func buttonAction() {
-        
+    
+    @objc func buttonAction(recognizer: UITapGestureRecognizer) {
+        let xPoint = (recognizer.location(in: self.scrollView).x)
+        let centerWidth = (self.view.frame.width / 1.96)
+        scrollView.setContentOffset(CGPoint(x:  CGFloat(roundf(Float((xPoint) - centerWidth))),y:0), animated: true)
     }
+    
     @IBAction func backButtonAction(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
@@ -68,12 +75,14 @@ class SignUp6VC: BaseVC {
 
 extension SignUp6VC: UIScrollViewDelegate {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        let pageIndex = round(scrollView.contentOffset.x / (self.view.frame.width - 32 ))
-        pageControl.currentPage = Int(pageIndex)
+        let pageIndex = Int(round(scrollView.contentOffset.x / (48 + 40)))
+        pageControl.currentPage = pageIndex
+        genreLabel.text = genreArray[pageIndex]["name"] as? String
     }
+    
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         
-        let width = self.view.frame.width - 32 + 8
+        let width = CGFloat(40 + 48)
         var offset = targetContentOffset.pointee
         let index = (offset.x) / width
         var roundIndex = round(index)
