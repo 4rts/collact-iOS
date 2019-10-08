@@ -69,7 +69,7 @@ class SignUp6VC: BaseVC {
     }
     
     @IBAction func nextButtonAction(_ sender: Any) {
-//        self.performSegue(withIdentifier: "NextStep", sender: nil)
+        self.performSegue(withIdentifier: "NextStep", sender: nil)
     }
 }
 

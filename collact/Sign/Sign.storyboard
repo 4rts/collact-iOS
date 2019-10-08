@@ -59,12 +59,12 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="signInAction:" destination="xpE-Q1-Tf1" eventType="touchUpInside" id="o0m-Kx-ASa"/>
-                                    <segue destination="1kj-SN-sSJ" kind="show" id="trJ-J6-s5M"/>
+                                    <segue destination="psb-Qv-929" kind="show" id="v57-EU-EzG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilk-bI-Akk">
                                 <rect key="frame" x="36" y="568.5" width="342" height="60"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="PHJ-n5-BYc"/>
                                 </constraints>
@@ -596,6 +596,7 @@
                     <navigationItem key="navigationItem" id="bW6-yP-DUt"/>
                     <connections>
                         <outlet property="collectionView" destination="dU8-uf-96C" id="WPE-dt-PAi"/>
+                        <segue destination="1kj-SN-sSJ" kind="show" identifier="NextStep" id="7rb-gA-Qav"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qHg-eg-Dqh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -752,54 +753,96 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r4J-c8-jb3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305.79710144927537" y="-945.53571428571422"/>
+            <point key="canvasLocation" x="4791" y="-273"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up7VC-->
         <scene sceneID="8w4-vM-N1Z">
             <objects>
-                <viewController id="psb-Qv-929" sceneMemberID="viewController">
+                <viewController id="psb-Qv-929" customClass="SignUp7VC" customModule="collact" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CTI-hl-4ka">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCn-4W-PVk">
-                                <rect key="frame" x="10" y="44" width="108" height="66"/>
+                                <rect key="frame" x="10" y="88" width="108" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="ReP-No-lcB"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="22" minY="22" maxX="22" maxY="22"/>
                                 <state key="normal" title="Button" image="icBack"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KaW-aN-bek">
-                                <rect key="frame" x="36" y="280" width="342" height="72"/>
-                                <string key="text">당신의 창작분야를
-선택하세요</string>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DJ-A1-uwd">
                                 <rect key="frame" x="226" y="796" width="188" height="100"/>
                                 <state key="normal" image="icBtnSide"/>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyl-Lv-Nrk">
+                                <rect key="frame" x="36" y="389" width="342" height="172"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yoP-0d-yX8">
+                                        <rect key="frame" x="4" y="112" width="334" height="60"/>
+                                        <subviews>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sgA-Hf-hMW">
+                                                <rect key="frame" x="-2" y="0.0" width="338" height="61"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="o7s-oU-Rtf"/>
+                                                </constraints>
+                                                <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="changeSliderValue:" destination="psb-Qv-929" eventType="valueChanged" id="wZy-Yp-Thf"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="sgA-Hf-hMW" secondAttribute="bottom" id="GJd-du-qLS"/>
+                                            <constraint firstAttribute="height" constant="60" id="JUm-Pd-Okh"/>
+                                            <constraint firstAttribute="trailing" secondItem="sgA-Hf-hMW" secondAttribute="trailing" id="net-2Q-Fnj"/>
+                                            <constraint firstItem="sgA-Hf-hMW" firstAttribute="leading" secondItem="yoP-0d-yX8" secondAttribute="leading" id="w65-SZ-Dro"/>
+                                            <constraint firstItem="sgA-Hf-hMW" firstAttribute="top" secondItem="yoP-0d-yX8" secondAttribute="top" id="zcT-vP-Vil"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRJ-Pg-NF0">
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="72" id="zTt-Gz-a80"/>
+                                        </constraints>
+                                        <string key="text">당신은 어디에 
+가까우신가요?</string>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="iRJ-Pg-NF0" secondAttribute="trailing" id="5UI-ui-6ks"/>
+                                    <constraint firstItem="iRJ-Pg-NF0" firstAttribute="leading" secondItem="pyl-Lv-Nrk" secondAttribute="leading" id="CKo-Hb-bmc"/>
+                                    <constraint firstItem="iRJ-Pg-NF0" firstAttribute="top" secondItem="pyl-Lv-Nrk" secondAttribute="top" id="DQ5-WN-5YG"/>
+                                    <constraint firstAttribute="bottom" secondItem="yoP-0d-yX8" secondAttribute="bottom" id="FFe-Wz-rTj"/>
+                                    <constraint firstItem="yoP-0d-yX8" firstAttribute="top" secondItem="iRJ-Pg-NF0" secondAttribute="bottom" constant="40" id="Qe0-tI-5g9"/>
+                                    <constraint firstItem="yoP-0d-yX8" firstAttribute="leading" secondItem="pyl-Lv-Nrk" secondAttribute="leading" constant="4" id="VGI-94-IBe"/>
+                                    <constraint firstAttribute="trailing" secondItem="yoP-0d-yX8" secondAttribute="trailing" constant="4" id="Zlk-FQ-ZPg"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.57285423801369861" green="1" blue="0.57285423801369861" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="KaW-aN-bek" firstAttribute="leading" secondItem="2fy-fV-89c" secondAttribute="leading" constant="36" id="Nda-tL-O4V"/>
+                            <constraint firstItem="pyl-Lv-Nrk" firstAttribute="leading" secondItem="2fy-fV-89c" secondAttribute="leading" constant="36" id="T8r-5H-XUd"/>
                             <constraint firstItem="7DJ-A1-uwd" firstAttribute="trailing" secondItem="2fy-fV-89c" secondAttribute="trailing" id="eKG-JS-p6m"/>
+                            <constraint firstItem="pyl-Lv-Nrk" firstAttribute="centerY" secondItem="2fy-fV-89c" secondAttribute="centerY" id="fy5-Ey-Bfb"/>
                             <constraint firstItem="bCn-4W-PVk" firstAttribute="leading" secondItem="CTI-hl-4ka" secondAttribute="leading" constant="10" id="gu5-CX-Clt"/>
-                            <constraint firstAttribute="trailing" secondItem="KaW-aN-bek" secondAttribute="trailing" constant="36" id="pMe-uH-BeZ"/>
+                            <constraint firstItem="2fy-fV-89c" firstAttribute="trailing" secondItem="pyl-Lv-Nrk" secondAttribute="trailing" constant="36" id="tTJ-dC-VLX"/>
                             <constraint firstItem="bCn-4W-PVk" firstAttribute="top" secondItem="2fy-fV-89c" secondAttribute="top" id="u8g-Ac-Hlp"/>
                             <constraint firstAttribute="bottom" secondItem="7DJ-A1-uwd" secondAttribute="bottom" id="w53-Zk-NIX"/>
-                            <constraint firstItem="KaW-aN-bek" firstAttribute="top" secondItem="bCn-4W-PVk" secondAttribute="bottom" constant="170" id="wcT-s3-e7y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2fy-fV-89c"/>
                     </view>
                     <navigationItem key="navigationItem" id="CYa-vz-fb2"/>
+                    <connections>
+                        <outlet property="slider" destination="sgA-Hf-hMW" id="qAs-9b-roX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRZ-Ml-Hac" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5528" y="-273"/>
+            <point key="canvasLocation" x="306" y="-958"/>
         </scene>
     </scenes>
     <resources>
