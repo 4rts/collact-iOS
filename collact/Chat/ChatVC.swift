@@ -1,14 +1,14 @@
 //
-//  MainVC.swift
+//  ChatVC.swift
 //  collact
 //
-//  Created by minjae on 29/09/2019.
+//  Created by minjae on 2019/10/12.
 //  Copyright © 2019 minjae. All rights reserved.
 //
 
 import UIKit
 
-class MainVC: UIViewController {
+class ChatVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
