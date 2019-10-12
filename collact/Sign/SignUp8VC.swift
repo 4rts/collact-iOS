@@ -1,15 +1,15 @@
 //
-//  SignUp7VC.swift
+//  SignUp8VC.swift
 //  collact
 //
-//  Created by minjae on 07/10/2019.
+//  Created by minjae on 2019/10/11.
 //  Copyright © 2019 minjae. All rights reserved.
 //
 
 import UIKit
 
-class SignUp7VC: BaseVC {
-
+class SignUp8VC: BaseVC {
+    
     @IBOutlet weak var slider: UISlider!
     
     override func viewDidLoad() {
