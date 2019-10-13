@@ -36,4 +36,8 @@ extension UIColor {
     static var montGray: UIColor = {
         return UIColor(red: 178, green: 185, blue: 191, alpha: 1.0)
     }()
+    
+    static var gray15: UIColor = {
+        return UIColor(red: 0, green: 0, blue: 0, alpha: 0.15)
+        }()
 }

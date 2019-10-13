@@ -8,23 +8,38 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class HomeVC: BaseVC {
 
+    @IBOutlet weak var artistButton: UIButton!
+    @IBOutlet weak var collaboButton: UIButton!
+    @IBOutlet weak var artistView: UIView!
+    @IBOutlet weak var collaboView: UIView!
+    @IBOutlet weak var myCollectionView: UIView!
+    
+    var buttonFlag: ViewType = .ARTIST
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func changeToView(_ sender: UIButton) {
+        switch sender.tag {
+        case 0:
+            self.artistButton.setTitleColor(UIColor.gray15, for: .normal)
+            self.artistView.isHidden = false
+            self.collaboButton.setTitleColor(UIColor.black, for: .normal)
+            self.collaboView.isHidden = true
+            self.buttonFlag = .ARTIST
+        case 1:
+            self.artistButton.setTitleColor(UIColor.black, for: .normal)
+            self.artistView.isHidden = true
+            self.collaboButton.setTitleColor(UIColor.gray15, for: .normal)
+            self.collaboView.isHidden = false
+            self.buttonFlag = .COLLABO
+        default:
+            break
+        }
     }
-    */
-
+    
 }

@@ -21,19 +21,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="collection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UQ-Nr-QhG">
-                                <rect key="frame" x="24" y="100" width="188.5" height="32.5"/>
+                                <rect key="frame" x="24" y="100" width="155" height="42"/>
                                 <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4C-kJ-HVC">
-                                <rect key="frame" x="190" y="149" width="13" height="43.5"/>
+                                <rect key="frame" x="159.5" y="162" width="13" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="yG7-cg-CgL"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="36"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="of" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbu-jJ-O0b">
-                                <rect key="frame" x="24" y="152.5" width="39" height="36"/>
+                                <rect key="frame" x="24" y="162" width="31.5" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="jKz-XB-dhR"/>
                                 </constraints>
@@ -42,35 +45,41 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZN-Hm-Ppi">
-                                <rect key="frame" x="75" y="152.5" width="103" height="36"/>
+                                <rect key="frame" x="67.5" y="162" width="80" height="36"/>
                                 <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="36"/>
                                 <state key="normal" title="artist">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeToView:" destination="gr7-o0-AQm" eventType="touchUpInside" id="iNs-M1-ycu"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4he-7d-WRJ">
-                                <rect key="frame" x="213" y="148" width="142" height="45"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4he-7d-WRJ">
+                                <rect key="frame" x="182.5" y="156" width="118" height="54"/>
                                 <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="36"/>
                                 <state key="normal" title="collabo">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeToView:" destination="gr7-o0-AQm" eventType="touchUpInside" id="coh-ux-wTr"/>
+                                </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRZ-wQ-BcC">
-                                <rect key="frame" x="0.0" y="296.5" width="414" height="599.5"/>
+                                <rect key="frame" x="0.0" y="306" width="414" height="590"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Gpg-cD-Qw5">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="330"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEi-lT-Do6">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="330"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="330" id="j9M-bf-EBq"/>
                                                 </constraints>
                                             </view>
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnc-fN-yNP">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="360"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="360" id="sKZ-7n-axH"/>
                                                 </constraints>
@@ -98,7 +107,7 @@
                                 </constraints>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today’s Image artists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiZ-Qt-hPU">
-                                <rect key="frame" x="24" y="228.5" width="200" height="36"/>
+                                <rect key="frame" x="24" y="238" width="169.5" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="we0-XQ-Mf6"/>
                                 </constraints>
@@ -132,6 +141,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="house" catalog="system" selectedImage="house.fill" id="sOp-lN-8tX"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="artistButton" destination="SZN-Hm-Ppi" id="fQU-3N-srA"/>
+                        <outlet property="artistView" destination="lEi-lT-Do6" id="SHT-aM-HxQ"/>
+                        <outlet property="collaboButton" destination="4he-7d-WRJ" id="TM2-yi-Vde"/>
+                        <outlet property="collaboView" destination="gnc-fN-yNP" id="4jU-Xd-NGI"/>
+                        <outlet property="myCollectionView" destination="ZoO-0d-s8V" id="mNv-d9-Zuj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEJ-Iz-CiU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
