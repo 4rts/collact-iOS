@@ -21,13 +21,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="collection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UQ-Nr-QhG">
-                                <rect key="frame" x="24" y="100" width="155" height="42"/>
+                                <rect key="frame" x="24" y="100" width="188.5" height="32.5"/>
                                 <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4C-kJ-HVC">
-                                <rect key="frame" x="159.5" y="162" width="13" height="36"/>
+                                <rect key="frame" x="190" y="152.5" width="13" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="yG7-cg-CgL"/>
                                 </constraints>
@@ -36,7 +36,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="of" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbu-jJ-O0b">
-                                <rect key="frame" x="24" y="162" width="31.5" height="36"/>
+                                <rect key="frame" x="24" y="152.5" width="39" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="jKz-XB-dhR"/>
                                 </constraints>
@@ -45,7 +45,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZN-Hm-Ppi">
-                                <rect key="frame" x="67.5" y="162" width="80" height="36"/>
+                                <rect key="frame" x="75" y="152.5" width="103" height="36"/>
                                 <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="36"/>
                                 <state key="normal" title="artist">
                                     <color key="titleColor" white="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -55,7 +55,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4he-7d-WRJ">
-                                <rect key="frame" x="182.5" y="156" width="118" height="54"/>
+                                <rect key="frame" x="213" y="148" width="142" height="45"/>
                                 <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="36"/>
                                 <state key="normal" title="collabo">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -65,7 +65,7 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRZ-wQ-BcC">
-                                <rect key="frame" x="0.0" y="306" width="414" height="590"/>
+                                <rect key="frame" x="0.0" y="296.5" width="414" height="599.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Gpg-cD-Qw5">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="330"/>
@@ -86,28 +86,68 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZoO-0d-s8V">
-                                        <rect key="frame" x="0.0" y="330" width="414" height="270"/>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iPl-QO-rNN">
+                                        <rect key="frame" x="25" y="405" width="364" height="128"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="270" id="XmA-ih-J8r"/>
+                                            <constraint firstAttribute="height" constant="128" identifier="constraint" id="Lsv-tm-NDO"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5vU-Bu-62V">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5SB-Ue-zj5">
+                                        <rect key="frame" x="0.0" y="330" width="414" height="75"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My artist collection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uda-hS-mNq">
+                                                <rect key="frame" x="25" y="24" width="181.5" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xmi-SJ-be7">
+                                                <rect key="frame" x="212.5" y="27" width="8.5" height="13"/>
+                                                <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXf-Ja-uIJ">
+                                                <rect key="frame" x="374" y="21.5" width="16" height="22"/>
+                                                <state key="normal" image="combinedShape"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="uda-hS-mNq" firstAttribute="top" secondItem="5SB-Ue-zj5" secondAttribute="top" constant="24" id="7iO-xb-cfz"/>
+                                            <constraint firstItem="Xmi-SJ-be7" firstAttribute="top" secondItem="5SB-Ue-zj5" secondAttribute="top" constant="27" id="Kvt-K7-nK6"/>
+                                            <constraint firstItem="Xmi-SJ-be7" firstAttribute="leading" secondItem="uda-hS-mNq" secondAttribute="trailing" constant="6" id="N16-4o-oLc"/>
+                                            <constraint firstItem="uda-hS-mNq" firstAttribute="leading" secondItem="5SB-Ue-zj5" secondAttribute="leading" constant="25" id="Rtx-Xf-sMJ"/>
+                                            <constraint firstAttribute="height" constant="75" id="bUz-GN-NdF"/>
+                                            <constraint firstAttribute="trailing" secondItem="YXf-Ja-uIJ" secondAttribute="trailing" constant="24" id="feV-YO-yTK"/>
+                                            <constraint firstItem="YXf-Ja-uIJ" firstAttribute="centerY" secondItem="uda-hS-mNq" secondAttribute="centerY" id="vxE-F2-lG8"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Gpg-cD-Qw5" firstAttribute="centerX" secondItem="nRZ-wQ-BcC" secondAttribute="centerX" id="14u-A8-XI3"/>
-                                    <constraint firstAttribute="bottom" secondItem="ZoO-0d-s8V" secondAttribute="bottom" id="8LS-Zl-2Ac"/>
+                                    <constraint firstItem="iPl-QO-rNN" firstAttribute="top" secondItem="5SB-Ue-zj5" secondAttribute="bottom" id="4ZM-On-Le7"/>
+                                    <constraint firstAttribute="trailing" secondItem="5SB-Ue-zj5" secondAttribute="trailing" id="9ZK-t6-DF1"/>
                                     <constraint firstAttribute="trailing" secondItem="Gpg-cD-Qw5" secondAttribute="trailing" id="Dp1-Ke-vRf"/>
-                                    <constraint firstItem="ZoO-0d-s8V" firstAttribute="centerX" secondItem="nRZ-wQ-BcC" secondAttribute="centerX" id="N9n-VJ-2KC"/>
-                                    <constraint firstItem="ZoO-0d-s8V" firstAttribute="top" secondItem="Gpg-cD-Qw5" secondAttribute="bottom" id="Qyw-mg-YIn"/>
-                                    <constraint firstAttribute="trailing" secondItem="ZoO-0d-s8V" secondAttribute="trailing" id="YBi-EC-Wps"/>
+                                    <constraint firstItem="iPl-QO-rNN" firstAttribute="leading" secondItem="nRZ-wQ-BcC" secondAttribute="leading" constant="25" id="Key-F6-QH5"/>
                                     <constraint firstItem="Gpg-cD-Qw5" firstAttribute="leading" secondItem="nRZ-wQ-BcC" secondAttribute="leading" id="Zmf-zS-sDm"/>
+                                    <constraint firstAttribute="trailing" secondItem="iPl-QO-rNN" secondAttribute="trailing" constant="25" id="cz8-7R-0IH"/>
+                                    <constraint firstItem="5SB-Ue-zj5" firstAttribute="top" secondItem="Gpg-cD-Qw5" secondAttribute="bottom" id="eI7-pa-iKD"/>
+                                    <constraint firstAttribute="bottom" secondItem="iPl-QO-rNN" secondAttribute="bottom" id="i7A-Ch-h8Q"/>
                                     <constraint firstItem="Gpg-cD-Qw5" firstAttribute="top" secondItem="nRZ-wQ-BcC" secondAttribute="top" id="lMz-WZ-l8S"/>
-                                    <constraint firstItem="ZoO-0d-s8V" firstAttribute="leading" secondItem="nRZ-wQ-BcC" secondAttribute="leading" id="rnR-Hk-Dr3"/>
+                                    <constraint firstItem="5SB-Ue-zj5" firstAttribute="leading" secondItem="nRZ-wQ-BcC" secondAttribute="leading" id="nkK-6i-S27"/>
                                 </constraints>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today’s Image artists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiZ-Qt-hPU">
-                                <rect key="frame" x="24" y="238" width="169.5" height="36"/>
+                                <rect key="frame" x="24" y="228.5" width="200" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="we0-XQ-Mf6"/>
                                 </constraints>
@@ -146,7 +186,7 @@
                         <outlet property="artistView" destination="lEi-lT-Do6" id="SHT-aM-HxQ"/>
                         <outlet property="collaboButton" destination="4he-7d-WRJ" id="TM2-yi-Vde"/>
                         <outlet property="collaboView" destination="gnc-fN-yNP" id="4jU-Xd-NGI"/>
-                        <outlet property="myCollectionView" destination="ZoO-0d-s8V" id="mNv-d9-Zuj"/>
+                        <outlet property="collectionView" destination="iPl-QO-rNN" id="9xm-FP-mqJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEJ-Iz-CiU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -155,6 +195,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="combinedShape" width="16" height="16"/>
         <image name="house" catalog="system" width="64" height="54"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>
     </resources>

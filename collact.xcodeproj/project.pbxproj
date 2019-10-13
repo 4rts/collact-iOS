@@ -24,8 +24,10 @@
 		B540716023531F1C006F57F0 /* EnumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540715F23531F1C006F57F0 /* EnumModel.swift */; };
 		B5407163235322BF006F57F0 /* RecentlyCollaboView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5407162235322BF006F57F0 /* RecentlyCollaboView.swift */; };
 		B5407165235322D4006F57F0 /* RecentlyCollaboView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5407164235322D4006F57F0 /* RecentlyCollaboView.xib */; };
-		B54071682353256B006F57F0 /* MyArtistCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54071672353256B006F57F0 /* MyArtistCollectionView.xib */; };
-		B540716A23532584006F57F0 /* MyArtistCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540716923532584006F57F0 /* MyArtistCollectionView.swift */; };
+		B540716F235349F2006F57F0 /* CollaboCardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540716D235349F2006F57F0 /* CollaboCardCVC.swift */; };
+		B5407170235349F2006F57F0 /* CollaboCardCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B540716E235349F2006F57F0 /* CollaboCardCVC.xib */; };
+		B540717323534A05006F57F0 /* ArtistCardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540717123534A05006F57F0 /* ArtistCardCVC.swift */; };
+		B540717423534A05006F57F0 /* ArtistCardCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B540717223534A05006F57F0 /* ArtistCardCVC.xib */; };
 		B56A903423525B390077443B /* TodayArtistView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B56A903323525B390077443B /* TodayArtistView.xib */; };
 		B56A903623525B4B0077443B /* TodayArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56A903523525B4B0077443B /* TodayArtistView.swift */; };
 		B5710E07234FA6F30099FCFA /* SignUp8VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5710E06234FA6F30099FCFA /* SignUp8VC.swift */; };
@@ -112,8 +114,10 @@
 		B540715F23531F1C006F57F0 /* EnumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumModel.swift; sourceTree = "<group>"; };
 		B5407162235322BF006F57F0 /* RecentlyCollaboView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyCollaboView.swift; sourceTree = "<group>"; };
 		B5407164235322D4006F57F0 /* RecentlyCollaboView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentlyCollaboView.xib; sourceTree = "<group>"; };
-		B54071672353256B006F57F0 /* MyArtistCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyArtistCollectionView.xib; sourceTree = "<group>"; };
-		B540716923532584006F57F0 /* MyArtistCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyArtistCollectionView.swift; sourceTree = "<group>"; };
+		B540716D235349F2006F57F0 /* CollaboCardCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaboCardCVC.swift; sourceTree = "<group>"; };
+		B540716E235349F2006F57F0 /* CollaboCardCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollaboCardCVC.xib; sourceTree = "<group>"; };
+		B540717123534A05006F57F0 /* ArtistCardCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCardCVC.swift; sourceTree = "<group>"; };
+		B540717223534A05006F57F0 /* ArtistCardCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistCardCVC.xib; sourceTree = "<group>"; };
 		B56A903323525B390077443B /* TodayArtistView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayArtistView.xib; sourceTree = "<group>"; };
 		B56A903523525B4B0077443B /* TodayArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayArtistView.swift; sourceTree = "<group>"; };
 		B5710E06234FA6F30099FCFA /* SignUp8VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp8VC.swift; sourceTree = "<group>"; };
@@ -275,13 +279,22 @@
 			path = RecentlyCollabo;
 			sourceTree = "<group>";
 		};
-		B540716623532397006F57F0 /* MyArtistCollection */ = {
+		B540716B235349B2006F57F0 /* ArtistCardCVC */ = {
 			isa = PBXGroup;
 			children = (
-				B54071672353256B006F57F0 /* MyArtistCollectionView.xib */,
-				B540716923532584006F57F0 /* MyArtistCollectionView.swift */,
+				B540717223534A05006F57F0 /* ArtistCardCVC.xib */,
+				B540717123534A05006F57F0 /* ArtistCardCVC.swift */,
 			);
-			path = MyArtistCollection;
+			path = ArtistCardCVC;
+			sourceTree = "<group>";
+		};
+		B540716C235349CA006F57F0 /* CollaboCardCVC */ = {
+			isa = PBXGroup;
+			children = (
+				B540716E235349F2006F57F0 /* CollaboCardCVC.xib */,
+				B540716D235349F2006F57F0 /* CollaboCardCVC.swift */,
+			);
+			path = CollaboCardCVC;
 			sourceTree = "<group>";
 		};
 		B56A903723525B4F0077443B /* TodayArtist */ = {
@@ -345,6 +358,8 @@
 			children = (
 				B56A903723525B4F0077443B /* TodayArtist */,
 				B540716123532288006F57F0 /* RecentlyCollabo */,
+				B540716B235349B2006F57F0 /* ArtistCardCVC */,
+				B540716C235349CA006F57F0 /* CollaboCardCVC */,
 				B5710E0B2351C4CE0099FCFA /* Home.storyboard */,
 				B57ABB7323409F140057964E /* HomeVC.swift */,
 			);
@@ -394,7 +409,6 @@
 		B5AF434123422E2200EFAA7E /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				B540716623532397006F57F0 /* MyArtistCollection */,
 				B5AF43A2234CD54D00EFAA7E /* CustomSlider */,
 				B5AF43912349C88F00EFAA7E /* GenrePickerCVC */,
 				B5AF433523422A1E00EFAA7E /* BorderView.swift */,
@@ -573,7 +587,6 @@
 			files = (
 				B51E1D672340B163004AFDA2 /* Main.storyboard in Resources */,
 				B5710E0C2351C4CE0099FCFA /* Home.storyboard in Resources */,
-				B54071682353256B006F57F0 /* MyArtistCollectionView.xib in Resources */,
 				B5407165235322D4006F57F0 /* RecentlyCollaboView.xib in Resources */,
 				B57ABB7023409ECA0057964E /* Sign.storyboard in Resources */,
 				B56A903423525B390077443B /* TodayArtistView.xib in Resources */,
@@ -583,8 +596,10 @@
 				B5AF43322342218A00EFAA7E /* Fontfabric - Mont Heavy DEMO.otf in Resources */,
 				B57ABB6A23409EA90057964E /* Profile.storyboard in Resources */,
 				B5AF439C2349D4FF00EFAA7E /* ProfileColor.json in Resources */,
+				B5407170235349F2006F57F0 /* CollaboCardCVC.xib in Resources */,
 				B57ABB6E23409EBF0057964E /* Chat.storyboard in Resources */,
 				B57ABB6C23409EB60057964E /* Search.storyboard in Resources */,
+				B540717423534A05006F57F0 /* ArtistCardCVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -708,13 +723,13 @@
 				B5407163235322BF006F57F0 /* RecentlyCollaboView.swift in Sources */,
 				B5192883233C7AA300BBFBCD /* collact.xcdatamodeld in Sources */,
 				B5C913AC234B496100E1DB22 /* SignUp7VC.swift in Sources */,
+				B540717323534A05006F57F0 /* ArtistCardCVC.swift in Sources */,
 				B572A2F82340D66100C3C88E /* BaseVC.swift in Sources */,
 				B57ABB7423409F140057964E /* HomeVC.swift in Sources */,
 				B57ABB7823409F440057964E /* ProfileVC.swift in Sources */,
 				B519287B233C7AA300BBFBCD /* SceneDelegate.swift in Sources */,
 				B51E1D652340AE67004AFDA2 /* CodePreference.swift in Sources */,
 				B57ABB7223409EFD0057964E /* SignInVC.swift in Sources */,
-				B540716A23532584006F57F0 /* MyArtistCollectionView.swift in Sources */,
 				B56A903623525B4B0077443B /* TodayArtistView.swift in Sources */,
 				B5AF433D23422A1E00EFAA7E /* ColorExtension.swift in Sources */,
 				B5AF43972349CFCA00EFAA7E /* SignUp6VC.swift in Sources */,
@@ -722,6 +737,7 @@
 				B5AF43892349062000EFAA7E /* SignUp5VC.swift in Sources */,
 				B5AF4387234905FC00EFAA7E /* SignUp4VC.swift in Sources */,
 				B5FFB7C02340A84E0098B113 /* BaseForm.swift in Sources */,
+				B540716F235349F2006F57F0 /* CollaboCardCVC.swift in Sources */,
 				B5FFB7C12340A84E0098B113 /* BaseResponse.swift in Sources */,
 				B5AF433C23422A1E00EFAA7E /* ViewExtension.swift in Sources */,
 				B5AF434323422E9000EFAA7E /* MontTextFieldView.swift in Sources */,

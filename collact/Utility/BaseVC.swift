@@ -31,7 +31,15 @@ class BaseVC: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
-
+    
+    func setContraint(_ view: UIView, value: CGFloat) {
+        for constraint in view.constraints {
+            if constraint.identifier == "constraint" {
+                constraint.constant = value
+            }
+        }
+    }
+    
     func animationAction<T:Springable>(animationObject: T, autostart: Bool = true, animation: String = "FadeInUp", curve: String = "EaseIn", duration: CGFloat = 0, delay: CGFloat = 0,x: CGFloat = 0, y: CGFloat = 0, callback: @escaping(()->Void) = {}) {
         animationObject.autostart = autostart
         animationObject.animation = animation
