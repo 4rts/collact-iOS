@@ -22,6 +22,10 @@
 		B51E1D672340B163004AFDA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51E1D662340B163004AFDA2 /* Main.storyboard */; };
 		B51E1D692340B1C7004AFDA2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E1D682340B1C7004AFDA2 /* MainVC.swift */; };
 		B540716023531F1C006F57F0 /* EnumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540715F23531F1C006F57F0 /* EnumModel.swift */; };
+		B5407163235322BF006F57F0 /* RecentlyCollaboView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5407162235322BF006F57F0 /* RecentlyCollaboView.swift */; };
+		B5407165235322D4006F57F0 /* RecentlyCollaboView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5407164235322D4006F57F0 /* RecentlyCollaboView.xib */; };
+		B54071682353256B006F57F0 /* MyArtistCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54071672353256B006F57F0 /* MyArtistCollectionView.xib */; };
+		B540716A23532584006F57F0 /* MyArtistCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540716923532584006F57F0 /* MyArtistCollectionView.swift */; };
 		B56A903423525B390077443B /* TodayArtistView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B56A903323525B390077443B /* TodayArtistView.xib */; };
 		B56A903623525B4B0077443B /* TodayArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56A903523525B4B0077443B /* TodayArtistView.swift */; };
 		B5710E07234FA6F30099FCFA /* SignUp8VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5710E06234FA6F30099FCFA /* SignUp8VC.swift */; };
@@ -106,6 +110,10 @@
 		B51E1D662340B163004AFDA2 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B51E1D682340B1C7004AFDA2 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B540715F23531F1C006F57F0 /* EnumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumModel.swift; sourceTree = "<group>"; };
+		B5407162235322BF006F57F0 /* RecentlyCollaboView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyCollaboView.swift; sourceTree = "<group>"; };
+		B5407164235322D4006F57F0 /* RecentlyCollaboView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentlyCollaboView.xib; sourceTree = "<group>"; };
+		B54071672353256B006F57F0 /* MyArtistCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyArtistCollectionView.xib; sourceTree = "<group>"; };
+		B540716923532584006F57F0 /* MyArtistCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyArtistCollectionView.swift; sourceTree = "<group>"; };
 		B56A903323525B390077443B /* TodayArtistView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayArtistView.xib; sourceTree = "<group>"; };
 		B56A903523525B4B0077443B /* TodayArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayArtistView.swift; sourceTree = "<group>"; };
 		B5710E06234FA6F30099FCFA /* SignUp8VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp8VC.swift; sourceTree = "<group>"; };
@@ -258,13 +266,31 @@
 			path = collactUITests;
 			sourceTree = "<group>";
 		};
-		B56A903723525B4F0077443B /* TodayArtistView */ = {
+		B540716123532288006F57F0 /* RecentlyCollabo */ = {
+			isa = PBXGroup;
+			children = (
+				B5407164235322D4006F57F0 /* RecentlyCollaboView.xib */,
+				B5407162235322BF006F57F0 /* RecentlyCollaboView.swift */,
+			);
+			path = RecentlyCollabo;
+			sourceTree = "<group>";
+		};
+		B540716623532397006F57F0 /* MyArtistCollection */ = {
+			isa = PBXGroup;
+			children = (
+				B54071672353256B006F57F0 /* MyArtistCollectionView.xib */,
+				B540716923532584006F57F0 /* MyArtistCollectionView.swift */,
+			);
+			path = MyArtistCollection;
+			sourceTree = "<group>";
+		};
+		B56A903723525B4F0077443B /* TodayArtist */ = {
 			isa = PBXGroup;
 			children = (
 				B56A903323525B390077443B /* TodayArtistView.xib */,
 				B56A903523525B4B0077443B /* TodayArtistView.swift */,
 			);
-			path = TodayArtistView;
+			path = TodayArtist;
 			sourceTree = "<group>";
 		};
 		B5710E0A2351C4A80099FCFA /* Chat */ = {
@@ -317,7 +343,8 @@
 		B57ABB6323409AD30057964E /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				B56A903723525B4F0077443B /* TodayArtistView */,
+				B56A903723525B4F0077443B /* TodayArtist */,
+				B540716123532288006F57F0 /* RecentlyCollabo */,
 				B5710E0B2351C4CE0099FCFA /* Home.storyboard */,
 				B57ABB7323409F140057964E /* HomeVC.swift */,
 			);
@@ -367,6 +394,7 @@
 		B5AF434123422E2200EFAA7E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B540716623532397006F57F0 /* MyArtistCollection */,
 				B5AF43A2234CD54D00EFAA7E /* CustomSlider */,
 				B5AF43912349C88F00EFAA7E /* GenrePickerCVC */,
 				B5AF433523422A1E00EFAA7E /* BorderView.swift */,
@@ -545,6 +573,8 @@
 			files = (
 				B51E1D672340B163004AFDA2 /* Main.storyboard in Resources */,
 				B5710E0C2351C4CE0099FCFA /* Home.storyboard in Resources */,
+				B54071682353256B006F57F0 /* MyArtistCollectionView.xib in Resources */,
+				B5407165235322D4006F57F0 /* RecentlyCollaboView.xib in Resources */,
 				B57ABB7023409ECA0057964E /* Sign.storyboard in Resources */,
 				B56A903423525B390077443B /* TodayArtistView.xib in Resources */,
 				B5192888233C7AA500BBFBCD /* LaunchScreen.storyboard in Resources */,
@@ -675,6 +705,7 @@
 				B540716023531F1C006F57F0 /* EnumModel.swift in Sources */,
 				B51E1D632340ADFE004AFDA2 /* NetworkAPI.swift in Sources */,
 				B5192879233C7AA300BBFBCD /* AppDelegate.swift in Sources */,
+				B5407163235322BF006F57F0 /* RecentlyCollaboView.swift in Sources */,
 				B5192883233C7AA300BBFBCD /* collact.xcdatamodeld in Sources */,
 				B5C913AC234B496100E1DB22 /* SignUp7VC.swift in Sources */,
 				B572A2F82340D66100C3C88E /* BaseVC.swift in Sources */,
@@ -683,6 +714,7 @@
 				B519287B233C7AA300BBFBCD /* SceneDelegate.swift in Sources */,
 				B51E1D652340AE67004AFDA2 /* CodePreference.swift in Sources */,
 				B57ABB7223409EFD0057964E /* SignInVC.swift in Sources */,
+				B540716A23532584006F57F0 /* MyArtistCollectionView.swift in Sources */,
 				B56A903623525B4B0077443B /* TodayArtistView.swift in Sources */,
 				B5AF433D23422A1E00EFAA7E /* ColorExtension.swift in Sources */,
 				B5AF43972349CFCA00EFAA7E /* SignUp6VC.swift in Sources */,
