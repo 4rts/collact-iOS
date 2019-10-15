@@ -18,6 +18,10 @@
                 <subviews>
                     <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demoImage1" translatesAutoresizingMaskIntoConstraints="NO" id="mtD-en-UDV">
                         <rect key="frame" x="0.0" y="0.0" width="106" height="160"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="106" identifier="constraint" id="fgz-hr-ovw"/>
+                            <constraint firstAttribute="height" constant="160" id="tlC-it-TxX"/>
+                        </constraints>
                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                     </imageView>
                 </subviews>

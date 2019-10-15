@@ -32,9 +32,9 @@ class BaseVC: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
-    func setContraint(_ view: UIView, value: CGFloat) {
+    func setConstraint<T:UIView>(_ view: T, value: CGFloat, identifier: String = "constraint") {
         for constraint in view.constraints {
-            if constraint.identifier == "constraint" {
+            if constraint.identifier == identifier {
                 constraint.constant = value
             }
         }

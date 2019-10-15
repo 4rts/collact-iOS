@@ -19,9 +19,10 @@ class HomeVC: BaseVC {
     @IBOutlet weak var collectionView: UICollectionView!
     
     var viewType: ViewType = .ARTIST
-    var myArtistCollectionCount = 9 / 3
     let artistCardCVC = UINib(nibName: "ArtistCardCVC", bundle: nil)
     let collaboCardCVC = UINib(nibName: "CollaboCardCVC", bundle: nil)
+    let myArtistCount = Int(ceil(15 / 3))
+    let mycollaboCount = Int(ceil(17 / 2))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +50,11 @@ class HomeVC: BaseVC {
         self.collectionView.dataSource = self
         self.collectionView.register(artistCardCVC, forCellWithReuseIdentifier: "ArtistCard")
         self.collectionView.register(collaboCardCVC, forCellWithReuseIdentifier: "CollaboCard")
-        self.setContraint(collectionView, value: CGFloat(160 * myArtistCollectionCount))
+        if viewType == .ARTIST {
+            self.setConstraint(collectionView, value: CGFloat(160 * myArtistCount))
+        } else {
+            self.setConstraint(collectionView, value: CGFloat(160 * mycollaboCount))
+        }
     }
     
     @IBAction func changeToView(_ sender: UIButton) {
@@ -69,25 +74,30 @@ class HomeVC: BaseVC {
         default:
             break
         }
+        if viewType == .ARTIST {
+            self.setConstraint(collectionView, value: CGFloat(160 * myArtistCount))
+        } else {
+            self.setConstraint(collectionView, value: CGFloat(160 * mycollaboCount))
+        }
         collectionView.reloadData()
     }
     
 }
 extension HomeVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 9
+        return 15
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if viewType == .ARTIST {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ArtistCard", for: indexPath) as! ArtistCardCVC
+            setConstraint(cell.imageView, value: (self.collectionView.frame.width - 16) / 3)
 //            cell.imageView.image = UIImage(named: "demoImage1")
             return cell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollaboCard", for: indexPath) as! CollaboCardCVC
-            cell.frame = CGRect(x: 0, y: 0, width: self.collectionView.frame.width / 3, height: 160)
+            setConstraint(cell.imageContainer, value: (self.collectionView.frame.width - 16) / 2)
 //            cell.leftImageView.image = UIImage(named: "demoImage1")
 //            cell.rightImageView.image = UIImage(named: "demoImage2")
-            cell.backgroundColor = UIColor.blue
             return cell
         }
     }
@@ -95,8 +105,8 @@ extension HomeVC: UICollectionViewDataSource {
 
 extension HomeVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let artistCardWidth = self.collectionView.frame.width / 3
-        let collaboCardWidth = self.collectionView.frame.width / 2
+        let artistCardWidth = (self.collectionView.frame.width - 16) / 3
+        let collaboCardWidth = (self.collectionView.frame.width - 16) / 2
         if viewType == .ARTIST {
             return CGSize(width: artistCardWidth, height: 160)
         } else {

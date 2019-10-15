@@ -158,7 +158,7 @@ extension UIView {
 
 // Constraints
 extension UIView {
-    public func setContraintsForDevice(NotchO: CGFloat, NotchX: CGFloat){
+    public func setConstraintForDevice(NotchO: CGFloat, NotchX: CGFloat){
         for constraint in self.constraints {
             if constraint.identifier == "constraints" {
                 if (UIDevice.current.isiPhoneXS || UIDevice.current.isiPhoneXSMAX)  {
