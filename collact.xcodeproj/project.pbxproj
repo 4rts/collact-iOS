@@ -60,6 +60,8 @@
 		B5AF43972349CFCA00EFAA7E /* SignUp6VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF43962349CFCA00EFAA7E /* SignUp6VC.swift */; };
 		B5AF439C2349D4FF00EFAA7E /* ProfileColor.json in Resources */ = {isa = PBXBuildFile; fileRef = B5AF439B2349D4FF00EFAA7E /* ProfileColor.json */; };
 		B5AF43A4234CD59C00EFAA7E /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF43A3234CD59C00EFAA7E /* CustomSlider.swift */; };
+		B5BFA76E2354C0B700720C39 /* WorkCardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BFA76C2354C0B700720C39 /* WorkCardCVC.swift */; };
+		B5BFA76F2354C0B700720C39 /* WorkCardCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5BFA76D2354C0B700720C39 /* WorkCardCVC.xib */; };
 		B5C913AC234B496100E1DB22 /* SignUp7VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C913AB234B496100E1DB22 /* SignUp7VC.swift */; };
 		B5FFB7BF2340A84E0098B113 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFB7B72340A84E0098B113 /* BaseModel.swift */; };
 		B5FFB7C02340A84E0098B113 /* BaseForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFB7BA2340A84E0098B113 /* BaseForm.swift */; };
@@ -150,6 +152,8 @@
 		B5AF43962349CFCA00EFAA7E /* SignUp6VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp6VC.swift; sourceTree = "<group>"; };
 		B5AF439B2349D4FF00EFAA7E /* ProfileColor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProfileColor.json; sourceTree = "<group>"; };
 		B5AF43A3234CD59C00EFAA7E /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		B5BFA76C2354C0B700720C39 /* WorkCardCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCardCVC.swift; sourceTree = "<group>"; };
+		B5BFA76D2354C0B700720C39 /* WorkCardCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkCardCVC.xib; sourceTree = "<group>"; };
 		B5C913AB234B496100E1DB22 /* SignUp7VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp7VC.swift; sourceTree = "<group>"; };
 		B5FFB7B72340A84E0098B113 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		B5FFB7BA2340A84E0098B113 /* BaseForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseForm.swift; sourceTree = "<group>"; };
@@ -360,6 +364,7 @@
 				B540716123532288006F57F0 /* RecentlyCollabo */,
 				B540716B235349B2006F57F0 /* ArtistCardCVC */,
 				B540716C235349CA006F57F0 /* CollaboCardCVC */,
+				B5BFA7702354C0BA00720C39 /* WorkCardCVC */,
 				B5710E0B2351C4CE0099FCFA /* Home.storyboard */,
 				B57ABB7323409F140057964E /* HomeVC.swift */,
 			);
@@ -433,6 +438,15 @@
 				B5AF43A3234CD59C00EFAA7E /* CustomSlider.swift */,
 			);
 			path = CustomSlider;
+			sourceTree = "<group>";
+		};
+		B5BFA7702354C0BA00720C39 /* WorkCardCVC */ = {
+			isa = PBXGroup;
+			children = (
+				B5BFA76D2354C0B700720C39 /* WorkCardCVC.xib */,
+				B5BFA76C2354C0B700720C39 /* WorkCardCVC.swift */,
+			);
+			path = WorkCardCVC;
 			sourceTree = "<group>";
 		};
 		B5FFB7B62340A84E0098B113 /* Model */ = {
@@ -594,6 +608,7 @@
 				B5192885233C7AA500BBFBCD /* Assets.xcassets in Resources */,
 				B5AF43952349C8C800EFAA7E /* GenrePickerCVC.xib in Resources */,
 				B5AF43322342218A00EFAA7E /* Fontfabric - Mont Heavy DEMO.otf in Resources */,
+				B5BFA76F2354C0B700720C39 /* WorkCardCVC.xib in Resources */,
 				B57ABB6A23409EA90057964E /* Profile.storyboard in Resources */,
 				B5AF439C2349D4FF00EFAA7E /* ProfileColor.json in Resources */,
 				B5407170235349F2006F57F0 /* CollaboCardCVC.xib in Resources */,
@@ -748,6 +763,7 @@
 				B5AF433B23422A1E00EFAA7E /* LabelExtension.swift in Sources */,
 				B5AF434023422AE300EFAA7E /* SignUp1VC.swift in Sources */,
 				B5AF433A23422A1E00EFAA7E /* BorderView.swift in Sources */,
+				B5BFA76E2354C0B700720C39 /* WorkCardCVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

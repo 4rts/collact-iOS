@@ -16,27 +16,38 @@
                 <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f6h-XB-uVf">
-                        <rect key="frame" x="0.0" y="0.0" width="80" height="160"/>
-                    </imageView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GOC-v8-fLt">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demoImage2" translatesAutoresizingMaskIntoConstraints="NO" id="GOC-v8-fLt">
                         <rect key="frame" x="80" y="0.0" width="80" height="160"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demoImage1" translatesAutoresizingMaskIntoConstraints="NO" id="f6h-XB-uVf">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="160"/>
                     </imageView>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="f6h-XB-uVf" secondAttribute="bottom" id="0Da-lz-YiR"/>
-                <constraint firstItem="f6h-XB-uVf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CQf-pz-8x2"/>
-                <constraint firstItem="GOC-v8-fLt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OFW-Pm-VIQ"/>
-                <constraint firstItem="GOC-v8-fLt" firstAttribute="leading" secondItem="f6h-XB-uVf" secondAttribute="trailing" id="Uja-7K-bSi"/>
-                <constraint firstAttribute="bottom" secondItem="GOC-v8-fLt" secondAttribute="bottom" id="ZOK-og-bAN"/>
-                <constraint firstAttribute="trailing" secondItem="GOC-v8-fLt" secondAttribute="trailing" id="c6P-cS-suo"/>
-                <constraint firstItem="GOC-v8-fLt" firstAttribute="width" secondItem="f6h-XB-uVf" secondAttribute="width" id="cDE-Ct-FSN"/>
-                <constraint firstItem="f6h-XB-uVf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="n3M-XQ-obi"/>
+                <constraint firstAttribute="trailing" secondItem="GOC-v8-fLt" secondAttribute="trailing" id="6AH-QZ-DWm"/>
+                <constraint firstItem="GOC-v8-fLt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7wk-HS-F9U"/>
+                <constraint firstAttribute="bottom" secondItem="GOC-v8-fLt" secondAttribute="bottom" id="9at-jp-JXw"/>
+                <constraint firstItem="f6h-XB-uVf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Beh-7F-afd"/>
+                <constraint firstItem="GOC-v8-fLt" firstAttribute="width" secondItem="f6h-XB-uVf" secondAttribute="width" id="Dvx-x4-mOI"/>
+                <constraint firstAttribute="bottom" secondItem="f6h-XB-uVf" secondAttribute="bottom" id="Et3-oi-vja"/>
+                <constraint firstItem="f6h-XB-uVf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Gnv-Ss-LKw"/>
+                <constraint firstAttribute="bottom" secondItem="f6h-XB-uVf" secondAttribute="bottom" id="JUh-pu-9Kq"/>
+                <constraint firstItem="f6h-XB-uVf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Nqe-8T-uNu"/>
+                <constraint firstItem="GOC-v8-fLt" firstAttribute="leading" secondItem="f6h-XB-uVf" secondAttribute="trailing" id="PG1-gq-0SI"/>
+                <constraint firstItem="f6h-XB-uVf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="g87-Kx-drl"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="167" height="116"/>
+            <connections>
+                <outlet property="leftImageView" destination="f6h-XB-uVf" id="aRp-g5-aRH"/>
+                <outlet property="rightImageView" destination="GOC-v8-fLt" id="Cys-3Y-WSn"/>
+            </connections>
             <point key="canvasLocation" x="221.73913043478262" y="144.64285714285714"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="demoImage1" width="106" height="159"/>
+        <image name="demoImage2" width="106" height="133"/>
+    </resources>
 </document>

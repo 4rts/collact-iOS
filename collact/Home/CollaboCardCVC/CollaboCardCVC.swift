@@ -10,6 +10,8 @@ import UIKit
 
 class CollaboCardCVC: UICollectionViewCell {
 
+    @IBOutlet weak var leftImageView: UIImageView!
+    @IBOutlet weak var rightImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

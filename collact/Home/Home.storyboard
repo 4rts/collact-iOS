@@ -48,7 +48,7 @@
                                 <rect key="frame" x="75" y="152.5" width="103" height="36"/>
                                 <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="36"/>
                                 <state key="normal" title="artist">
-                                    <color key="titleColor" white="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="changeToView:" destination="gr7-o0-AQm" eventType="touchUpInside" id="iNs-M1-ycu"/>
@@ -58,35 +58,53 @@
                                 <rect key="frame" x="213" y="148" width="142" height="45"/>
                                 <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="36"/>
                                 <state key="normal" title="collabo">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="changeToView:" destination="gr7-o0-AQm" eventType="touchUpInside" id="coh-ux-wTr"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8aA-h5-acn">
+                                <rect key="frame" x="24" y="218" width="366" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today’s Image artists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiZ-Qt-hPU">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="we0-XQ-Mf6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="JiZ-Qt-hPU" firstAttribute="leading" secondItem="8aA-h5-acn" secondAttribute="leading" id="2Ag-8G-pw6"/>
+                                    <constraint firstAttribute="bottom" secondItem="JiZ-Qt-hPU" secondAttribute="bottom" id="QTw-aG-oe3"/>
+                                    <constraint firstItem="JiZ-Qt-hPU" firstAttribute="top" secondItem="8aA-h5-acn" secondAttribute="top" id="at8-hm-L3G"/>
+                                </constraints>
+                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRZ-wQ-BcC">
-                                <rect key="frame" x="0.0" y="296.5" width="414" height="599.5"/>
+                                <rect key="frame" x="0.0" y="274" width="414" height="622"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Gpg-cD-Qw5">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="330"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEi-lT-Do6">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="330"/>
-                                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="330" id="j9M-bf-EBq"/>
                                                 </constraints>
                                             </view>
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnc-fN-yNP">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="360"/>
-                                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="360" id="sKZ-7n-axH"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iPl-QO-rNN">
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iPl-QO-rNN">
                                         <rect key="frame" x="25" y="405" width="364" height="128"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -146,15 +164,18 @@
                                     <constraint firstItem="5SB-Ue-zj5" firstAttribute="leading" secondItem="nRZ-wQ-BcC" secondAttribute="leading" id="nkK-6i-S27"/>
                                 </constraints>
                             </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today’s Image artists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiZ-Qt-hPU">
-                                <rect key="frame" x="24" y="228.5" width="200" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="we0-XQ-Mf6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gK0-b5-1Su">
+                                <rect key="frame" x="24" y="274" width="366" height="1"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XcW-nP-9FN">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="1"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="v5e-oP-1gq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -164,15 +185,19 @@
                             <constraint firstItem="SZN-Hm-Ppi" firstAttribute="height" secondItem="Rbu-jJ-O0b" secondAttribute="height" id="ABC-Cd-nIm"/>
                             <constraint firstItem="nRZ-wQ-BcC" firstAttribute="trailing" secondItem="8V3-Cc-aID" secondAttribute="trailing" id="IQC-EX-0iG"/>
                             <constraint firstItem="i4C-kJ-HVC" firstAttribute="leading" secondItem="SZN-Hm-Ppi" secondAttribute="trailing" constant="12" id="KDP-Nn-C2j"/>
-                            <constraint firstItem="nRZ-wQ-BcC" firstAttribute="top" secondItem="JiZ-Qt-hPU" secondAttribute="bottom" constant="32" id="Kd7-Vy-i4A"/>
+                            <constraint firstItem="gK0-b5-1Su" firstAttribute="leading" secondItem="8V3-Cc-aID" secondAttribute="leading" constant="24" id="Kwe-iq-H9h"/>
+                            <constraint firstItem="8aA-h5-acn" firstAttribute="leading" secondItem="8V3-Cc-aID" secondAttribute="leading" constant="24" id="Lgd-1o-New"/>
                             <constraint firstItem="SZN-Hm-Ppi" firstAttribute="leading" secondItem="Rbu-jJ-O0b" secondAttribute="trailing" constant="12" id="NAf-MB-z7b"/>
                             <constraint firstItem="4he-7d-WRJ" firstAttribute="leading" secondItem="i4C-kJ-HVC" secondAttribute="trailing" constant="10" id="Sof-tX-P6k"/>
                             <constraint firstItem="i4C-kJ-HVC" firstAttribute="centerY" secondItem="SZN-Hm-Ppi" secondAttribute="centerY" id="TGL-up-jVd"/>
+                            <constraint firstItem="8V3-Cc-aID" firstAttribute="trailing" secondItem="gK0-b5-1Su" secondAttribute="trailing" constant="24" id="TOA-h6-qOw"/>
                             <constraint firstItem="nRZ-wQ-BcC" firstAttribute="centerX" secondItem="8V3-Cc-aID" secondAttribute="centerX" id="TX9-MA-xId"/>
-                            <constraint firstItem="JiZ-Qt-hPU" firstAttribute="top" secondItem="Rbu-jJ-O0b" secondAttribute="bottom" constant="40" id="VZY-iz-epR"/>
-                            <constraint firstItem="JiZ-Qt-hPU" firstAttribute="leading" secondItem="8V3-Cc-aID" secondAttribute="leading" constant="24" id="YZW-6r-pYF"/>
+                            <constraint firstItem="gK0-b5-1Su" firstAttribute="top" secondItem="8aA-h5-acn" secondAttribute="bottom" constant="20" id="WPD-nl-vMv"/>
+                            <constraint firstItem="8aA-h5-acn" firstAttribute="top" secondItem="4he-7d-WRJ" secondAttribute="bottom" constant="25" id="aDk-N2-7zZ"/>
                             <constraint firstItem="Rbu-jJ-O0b" firstAttribute="top" secondItem="0UQ-Nr-QhG" secondAttribute="bottom" constant="20" id="cvg-vN-yBb"/>
                             <constraint firstItem="0UQ-Nr-QhG" firstAttribute="top" secondItem="8V3-Cc-aID" secondAttribute="top" constant="56" id="eA9-dh-QNR"/>
+                            <constraint firstItem="nRZ-wQ-BcC" firstAttribute="top" secondItem="8aA-h5-acn" secondAttribute="bottom" constant="20" id="ioB-Ng-8uP"/>
+                            <constraint firstItem="8V3-Cc-aID" firstAttribute="trailing" secondItem="8aA-h5-acn" secondAttribute="trailing" constant="24" id="nke-et-olr"/>
                             <constraint firstItem="Rbu-jJ-O0b" firstAttribute="leading" secondItem="8V3-Cc-aID" secondAttribute="leading" constant="24" id="ogY-qt-RUY"/>
                             <constraint firstItem="0UQ-Nr-QhG" firstAttribute="leading" secondItem="8V3-Cc-aID" secondAttribute="leading" constant="24" id="ueZ-ol-pUy"/>
                             <constraint firstItem="4he-7d-WRJ" firstAttribute="firstBaseline" secondItem="SZN-Hm-Ppi" secondAttribute="firstBaseline" id="utx-FG-kkt"/>
@@ -187,6 +212,8 @@
                         <outlet property="collaboButton" destination="4he-7d-WRJ" id="TM2-yi-Vde"/>
                         <outlet property="collaboView" destination="gnc-fN-yNP" id="4jU-Xd-NGI"/>
                         <outlet property="collectionView" destination="iPl-QO-rNN" id="9xm-FP-mqJ"/>
+                        <outlet property="scrollView" destination="nRZ-wQ-BcC" id="5nC-IA-scn"/>
+                        <outlet property="svBorderView" destination="XcW-nP-9FN" id="g7p-Ha-R1U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEJ-Iz-CiU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

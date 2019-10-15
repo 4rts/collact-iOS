@@ -1,20 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Fontfabric - Mont Heavy DEMO.otf">
+            <string>Mont-HeavyDEMO</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TodayArtistView" customModule="collact" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="330"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="txV-Zk-te2">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="XWG-Q7-UUP"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wXz-pQ-ptG">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jvdas Berra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaG-Rp-y7T">
+                    <rect key="frame" x="24" y="256" width="86.5" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="b2t-fJ-A8S"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서울에서 활동하고 있는 그래픽 디자이너입니다.서울에서 활동하고 있는 그래픽 디자이너입니다.서울에서 활동하고 있는 그래픽 디자이너입니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQv-1A-Red">
+                    <rect key="frame" x="24" y="276" width="366" height="34"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
+                    <color key="textColor" red="0.46666666666666667" green="0.54117647058823526" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MC0-q2-0zD">
+                    <rect key="frame" x="24" y="329" width="366" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Ki9-yb-lVy"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="txV-Zk-te2" secondAttribute="trailing" id="2YW-Pt-cD4"/>
+                <constraint firstItem="txV-Zk-te2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="GGi-hW-Pjh"/>
+                <constraint firstItem="LQv-1A-Red" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="Mjx-fV-XlG"/>
+                <constraint firstAttribute="trailing" secondItem="LQv-1A-Red" secondAttribute="trailing" constant="24" id="PJv-93-4bp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="MC0-q2-0zD" secondAttribute="bottom" id="PZo-my-1a9"/>
+                <constraint firstItem="OaG-Rp-y7T" firstAttribute="top" secondItem="txV-Zk-te2" secondAttribute="bottom" constant="16" id="Y3q-6E-6VQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="MC0-q2-0zD" secondAttribute="trailing" constant="24" id="YPg-vl-ob7"/>
+                <constraint firstItem="txV-Zk-te2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ZkE-8T-lNv"/>
+                <constraint firstItem="LQv-1A-Red" firstAttribute="top" secondItem="OaG-Rp-y7T" secondAttribute="bottom" constant="4" id="unM-m8-Yr0"/>
+                <constraint firstItem="MC0-q2-0zD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="v5S-zR-ONK"/>
+                <constraint firstItem="OaG-Rp-y7T" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="xsj-aG-saE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="139" y="153"/>
+            <connections>
+                <outlet property="artistDescriptionLabel" destination="LQv-1A-Red" id="WQe-hR-exH"/>
+                <outlet property="artistNameLabel" destination="OaG-Rp-y7T" id="XX1-jd-ARM"/>
+                <outlet property="collectionView" destination="txV-Zk-te2" id="0ab-R3-Wx3"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="152.92353823088456"/>
         </view>
     </objects>
 </document>
