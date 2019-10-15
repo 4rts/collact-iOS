@@ -31,6 +31,11 @@ class HomeVC: BaseVC {
         self.setRecentlyCollaboView()
         self.setTodayArtistView()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = false
+    }
 
     func setTodayArtistView() {
         let view = Bundle.main.loadNibNamed("TodayArtistView", owner: self, options: nil)?.first as! TodayArtistView

@@ -63,6 +63,7 @@
 		B5BFA76E2354C0B700720C39 /* WorkCardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BFA76C2354C0B700720C39 /* WorkCardCVC.swift */; };
 		B5BFA76F2354C0B700720C39 /* WorkCardCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5BFA76D2354C0B700720C39 /* WorkCardCVC.xib */; };
 		B5C913AC234B496100E1DB22 /* SignUp7VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C913AB234B496100E1DB22 /* SignUp7VC.swift */; };
+		B5E7A431235641B6004C66C7 /* CollaboDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E7A430235641B6004C66C7 /* CollaboDetailVC.swift */; };
 		B5FFB7BF2340A84E0098B113 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFB7B72340A84E0098B113 /* BaseModel.swift */; };
 		B5FFB7C02340A84E0098B113 /* BaseForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFB7BA2340A84E0098B113 /* BaseForm.swift */; };
 		B5FFB7C12340A84E0098B113 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFB7BC2340A84E0098B113 /* BaseResponse.swift */; };
@@ -155,6 +156,7 @@
 		B5BFA76C2354C0B700720C39 /* WorkCardCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCardCVC.swift; sourceTree = "<group>"; };
 		B5BFA76D2354C0B700720C39 /* WorkCardCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkCardCVC.xib; sourceTree = "<group>"; };
 		B5C913AB234B496100E1DB22 /* SignUp7VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp7VC.swift; sourceTree = "<group>"; };
+		B5E7A430235641B6004C66C7 /* CollaboDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaboDetailVC.swift; sourceTree = "<group>"; };
 		B5FFB7B72340A84E0098B113 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		B5FFB7BA2340A84E0098B113 /* BaseForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseForm.swift; sourceTree = "<group>"; };
 		B5FFB7BC2340A84E0098B113 /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
@@ -367,6 +369,7 @@
 				B5BFA7702354C0BA00720C39 /* WorkCardCVC */,
 				B5710E0B2351C4CE0099FCFA /* Home.storyboard */,
 				B57ABB7323409F140057964E /* HomeVC.swift */,
+				B5E7A430235641B6004C66C7 /* CollaboDetailVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -757,6 +760,7 @@
 				B5AF433C23422A1E00EFAA7E /* ViewExtension.swift in Sources */,
 				B5AF434323422E9000EFAA7E /* MontTextFieldView.swift in Sources */,
 				B5FFB7C22340A84E0098B113 /* BaseController.swift in Sources */,
+				B5E7A431235641B6004C66C7 /* CollaboDetailVC.swift in Sources */,
 				B57ABB7623409F2F0057964E /* SearchVC.swift in Sources */,
 				B5AF43812348E48B00EFAA7E /* SignUp2VC.swift in Sources */,
 				B51E1D692340B1C7004AFDA2 /* MainVC.swift in Sources */,
