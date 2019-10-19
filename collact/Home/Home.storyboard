@@ -38,13 +38,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="collection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UQ-Nr-QhG">
-                                <rect key="frame" x="24" y="100" width="155" height="42"/>
+                                <rect key="frame" x="24" y="100" width="188.5" height="32.5"/>
                                 <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4C-kJ-HVC">
-                                <rect key="frame" x="159.5" y="162" width="13" height="36"/>
+                                <rect key="frame" x="190" y="152.5" width="13" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="yG7-cg-CgL"/>
                                 </constraints>
@@ -53,7 +53,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="of" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbu-jJ-O0b">
-                                <rect key="frame" x="24" y="162" width="31.5" height="36"/>
+                                <rect key="frame" x="24" y="152.5" width="39" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="jKz-XB-dhR"/>
                                 </constraints>
@@ -62,7 +62,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZN-Hm-Ppi">
-                                <rect key="frame" x="67.5" y="162" width="80" height="36"/>
+                                <rect key="frame" x="75" y="152.5" width="103" height="36"/>
                                 <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="36"/>
                                 <state key="normal" title="artist">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -72,7 +72,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4he-7d-WRJ">
-                                <rect key="frame" x="182.5" y="156" width="118" height="54"/>
+                                <rect key="frame" x="213" y="148" width="142" height="45"/>
                                 <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="36"/>
                                 <state key="normal" title="collabo">
                                     <color key="titleColor" white="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -82,10 +82,10 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8aA-h5-acn">
-                                <rect key="frame" x="24" y="235" width="327" height="36"/>
+                                <rect key="frame" x="24" y="218" width="327" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today’s Image artists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiZ-Qt-hPU">
-                                        <rect key="frame" x="0.0" y="0.0" width="169.5" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="we0-XQ-Mf6"/>
                                         </constraints>
@@ -102,7 +102,7 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRZ-wQ-BcC">
-                                <rect key="frame" x="0.0" y="291" width="375" height="376"/>
+                                <rect key="frame" x="0.0" y="274" width="375" height="393"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Gpg-cD-Qw5">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="330"/>
@@ -139,19 +139,19 @@
                                         <rect key="frame" x="0.0" y="330" width="375" height="75"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My artist collection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uda-hS-mNq">
-                                                <rect key="frame" x="25" y="24" width="152.5" height="21"/>
+                                                <rect key="frame" x="25" y="24" width="181.5" height="16.5"/>
                                                 <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xmi-SJ-be7">
-                                                <rect key="frame" x="183.5" y="27" width="8" height="16.5"/>
+                                                <rect key="frame" x="212.5" y="27" width="8.5" height="13"/>
                                                 <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXf-Ja-uIJ">
-                                                <rect key="frame" x="335" y="23.5" width="16" height="22"/>
+                                                <rect key="frame" x="335" y="21.5" width="16" height="22"/>
                                                 <state key="normal" image="combinedShape"/>
                                                 <connections>
                                                     <segue destination="rrf-rh-HYy" kind="show" id="KnJ-k3-XDH"/>
@@ -185,7 +185,7 @@
                                 </constraints>
                             </scrollView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gK0-b5-1Su">
-                                <rect key="frame" x="24" y="291" width="327" height="1"/>
+                                <rect key="frame" x="24" y="274" width="327" height="1"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XcW-nP-9FN">
                                         <rect key="frame" x="0.0" y="0.0" width="327" height="1"/>
@@ -224,7 +224,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8V3-Cc-aID"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="house" catalog="system" selectedImage="house.fill" id="sOp-lN-8tX"/>
+                    <tabBarItem key="tabBarItem" title="" image="icCollectionClick" selectedImage="icCollectionClick" id="sOp-lN-8tX"/>
                     <navigationItem key="navigationItem" id="24Q-4o-pLy"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -284,19 +284,20 @@
                                             <constraint firstAttribute="height" constant="225" id="QRz-7v-qFY"/>
                                         </constraints>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gxJ-Ol-c5u">
-                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="itemSize" width="326" height="227"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="qfD-eI-A28">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="0.5" y="0.0" width="326" height="227"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="JoS-9Z-v9n">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="326" height="227"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </collectionViewCellContentView>
+                                                <size key="customSize" width="326" height="227"/>
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
@@ -401,9 +402,8 @@
         <image name="combinedShape" width="16" height="16"/>
         <image name="demoImage1" width="106" height="159"/>
         <image name="demoImage2" width="106" height="133"/>
-        <image name="house" catalog="system" width="64" height="54"/>
-        <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="icBack" width="10" height="18"/>
         <image name="icCollect" width="24" height="24"/>
+        <image name="icCollectionClick" width="26" height="22"/>
     </resources>
 </document>

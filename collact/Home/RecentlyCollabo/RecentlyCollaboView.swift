@@ -14,10 +14,11 @@ class RecentlyCollaboView: UIView {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var pageControl: UIPageControl!
     
-    var recentlyCollaboList = ["demoImage1","demoImage2","demoImage1","demoImage2"]
+    var recentlyCollaboList = [["demoImage1","demoImage2"],["demoImage1","demoImage2"],["demoImage1","demoImage2"]]
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        self.backgroundColor = .none
         setLayout()
     }
     
@@ -30,21 +31,53 @@ class RecentlyCollaboView: UIView {
         
         scrollView.delegate = self
         scrollView.contentSize = CGSize(width: CGFloat(recentlyCollaboList.count) * (width + 16), height: 240)
-        
         scrollView.decelerationRate = UIScrollView.DecelerationRate.fast
         
-        self.backgroundColor = .none
-        
-        for i in 0 ..< recentlyCollaboList.count {
-            let image: UIImageView = UIImageView(frame: CGRect(x: CGFloat(i) * (width + 8) + 16, y: 0, width: width, height: 240))
-//            image.sd_setImage(with: URL(string: bannerList[i].eventBannerURL ?? ""))
-            image.image = UIImage(named: recentlyCollaboList[i])
-            image.contentMode = .scaleToFill
-            image.layer.masksToBounds = true
-            image.layer.cornerRadius = 5
-            image.isUserInteractionEnabled = true
-            scrollView.addSubview(image)
+        for (index, recentlyCollabo) in recentlyCollaboList.enumerated() {
+            let view = UIView(frame: CGRect(x: CGFloat(index) * (width + 8) + 16, y: 0, width: width, height: 240))
+            
+            let image1 = UIImageView(frame: CGRect(x: 0, y: 0, width: view.frame.width/2, height: view.frame.height))
+            setImageView(image1, imageTitle: recentlyCollabo[0])
+            view.addSubview(image1)
+            
+            let image2 = UIImageView(frame: CGRect(x: view.frame.width/2, y: 0, width: view.frame.width/2, height: view.frame.height))
+            setImageView(image2, imageTitle: recentlyCollabo[1])
+            view.addSubview(image2)
+            
+            let foregroundView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
+            foregroundView.backgroundColor = UIColor.white
+            foregroundView.alpha = 0.2
+            view.addSubview(foregroundView)
+            
+            let gradationColorView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
+            leftToRightGradientColor(gradationColorView, colorArray: [UIColor.green, UIColor.blue])
+            gradationColorView.alpha = 0.5
+            view.addSubview(gradationColorView)
+            
+            let collaboArtists = UILabel(frame: CGRect(x: 0, y: 102, width: view.frame.width, height: 17))
+            collaboArtists.textAlignment = .center
+            collaboArtists.textColor = UIColor.white
+            collaboArtists.font = UIFont(name: "Mont", size: 14)
+            collaboArtists.text = "Grabit X Jvdas Berra"
+            view.addSubview(collaboArtists)
+            
+            let collaboDate = UILabel(frame: CGRect(x: 0, y: 126, width: view.frame.width, height: 15))
+            collaboDate.textAlignment = .center
+            collaboDate.textColor = UIColor.init(red: 255, green: 255, blue: 255, alpha: 0.8)
+            collaboDate.font = UIFont(name: "Mont", size: 14)
+            collaboDate.text = "2019.09.28"
+            view.addSubview(collaboDate)
+            
+            scrollView.addSubview(view)
         }
+    }
+    
+    func setImageView(_ view: UIImageView, imageTitle: String ) {
+        view.image = UIImage(named: imageTitle)
+        view.contentMode = .scaleAspectFill
+        view.layer.masksToBounds = true
+        view.layer.cornerRadius = 5
+        view.isUserInteractionEnabled = true
     }
 }
 

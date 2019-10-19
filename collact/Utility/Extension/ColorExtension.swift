@@ -41,3 +41,21 @@ extension UIColor {
         return UIColor(red: 0, green: 0, blue: 0, alpha: 0.15)
         }()
 }
+
+public func leftToRightGradientColor<T: UIView>(_ pasteToView: T, colorArray: [UIColor]) {
+    let gradientLayer = CAGradientLayer()
+    gradientLayer.frame = pasteToView.bounds
+    gradientLayer.colors = [colorArray[0].cgColor, colorArray[1].cgColor]
+    gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
+    gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
+    pasteToView.layer.addSublayer(gradientLayer)
+}
+
+public func topToBottomGradientColor<T: UIView>(_ pasteToView: T, colorArray: [UIColor]) {
+    let gradientLayer = CAGradientLayer()
+    gradientLayer.frame = pasteToView.bounds
+    gradientLayer.colors = [colorArray[0].cgColor, colorArray[1].cgColor]
+    gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
+    gradientLayer.endPoint = CGPoint(x: 0.5, y: 0.1)
+    pasteToView.layer.addSublayer(gradientLayer)
+}

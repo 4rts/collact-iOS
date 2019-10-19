@@ -45,7 +45,7 @@ class HomeVC: BaseVC {
     
     func setRecentlyCollaboView() {
         let view = Bundle.main.loadNibNamed("RecentlyCollaboView", owner: self, options: nil)?.first as! RecentlyCollaboView
-        view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 360)
+        view.frame = CGRect(x: 0, y: 0, width: collaboView.frame.width, height: 360)
         collaboView.addSubview(view)
     }
     

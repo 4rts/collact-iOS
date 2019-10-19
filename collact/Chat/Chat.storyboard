@@ -17,7 +17,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="K2N-fF-rXl"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" selectedImage="heart.fill" id="THA-an-Qb1"/>
+                    <tabBarItem key="tabBarItem" title="" image="icChats" selectedImage="icChats" id="THA-an-Qb1"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KMy-9H-OAf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -26,7 +26,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="heart" catalog="system" width="64" height="58"/>
-        <image name="heart.fill" catalog="system" width="64" height="58"/>
+        <image name="icChats" width="16" height="16"/>
     </resources>
 </document>
