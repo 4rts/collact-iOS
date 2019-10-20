@@ -11,9 +11,9 @@ import UIKit
 class RecentlyCollaboView: UIView {
 
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var pageControl: UIPageControl!
     
+    var collaboDetailDelegate: CollaboDetailDelegate?
     var recentlyCollaboList = [["demoImage1","demoImage2"],["demoImage1","demoImage2"],["demoImage1","demoImage2"]]
     
     override func layoutSubviews() {
@@ -35,7 +35,8 @@ class RecentlyCollaboView: UIView {
         
         for (index, recentlyCollabo) in recentlyCollaboList.enumerated() {
             let view = UIView(frame: CGRect(x: CGFloat(index) * (width + 8) + 16, y: 0, width: width, height: 240))
-            
+            view.tag = index
+            view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(buttonAction)))
             let image1 = UIImageView(frame: CGRect(x: 0, y: 0, width: view.frame.width/2, height: view.frame.height))
             setImageView(image1, imageTitle: recentlyCollabo[0])
             view.addSubview(image1)
@@ -68,6 +69,12 @@ class RecentlyCollaboView: UIView {
             collaboDate.text = "2019.09.28"
             view.addSubview(collaboDate)
             
+            let collectionBoxBtn = UIButton(frame: CGRect(x: view.frame.width - 44, y: 20, width: 24, height: 20))
+            collectionBoxBtn.setImage(UIImage(named: "icCollectionWhiteUnabled"), for: .normal)
+            collectionBoxBtn.addTarget(self, action: #selector(collectionBoxAction), for: .touchUpInside)
+            collectionBoxBtn.tag = 1000
+            view.addSubview(collectionBoxBtn)
+            
             scrollView.addSubview(view)
         }
     }
@@ -78,6 +85,16 @@ class RecentlyCollaboView: UIView {
         view.layer.masksToBounds = true
         view.layer.cornerRadius = 5
         view.isUserInteractionEnabled = true
+    }
+    
+    @objc func collectionBoxAction() {
+        let view = scrollView.viewWithTag(pageControl.currentPage)
+        let button = view?.viewWithTag(1000) as! UIButton
+        button.setImage(UIImage(named: "icCollectionWhite"), for: .normal)
+    }
+    
+    @objc func buttonAction() {
+        collaboDetailDelegate?.enterCollaboDetail()
     }
 }
 

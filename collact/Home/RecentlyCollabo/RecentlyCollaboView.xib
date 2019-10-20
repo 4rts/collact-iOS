@@ -10,11 +10,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RecentlyCollaboView" customModule="collact" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="360"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEj-jJ-KxV">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="239"/>
                 </scrollView>
                 <pageControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="rrh-gt-tI6">
                     <rect key="frame" x="187.5" y="101" width="39" height="37"/>
@@ -26,29 +26,8 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29N-k9-wbk">
-                    <rect key="frame" x="24" y="256" width="366" height="48"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="48" id="3fE-IM-UG4"/>
-                    </constraints>
-                    <string key="text">저희는 가수 rams의 데뷔 10주년을 기념하여 
-열리는 팝업스토어를 위한 3D아트웍을 제작하고자 합니다.</string>
-                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
-                    <color key="textColor" red="0.46666666670000001" green="0.54117647059999996" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJe-2I-gN7">
-                    <rect key="frame" x="24" y="304" width="37" height="24"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="24" id="pvd-g1-Uh3"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
-                    <state key="normal" title="더보기">
-                        <color key="titleColor" red="0.69803921568627447" green="0.72549019607843135" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </state>
-                </button>
                 <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kXp-60-0zg">
-                    <rect key="frame" x="24" y="359" width="366" height="1"/>
+                    <rect key="frame" x="24" y="279" width="366" height="1"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="ogM-jN-XV4"/>
@@ -58,29 +37,23 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="rrh-gt-tI6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="101" id="03c-lc-6fk"/>
+                <constraint firstItem="kXp-60-0zg" firstAttribute="top" secondItem="WEj-jJ-KxV" secondAttribute="bottom" constant="40" id="4ZL-GK-XhU"/>
                 <constraint firstItem="WEj-jJ-KxV" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="76E-Fw-0eO"/>
                 <constraint firstItem="rrh-gt-tI6" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="9dE-En-edX"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="29N-k9-wbk" secondAttribute="trailing" constant="24" id="9kI-gY-ulP"/>
-                <constraint firstItem="MJe-2I-gN7" firstAttribute="top" secondItem="29N-k9-wbk" secondAttribute="bottom" id="Clu-8b-joB"/>
-                <constraint firstItem="MJe-2I-gN7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="G0n-C2-trP"/>
                 <constraint firstItem="WEj-jJ-KxV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="IvT-gi-sne"/>
                 <constraint firstItem="WEj-jJ-KxV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="KAK-x7-XVo"/>
                 <constraint firstItem="WEj-jJ-KxV" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Lh5-nF-GTK"/>
                 <constraint firstItem="kXp-60-0zg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="LsO-ww-bJ4"/>
-                <constraint firstItem="kXp-60-0zg" firstAttribute="top" secondItem="MJe-2I-gN7" secondAttribute="bottom" constant="31" id="VoS-Tt-eAU"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="kXp-60-0zg" secondAttribute="trailing" constant="24" id="WLB-7c-x6Q"/>
-                <constraint firstItem="29N-k9-wbk" firstAttribute="top" secondItem="WEj-jJ-KxV" secondAttribute="bottom" constant="16" id="aAF-4p-rNM"/>
                 <constraint firstItem="kXp-60-0zg" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="fPc-jO-3Kl"/>
-                <constraint firstItem="29N-k9-wbk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="iio-gu-EgQ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="descriptionLabel" destination="29N-k9-wbk" id="BPn-Dc-bpr"/>
                 <outlet property="pageControl" destination="rrh-gt-tI6" id="Wtp-p9-2IF"/>
                 <outlet property="scrollView" destination="WEj-jJ-KxV" id="5ha-ZD-5y1"/>
             </connections>
-            <point key="canvasLocation" x="137.59999999999999" y="152.92353823088456"/>
+            <point key="canvasLocation" x="156.80000000000001" y="-1.3493253373313345"/>
         </view>
     </objects>
 </document>

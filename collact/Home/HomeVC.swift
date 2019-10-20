@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol CollaboDetailDelegate {
+    func enterCollaboDetail()
+}
+
 class HomeVC: BaseVC {
 
     @IBOutlet weak var scrollView: UIScrollView!
@@ -45,7 +49,8 @@ class HomeVC: BaseVC {
     
     func setRecentlyCollaboView() {
         let view = Bundle.main.loadNibNamed("RecentlyCollaboView", owner: self, options: nil)?.first as! RecentlyCollaboView
-        view.frame = CGRect(x: 0, y: 0, width: collaboView.frame.width, height: 360)
+        view.frame = CGRect(x: 0, y: 0, width: collaboView.frame.width, height: 280)
+        view.collaboDetailDelegate = self
         collaboView.addSubview(view)
     }
     
@@ -92,6 +97,7 @@ extension HomeVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 15
     }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if viewType == .ARTIST {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ArtistCard", for: indexPath) as! ArtistCardCVC
@@ -100,7 +106,7 @@ extension HomeVC: UICollectionViewDataSource {
             return cell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollaboCard", for: indexPath) as! CollaboCardCVC
-            setConstraint(cell.imageContainer, value: (self.collectionView.frame.width - 16) / 2)
+            setConstraint(cell.imageContainer, value: (self.collectionView.frame.width - 8) / 2)
 //            cell.leftImageView.image = UIImage(named: "demoImage1")
 //            cell.rightImageView.image = UIImage(named: "demoImage2")
             return cell
@@ -111,7 +117,7 @@ extension HomeVC: UICollectionViewDataSource {
 extension HomeVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let artistCardWidth = (self.collectionView.frame.width - 16) / 3
-        let collaboCardWidth = (self.collectionView.frame.width - 16) / 2
+        let collaboCardWidth = (self.collectionView.frame.width - 8) / 2
         if viewType == .ARTIST {
             return CGSize(width: artistCardWidth, height: 160)
         } else {
@@ -142,5 +148,10 @@ extension HomeVC: UIScrollViewDelegate {
                 svBorderView.isHidden = false
             }
         }
+    }
+}
+extension HomeVC: CollaboDetailDelegate {
+    func enterCollaboDetail() {
+        self.performSegue(withIdentifier: "CollaboDetail", sender: nil)
     }
 }

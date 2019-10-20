@@ -122,10 +122,10 @@
                                         </subviews>
                                     </stackView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iPl-QO-rNN">
-                                        <rect key="frame" x="25" y="405" width="325" height="128"/>
+                                        <rect key="frame" x="25" y="405" width="325" height="300"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="128" identifier="constraint" id="Lsv-tm-NDO"/>
+                                            <constraint firstAttribute="height" constant="300" identifier="constraint" id="Lsv-tm-NDO"/>
                                         </constraints>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5vU-Bu-62V">
                                             <size key="itemSize" width="50" height="50"/>
@@ -153,9 +153,6 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXf-Ja-uIJ">
                                                 <rect key="frame" x="335" y="21.5" width="16" height="22"/>
                                                 <state key="normal" image="combinedShape"/>
-                                                <connections>
-                                                    <segue destination="rrf-rh-HYy" kind="show" id="KnJ-k3-XDH"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -235,6 +232,7 @@
                         <outlet property="collectionView" destination="iPl-QO-rNN" id="9xm-FP-mqJ"/>
                         <outlet property="scrollView" destination="nRZ-wQ-BcC" id="5nC-IA-scn"/>
                         <outlet property="svBorderView" destination="XcW-nP-9FN" id="g7p-Ha-R1U"/>
+                        <segue destination="rrf-rh-HYy" kind="show" identifier="CollaboDetail" id="09I-Ds-a5R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEJ-Iz-CiU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
