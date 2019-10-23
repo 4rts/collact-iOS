@@ -29,6 +29,8 @@
 		B5407170235349F2006F57F0 /* CollaboCardCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B540716E235349F2006F57F0 /* CollaboCardCVC.xib */; };
 		B540717323534A05006F57F0 /* ArtistCardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540717123534A05006F57F0 /* ArtistCardCVC.swift */; };
 		B540717423534A05006F57F0 /* ArtistCardCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B540717223534A05006F57F0 /* ArtistCardCVC.xib */; };
+		B5491CB82360D917009EDCB7 /* SwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5491CB72360D917009EDCB7 /* SwipeCardView.swift */; };
+		B5491CBA2360DE62009EDCB7 /* SwipeCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5491CB92360DE62009EDCB7 /* SwipeCardModel.swift */; };
 		B56A903423525B390077443B /* TodayArtistView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B56A903323525B390077443B /* TodayArtistView.xib */; };
 		B56A903623525B4B0077443B /* TodayArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56A903523525B4B0077443B /* TodayArtistView.swift */; };
 		B5710E07234FA6F30099FCFA /* SignUp8VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5710E06234FA6F30099FCFA /* SignUp8VC.swift */; };
@@ -123,6 +125,8 @@
 		B540716E235349F2006F57F0 /* CollaboCardCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollaboCardCVC.xib; sourceTree = "<group>"; };
 		B540717123534A05006F57F0 /* ArtistCardCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCardCVC.swift; sourceTree = "<group>"; };
 		B540717223534A05006F57F0 /* ArtistCardCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistCardCVC.xib; sourceTree = "<group>"; };
+		B5491CB72360D917009EDCB7 /* SwipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardView.swift; sourceTree = "<group>"; };
+		B5491CB92360DE62009EDCB7 /* SwipeCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardModel.swift; sourceTree = "<group>"; };
 		B56A903323525B390077443B /* TodayArtistView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayArtistView.xib; sourceTree = "<group>"; };
 		B56A903523525B4B0077443B /* TodayArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayArtistView.swift; sourceTree = "<group>"; };
 		B5710E06234FA6F30099FCFA /* SignUp8VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp8VC.swift; sourceTree = "<group>"; };
@@ -425,6 +429,7 @@
 				B5AF433523422A1E00EFAA7E /* BorderView.swift */,
 				B5AF434223422E9000EFAA7E /* MontTextFieldView.swift */,
 				B540715F23531F1C006F57F0 /* EnumModel.swift */,
+				B5491CB72360D917009EDCB7 /* SwipeCardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -459,6 +464,7 @@
 			isa = PBXGroup;
 			children = (
 				B5FFB7B72340A84E0098B113 /* BaseModel.swift */,
+				B5491CB92360DE62009EDCB7 /* SwipeCardModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -736,6 +742,7 @@
 				B5FFB7BF2340A84E0098B113 /* BaseModel.swift in Sources */,
 				B5AF43942349C8C800EFAA7E /* GenrePickerCVC.swift in Sources */,
 				B5AF43832348E49600EFAA7E /* SignUp3VC.swift in Sources */,
+				B5491CB82360D917009EDCB7 /* SwipeCardView.swift in Sources */,
 				B5710E07234FA6F30099FCFA /* SignUp8VC.swift in Sources */,
 				B5710E0E2351C4D80099FCFA /* ChatVC.swift in Sources */,
 				B540716023531F1C006F57F0 /* EnumModel.swift in Sources */,
@@ -769,6 +776,7 @@
 				B5AF43812348E48B00EFAA7E /* SignUp2VC.swift in Sources */,
 				B51E1D692340B1C7004AFDA2 /* MainVC.swift in Sources */,
 				B5AF433B23422A1E00EFAA7E /* LabelExtension.swift in Sources */,
+				B5491CBA2360DE62009EDCB7 /* SwipeCardModel.swift in Sources */,
 				B5AF434023422AE300EFAA7E /* SignUp1VC.swift in Sources */,
 				B5AF433A23422A1E00EFAA7E /* BorderView.swift in Sources */,
 				B5BFA76E2354C0B700720C39 /* WorkCardCVC.swift in Sources */,
