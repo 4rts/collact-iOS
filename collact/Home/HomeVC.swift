@@ -94,6 +94,7 @@ class HomeVC: BaseVC {
     
 }
 extension HomeVC: UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 15
     }
@@ -115,6 +116,7 @@ extension HomeVC: UICollectionViewDataSource {
 }
 
 extension HomeVC: UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let artistCardWidth = (self.collectionView.frame.width - 16) / 3
         let collaboCardWidth = (self.collectionView.frame.width - 8) / 2
@@ -124,9 +126,11 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
             return CGSize(width: collaboCardWidth, height: 160)
         }
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 8
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 8
     }
@@ -150,8 +154,10 @@ extension HomeVC: UIScrollViewDelegate {
         }
     }
 }
+
 extension HomeVC: CollaboDetailDelegate {
     func enterCollaboDetail() {
         self.performSegue(withIdentifier: "CollaboDetail", sender: nil)
     }
 }
+

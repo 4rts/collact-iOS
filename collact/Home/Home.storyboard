@@ -539,11 +539,103 @@
                         <outlet property="partner1Label" destination="mgy-v7-UHO" id="8TM-8A-jOo"/>
                         <outlet property="partner2Image" destination="IVT-4P-kiA" id="0zd-N7-inH"/>
                         <outlet property="partner2Label" destination="Bh6-PJ-wyU" id="oaN-Sk-npg"/>
+                        <segue destination="xuW-Oy-4GV" kind="show" identifier="CollaboDetailWatching" animates="NO" id="1do-aw-AKY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PAE-Lg-hV0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="960.79999999999995" y="-242.42878560719643"/>
+        </scene>
+        <!--Collabo Detail WatchingVC-->
+        <scene sceneID="lHE-iq-Cnj">
+            <objects>
+                <viewController id="xuW-Oy-4GV" customClass="CollaboDetailWatchingVC" customModule="collact" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fHN-bz-lcZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hHo-IO-p0K">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demoImage2" translatesAutoresizingMaskIntoConstraints="NO" id="Ahw-uu-FI7">
+                                        <rect key="frame" x="0.0" y="-44" width="375" height="600"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="600" id="ssS-uX-Goc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3J-N7-rlR">
+                                        <rect key="frame" x="307" y="3" width="68" height="72"/>
+                                        <inset key="contentEdgeInsets" minX="25" minY="25" maxX="25" maxY="25"/>
+                                        <state key="normal" image="icDelete20Px"/>
+                                        <connections>
+                                            <action selector="closeButtonAction:" destination="xuW-Oy-4GV" eventType="touchUpInside" id="rJF-yl-eBt"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grabit X Jvdas BerraGrabit X Jvdas BerraGrabit X Jvdas BerraGrabit X Jvdas Berra" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UC4-na-4pl">
+                                        <rect key="frame" x="24" y="580" width="255" height="65"/>
+                                        <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ik6-bQ-HWG">
+                                        <rect key="frame" x="303" y="577.5" width="72" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="Iqk-GY-012"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="24" minY="24" maxX="24" maxY="24"/>
+                                        <state key="normal" image="icLink"/>
+                                        <connections>
+                                            <action selector="linkAction:" destination="xuW-Oy-4GV" eventType="touchUpInside" id="hR2-WZ-DWb"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jcs-AB-7kj">
+                                        <rect key="frame" x="24" y="657" width="327" height="319.5"/>
+                                        <mutableString key="text">날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  </mutableString>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ik6-bQ-HWG" secondAttribute="trailing" id="1bc-GJ-3o1"/>
+                                    <constraint firstItem="Ahw-uu-FI7" firstAttribute="top" secondItem="hHo-IO-p0K" secondAttribute="top" constant="-44" id="2Kb-L2-oGI"/>
+                                    <constraint firstItem="UC4-na-4pl" firstAttribute="leading" secondItem="hHo-IO-p0K" secondAttribute="leading" constant="24" id="6rL-Tn-1ac"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jcs-AB-7kj" secondAttribute="trailing" constant="24" id="CR9-Yk-BQi"/>
+                                    <constraint firstItem="j3J-N7-rlR" firstAttribute="top" secondItem="hHo-IO-p0K" secondAttribute="top" constant="3" id="M1a-je-LfZ"/>
+                                    <constraint firstItem="Ahw-uu-FI7" firstAttribute="leading" secondItem="hHo-IO-p0K" secondAttribute="leading" id="R4v-nQ-QLR"/>
+                                    <constraint firstAttribute="trailing" secondItem="j3J-N7-rlR" secondAttribute="trailing" id="Rrf-fT-zqP"/>
+                                    <constraint firstItem="ik6-bQ-HWG" firstAttribute="centerY" secondItem="UC4-na-4pl" secondAttribute="centerY" id="Ug3-D5-yVi"/>
+                                    <constraint firstItem="ik6-bQ-HWG" firstAttribute="leading" secondItem="UC4-na-4pl" secondAttribute="trailing" constant="24" id="UkD-kC-gTh"/>
+                                    <constraint firstItem="UC4-na-4pl" firstAttribute="top" secondItem="Ahw-uu-FI7" secondAttribute="bottom" constant="24" id="XSI-Zp-KlY"/>
+                                    <constraint firstItem="Jcs-AB-7kj" firstAttribute="leading" secondItem="hHo-IO-p0K" secondAttribute="leading" constant="24" id="YhL-bM-MQy"/>
+                                    <constraint firstItem="Ahw-uu-FI7" firstAttribute="width" secondItem="hHo-IO-p0K" secondAttribute="width" id="gSO-N4-ddg"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jcs-AB-7kj" secondAttribute="bottom" constant="24" id="hJ2-zX-Gy8"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ahw-uu-FI7" secondAttribute="trailing" id="qdl-NZ-RAh"/>
+                                    <constraint firstItem="Jcs-AB-7kj" firstAttribute="top" secondItem="UC4-na-4pl" secondAttribute="bottom" constant="12" id="yuD-lV-3C7"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hHo-IO-p0K" secondAttribute="bottom" id="D60-Ti-wNF"/>
+                            <constraint firstItem="hHo-IO-p0K" firstAttribute="leading" secondItem="Oa4-69-823" secondAttribute="leading" id="KJY-R1-PX2"/>
+                            <constraint firstItem="hHo-IO-p0K" firstAttribute="top" secondItem="fHN-bz-lcZ" secondAttribute="top" id="na2-5s-yDh"/>
+                            <constraint firstItem="Oa4-69-823" firstAttribute="trailing" secondItem="hHo-IO-p0K" secondAttribute="trailing" id="op1-f2-EK6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Oa4-69-823"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bds-BT-7jJ"/>
+                    <size key="freeformSize" width="375" height="800"/>
+                    <connections>
+                        <outlet property="collaboDescriptionLabel" destination="Jcs-AB-7kj" id="AfJ-3F-WJn"/>
+                        <outlet property="collaboImageView" destination="Ahw-uu-FI7" id="sir-wK-sTd"/>
+                        <outlet property="collaboPartnersLabel" destination="UC4-na-4pl" id="dP0-NF-VEA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AmG-PI-t5i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1749.5999999999999" y="-242.87856071964021"/>
         </scene>
     </scenes>
     <resources>
@@ -553,5 +645,7 @@
         <image name="icBack" width="10" height="18"/>
         <image name="icCollect" width="24" height="24"/>
         <image name="icCollectionClick" width="26" height="22"/>
+        <image name="icDelete20Px" width="18" height="19"/>
+        <image name="icLink" width="20" height="10"/>
     </resources>
 </document>

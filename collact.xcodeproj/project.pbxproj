@@ -10,6 +10,7 @@
 		2CC4CCF30906AD65D28494BF /* Pods_collact.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26BFD331196EEEC449D7F93 /* Pods_collact.framework */; };
 		62C165F66A62585BA1F4877B /* Pods_collactUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D2EE58D959709CA1E0F739 /* Pods_collactUITests.framework */; };
 		9E46B692D5DB33C97525AA4D /* Pods_collactTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0386E3A3C9CE037B6F2EB33A /* Pods_collactTests.framework */; };
+		B5117AC72360B51B008F4273 /* CollaboDetailWatchingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5117AC62360B51B008F4273 /* CollaboDetailWatchingVC.swift */; };
 		B5192879233C7AA300BBFBCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5192878233C7AA300BBFBCD /* AppDelegate.swift */; };
 		B519287B233C7AA300BBFBCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B519287A233C7AA300BBFBCD /* SceneDelegate.swift */; };
 		B5192883233C7AA300BBFBCD /* collact.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5192881233C7AA300BBFBCD /* collact.xcdatamodeld */; };
@@ -97,6 +98,7 @@
 		8D8D9C282DA7DD0599127F83 /* Pods-collactUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collactUITests.debug.xcconfig"; path = "Target Support Files/Pods-collactUITests/Pods-collactUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A26BFD331196EEEC449D7F93 /* Pods_collact.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_collact.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E5F8E019092C7C82864615 /* Pods-collact.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collact.debug.xcconfig"; path = "Target Support Files/Pods-collact/Pods-collact.debug.xcconfig"; sourceTree = "<group>"; };
+		B5117AC62360B51B008F4273 /* CollaboDetailWatchingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaboDetailWatchingVC.swift; sourceTree = "<group>"; };
 		B5192875233C7AA300BBFBCD /* collact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = collact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5192878233C7AA300BBFBCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B519287A233C7AA300BBFBCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -370,6 +372,7 @@
 				B5710E0B2351C4CE0099FCFA /* Home.storyboard */,
 				B57ABB7323409F140057964E /* HomeVC.swift */,
 				B5E7A430235641B6004C66C7 /* CollaboDetailVC.swift */,
+				B5117AC62360B51B008F4273 /* CollaboDetailWatchingVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -757,6 +760,7 @@
 				B5FFB7C02340A84E0098B113 /* BaseForm.swift in Sources */,
 				B540716F235349F2006F57F0 /* CollaboCardCVC.swift in Sources */,
 				B5FFB7C12340A84E0098B113 /* BaseResponse.swift in Sources */,
+				B5117AC72360B51B008F4273 /* CollaboDetailWatchingVC.swift in Sources */,
 				B5AF433C23422A1E00EFAA7E /* ViewExtension.swift in Sources */,
 				B5AF434323422E9000EFAA7E /* MontTextFieldView.swift in Sources */,
 				B5FFB7C22340A84E0098B113 /* BaseController.swift in Sources */,

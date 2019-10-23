@@ -61,7 +61,7 @@ class CollaboDetailVC: BaseVC {
     }
     
     @IBAction func collaboWatchingAction(_ sender: Any) {
-        
+        self.performSegue(withIdentifier: "CollaboDetailWatching", sender: nil)
     }
     
 }
