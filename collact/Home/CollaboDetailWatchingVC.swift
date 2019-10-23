@@ -11,13 +11,14 @@ import UIKit
 
 class CollaboDetailWatchingVC: BaseVC {
 
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var collaboImageView: UIImageView!
     @IBOutlet weak var collaboPartnersLabel: UILabel!
     @IBOutlet weak var collaboDescriptionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.setConstraintForDevice(scrollView, NotchO: -44, NotchX: 0)
     }
     
     override var prefersStatusBarHidden: Bool {

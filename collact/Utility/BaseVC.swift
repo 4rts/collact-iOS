@@ -40,6 +40,19 @@ class BaseVC: UIViewController {
         }
     }
     
+    func setConstraintForDevice(_ view : UIView, NotchO: CGFloat, NotchX: CGFloat, identifier: String = "constraint"){
+        for constraint in view.constraints {
+            if constraint.identifier == identifier {
+                if (UIDevice.current.isiPhoneXS || UIDevice.current.isiPhoneXSMAX)  {
+                    constraint.constant = NotchO
+                }
+                else {
+                    constraint.constant = NotchX
+                }
+            }
+        }
+    }
+    
     func animationAction<T:Springable>(animationObject: T, autostart: Bool = true, animation: String = "FadeInUp", curve: String = "EaseIn", duration: CGFloat = 0, delay: CGFloat = 0,x: CGFloat = 0, y: CGFloat = 0, callback: @escaping(()->Void) = {}) {
         animationObject.autostart = autostart
         animationObject.animation = animation
