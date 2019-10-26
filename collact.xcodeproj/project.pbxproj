@@ -957,7 +957,7 @@
 			baseConfigurationReference = A9E5F8E019092C7C82864615 /* Pods-collact.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K557UV74SU;
 				INFOPLIST_FILE = "$(SRCROOT)/collact/Info.plist";
@@ -978,7 +978,7 @@
 			baseConfigurationReference = 6F96C52364FBF9C68DCFADE9 /* Pods-collact.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K557UV74SU;
 				INFOPLIST_FILE = "$(SRCROOT)/collact/Info.plist";
