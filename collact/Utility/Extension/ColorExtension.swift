@@ -39,7 +39,15 @@ extension UIColor {
     
     static var black15: UIColor = {
         return UIColor(red: 0, green: 0, blue: 0, alpha: 0.15)
-        }()
+    }()
+
+    static var white85: UIColor = {
+        return UIColor(red: 255, green: 255, blue: 255, alpha: 0.85)
+    }()
+    
+    static var veryLightBlue: UIColor = {
+        return UIColor(red: 213, green: 220, blue: 227, alpha: 1)
+    }()
 }
 
 public func leftToRightGradientColor<T: UIView>(_ pasteToView: T, colorArray: [UIColor]) {
@@ -56,6 +64,6 @@ public func topToBottomGradientColor<T: UIView>(_ pasteToView: T, colorArray: [U
     gradientLayer.frame = pasteToView.bounds
     gradientLayer.colors = [colorArray[0].cgColor, colorArray[1].cgColor]
     gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
-    gradientLayer.endPoint = CGPoint(x: 0.5, y: 0.1)
+    gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)
     pasteToView.layer.addSublayer(gradientLayer)
 }
