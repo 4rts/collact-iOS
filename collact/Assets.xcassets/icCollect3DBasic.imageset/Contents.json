@@ -3,17 +3,17 @@
     {
       "scale" : "1x",
       "idiom" : "universal",
-      "filename" : "icLink.png"
+      "filename" : "icCollect3DBasic.png"
     },
     {
       "scale" : "2x",
       "idiom" : "universal",
-      "filename" : "icLink@2x.png"
+      "filename" : "icCollect3DBasic@2x.png"
     },
     {
       "scale" : "3x",
       "idiom" : "universal",
-      "filename" : "icLink@3x.png"
+      "filename" : "icCollect3DBasic@3x.png"
     }
   ],
   "info" : {
