@@ -30,8 +30,6 @@
 		B540717323534A05006F57F0 /* ArtistCardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540717123534A05006F57F0 /* ArtistCardCVC.swift */; };
 		B540717423534A05006F57F0 /* ArtistCardCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B540717223534A05006F57F0 /* ArtistCardCVC.xib */; };
 		B5491CBA2360DE62009EDCB7 /* SwipeCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5491CB92360DE62009EDCB7 /* SwipeCardModel.swift */; };
-		B5491CBE236368A0009EDCB7 /* SwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5491CBC2363689F009EDCB7 /* SwipeCardView.swift */; };
-		B5491CBF236368A0009EDCB7 /* StackContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5491CBD236368A0009EDCB7 /* StackContainerView.swift */; };
 		B55C5CA723658CA300AE449E /* ProfilePopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55C5CA623658CA300AE449E /* ProfilePopupVC.swift */; };
 		B56A903423525B390077443B /* TodayArtistView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B56A903323525B390077443B /* TodayArtistView.xib */; };
 		B56A903623525B4B0077443B /* TodayArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56A903523525B4B0077443B /* TodayArtistView.swift */; };
@@ -40,8 +38,8 @@
 		B5710E0C2351C4CE0099FCFA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5710E0B2351C4CE0099FCFA /* Home.storyboard */; };
 		B5710E0E2351C4D80099FCFA /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5710E0D2351C4D80099FCFA /* ChatVC.swift */; };
 		B572A2F82340D66100C3C88E /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572A2F72340D66100C3C88E /* BaseVC.swift */; };
-		B57366B12365D299009D34FA /* MJSwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57366B02365D299009D34FA /* MJSwipeCardView.swift */; };
-		B57366B32365FACE009D34FA /* MJSwipeCardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57366B22365FACE009D34FA /* MJSwipeCardStackView.swift */; };
+		B57366B12365D299009D34FA /* SwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57366B02365D299009D34FA /* SwipeCardView.swift */; };
+		B57366B32365FACE009D34FA /* SwipeCardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57366B22365FACE009D34FA /* SwipeCardStackView.swift */; };
 		B57ABB6A23409EA90057964E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57ABB6923409EA90057964E /* Profile.storyboard */; };
 		B57ABB6C23409EB60057964E /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57ABB6B23409EB60057964E /* Search.storyboard */; };
 		B57ABB6E23409EBF0057964E /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57ABB6D23409EBF0057964E /* Chat.storyboard */; };
@@ -130,8 +128,6 @@
 		B540717123534A05006F57F0 /* ArtistCardCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCardCVC.swift; sourceTree = "<group>"; };
 		B540717223534A05006F57F0 /* ArtistCardCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistCardCVC.xib; sourceTree = "<group>"; };
 		B5491CB92360DE62009EDCB7 /* SwipeCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardModel.swift; sourceTree = "<group>"; };
-		B5491CBC2363689F009EDCB7 /* SwipeCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCardView.swift; sourceTree = "<group>"; };
-		B5491CBD236368A0009EDCB7 /* StackContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackContainerView.swift; sourceTree = "<group>"; };
 		B55C5CA623658CA300AE449E /* ProfilePopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePopupVC.swift; sourceTree = "<group>"; };
 		B56A903323525B390077443B /* TodayArtistView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayArtistView.xib; sourceTree = "<group>"; };
 		B56A903523525B4B0077443B /* TodayArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayArtistView.swift; sourceTree = "<group>"; };
@@ -140,8 +136,8 @@
 		B5710E0B2351C4CE0099FCFA /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		B5710E0D2351C4D80099FCFA /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		B572A2F72340D66100C3C88E /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
-		B57366B02365D299009D34FA /* MJSwipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJSwipeCardView.swift; sourceTree = "<group>"; };
-		B57366B22365FACE009D34FA /* MJSwipeCardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJSwipeCardStackView.swift; sourceTree = "<group>"; };
+		B57366B02365D299009D34FA /* SwipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardView.swift; sourceTree = "<group>"; };
+		B57366B22365FACE009D34FA /* SwipeCardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardStackView.swift; sourceTree = "<group>"; };
 		B57ABB6923409EA90057964E /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		B57ABB6B23409EB60057964E /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		B57ABB6D23409EBF0057964E /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
@@ -320,8 +316,8 @@
 		B5491CBB2363687A009EDCB7 /* SwipeCardView */ = {
 			isa = PBXGroup;
 			children = (
-				B5491CBD236368A0009EDCB7 /* StackContainerView.swift */,
-				B5491CBC2363689F009EDCB7 /* SwipeCardView.swift */,
+				B57366B02365D299009D34FA /* SwipeCardView.swift */,
+				B57366B22365FACE009D34FA /* SwipeCardStackView.swift */,
 			);
 			path = SwipeCardView;
 			sourceTree = "<group>";
@@ -379,8 +375,6 @@
 				B57ABB6923409EA90057964E /* Profile.storyboard */,
 				B57ABB7723409F440057964E /* ProfileVC.swift */,
 				B55C5CA623658CA300AE449E /* ProfilePopupVC.swift */,
-				B57366B02365D299009D34FA /* MJSwipeCardView.swift */,
-				B57366B22365FACE009D34FA /* MJSwipeCardStackView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -776,11 +770,11 @@
 				B57ABB7423409F140057964E /* HomeVC.swift in Sources */,
 				B57ABB7823409F440057964E /* ProfileVC.swift in Sources */,
 				B519287B233C7AA300BBFBCD /* SceneDelegate.swift in Sources */,
-				B57366B32365FACE009D34FA /* MJSwipeCardStackView.swift in Sources */,
+				B57366B32365FACE009D34FA /* SwipeCardStackView.swift in Sources */,
 				B51E1D652340AE67004AFDA2 /* CodePreference.swift in Sources */,
 				B57ABB7223409EFD0057964E /* SignInVC.swift in Sources */,
 				B56A903623525B4B0077443B /* TodayArtistView.swift in Sources */,
-				B57366B12365D299009D34FA /* MJSwipeCardView.swift in Sources */,
+				B57366B12365D299009D34FA /* SwipeCardView.swift in Sources */,
 				B5AF433D23422A1E00EFAA7E /* ColorExtension.swift in Sources */,
 				B5AF43972349CFCA00EFAA7E /* SignUp6VC.swift in Sources */,
 				B5710E09234FA72E0099FCFA /* SignUp9VC.swift in Sources */,
@@ -792,14 +786,12 @@
 				B5117AC72360B51B008F4273 /* CollaboDetailWatchingVC.swift in Sources */,
 				B5AF433C23422A1E00EFAA7E /* ViewExtension.swift in Sources */,
 				B5AF434323422E9000EFAA7E /* MontTextFieldView.swift in Sources */,
-				B5491CBE236368A0009EDCB7 /* SwipeCardView.swift in Sources */,
 				B5FFB7C22340A84E0098B113 /* BaseController.swift in Sources */,
 				B5E7A431235641B6004C66C7 /* CollaboDetailVC.swift in Sources */,
 				B57ABB7623409F2F0057964E /* SearchVC.swift in Sources */,
 				B5AF43812348E48B00EFAA7E /* SignUp2VC.swift in Sources */,
 				B51E1D692340B1C7004AFDA2 /* MainVC.swift in Sources */,
 				B5AF433B23422A1E00EFAA7E /* LabelExtension.swift in Sources */,
-				B5491CBF236368A0009EDCB7 /* StackContainerView.swift in Sources */,
 				B5491CBA2360DE62009EDCB7 /* SwipeCardModel.swift in Sources */,
 				B5AF434023422AE300EFAA7E /* SignUp1VC.swift in Sources */,
 				B5AF433A23422A1E00EFAA7E /* BorderView.swift in Sources */,

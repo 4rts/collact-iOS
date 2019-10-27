@@ -1,61 +1,57 @@
 //
 //  SwipeCardView.swift
-//  TinderStack
+//  collact
 //
-//  Created by Osama Naeem on 16/03/2019.
+//  Edited by minjae on 2019/10/28.
+//  Created by Osama Naeem on 2019/03/16.
 //  Copyright © 2019 NexThings. All rights reserved.
 //
 
 import UIKit
 
-protocol SwipeCardsDataSource {
-    func numberOfCardsToShow() -> Int
-    func card(at index: Int) -> SwipeCardView
-    func emptyView() -> UIView?
-    
-}
-
 protocol SwipeCardsDelegate {
     func swipeDidEnd(on view: SwipeCardView)
 }
 
-class SwipeCardView : UIView {
-   
+class SwipeCardView: UIView {
+    
     //MARK: - Properties
-    var swipeView : UIView!
-    var shadowView : UIView!
-    var imageView: UIImageView!
-  
-    var label = UILabel()
-    var moreButton = UIButton()
+    var artWorkImageView: UIImageView!
+    var descriptionView: UIView!
+    var linkTextLabel: UILabel!
+    var linkButton: UIButton!
+    var titleTextLabel: UILabel!
+    var descriptionTextLabel: UILabel!
     
-    var delegate : SwipeCardsDelegate?
-
-    var divisor : CGFloat = 0
-    let baseView = UIView()
-
-    
-    
-    var dataSource : SwipeCardModel? {
+    var dataSource: SwipeCardModel? {
         didSet {
-            swipeView.backgroundColor = dataSource?.bgColor
-            label.text = dataSource?.text
-            guard let image = dataSource?.image else { return }
-            imageView.image = UIImage(named: image)
+//            swipeView.backgroundColor = dataSource?.bgColor
+//            label.text = dataSource?.text
+//            guard let image = dataSource?.image else { return }
+//            imageView.image = UIImage(named: image)
         }
     }
+    var viewSize: CGSize!
+    var tapFlag: Bool = false
+    var delegate: SwipeCardsDelegate?
     
-    
-    //MARK: - Init
-     override init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: .zero)
-        configureShadowView()
-        configureSwipeView()
-        configureLabelView()
-        configureImageView()
-        configureButton()
-        addPanGestureOnCards()
+        
+        configureViewSize()
+        configureArtWorkImageView()
+        configureDescriptionView()
+        configureLinkTextLabel()
+        configureLinkButton()
+        configureDescriptionTextLabel()
+        configureTitleTextLabel()
         configureTapGesture()
+        configurePanGestureOnCards()
+        
+        artWorkImageView.image = UIImage(named: "demoImage1")
+        linkTextLabel.text = "https://www.instagram.com/p/B3MFSSQpDJn/"
+        titleTextLabel.text = "제목없음 (2019.07)"
+        descriptionTextLabel.text = "날아오르는 봉황과 빨간 새를 은은한 느낌으로 보여주며 특유의 질감과 기법을 사용하여 표현하였다. 아름다운 표현이다. 붓글씨를 활용했다."
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -64,100 +60,119 @@ class SwipeCardView : UIView {
     
     //MARK: - Configuration
     
-    func configureShadowView() {
-        shadowView = UIView()
-        shadowView.backgroundColor = .clear
-        shadowView.layer.shadowColor = UIColor.black.cgColor
-        shadowView.layer.shadowOffset = CGSize(width: 0, height: 0)
-        shadowView.layer.shadowOpacity = 0.8
-        shadowView.layer.shadowRadius = 4.0
-        addSubview(shadowView)
+    func configureViewSize() {
+        if UIDevice.current.isiPhoneXS || UIDevice.current.isiPhoneXSMAX  {
+            viewSize = CGSize(width: 280, height: 420)
+        } else {
+            viewSize = CGSize(width: 233, height: 340)
+        }
+    }
+    
+    func configureArtWorkImageView() {
+        artWorkImageView = UIImageView()
+        artWorkImageView.contentMode = .scaleAspectFit
+        artWorkImageView.layer.cornerRadius = 5
+        artWorkImageView.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(artWorkImageView)
         
-        shadowView.translatesAutoresizingMaskIntoConstraints = false
-        shadowView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
-        shadowView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
-        shadowView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        shadowView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        artWorkImageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        artWorkImageView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        artWorkImageView.widthAnchor.constraint(equalToConstant: viewSize.width).isActive = true
+        artWorkImageView.heightAnchor.constraint(equalToConstant: viewSize.height).isActive = true
     }
     
-    func configureSwipeView() {
-        swipeView = UIView()
-        swipeView.layer.cornerRadius = 15
-        swipeView.clipsToBounds = true
-        shadowView.addSubview(swipeView)
+    func configureDescriptionView() {
+        descriptionView = UIView()
+        descriptionView.translatesAutoresizingMaskIntoConstraints = false
+        descriptionView.isHidden = true
+        tapFlag = true
+        descriptionView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.6)
+        descriptionView.layer.cornerRadius = 5
+        addSubview(descriptionView)
         
-        swipeView.translatesAutoresizingMaskIntoConstraints = false
-        swipeView.leftAnchor.constraint(equalTo: shadowView.leftAnchor).isActive = true
-        swipeView.rightAnchor.constraint(equalTo: shadowView.rightAnchor).isActive = true
-        swipeView.bottomAnchor.constraint(equalTo: shadowView.bottomAnchor).isActive = true
-        swipeView.topAnchor.constraint(equalTo: shadowView.topAnchor).isActive = true
+        descriptionView.topAnchor.constraint(equalTo: artWorkImageView.topAnchor).isActive = true
+        descriptionView.leadingAnchor.constraint(equalTo: artWorkImageView.leadingAnchor).isActive = true
+        descriptionView.trailingAnchor.constraint(equalTo: artWorkImageView.trailingAnchor).isActive = true
+        descriptionView.bottomAnchor.constraint(equalTo: artWorkImageView.bottomAnchor).isActive = true
     }
     
-    func configureLabelView() {
-        swipeView.addSubview(label)
-        label.backgroundColor = .white
-        label.textColor = .black
-        label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 18)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.leftAnchor.constraint(equalTo: swipeView.leftAnchor).isActive = true
-        label.rightAnchor.constraint(equalTo: swipeView.rightAnchor).isActive = true
-        label.bottomAnchor.constraint(equalTo: swipeView.bottomAnchor).isActive = true
-        label.heightAnchor.constraint(equalToConstant: 85).isActive = true
+    func configureLinkTextLabel() {
+        linkTextLabel = UILabel()
+        linkTextLabel.translatesAutoresizingMaskIntoConstraints = false
+        linkTextLabel.textColor = .white
+        linkTextLabel.font = UIFont.systemFont(ofSize: 12, weight: .bold)
+        linkTextLabel.numberOfLines = 0
+        descriptionView.addSubview(linkTextLabel)
         
+        linkTextLabel.topAnchor.constraint(equalTo: descriptionView.topAnchor, constant: 20).isActive = true
+        linkTextLabel.leadingAnchor.constraint(equalTo: descriptionView.leadingAnchor, constant: 20).isActive = true
     }
     
-    func configureImageView() {
-        imageView = UIImageView()
-        swipeView.addSubview(imageView)
-        imageView.contentMode = .scaleAspectFit
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-
-        imageView.centerXAnchor.constraint(equalTo: swipeView.centerXAnchor).isActive = true
-        imageView.centerYAnchor.constraint(equalTo: swipeView.centerYAnchor, constant: -30).isActive = true
-        imageView.widthAnchor.constraint(equalToConstant: 150).isActive = true
-        imageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
-    }
-    
-    func configureButton() {
-        label.addSubview(moreButton)
-        moreButton.translatesAutoresizingMaskIntoConstraints = false
-        let image = UIImage(named: "plus-tab")?.withRenderingMode(.alwaysTemplate)
-        moreButton.setImage(image, for: .normal)
-        moreButton.tintColor = UIColor.red
+    func configureLinkButton() {
+        linkButton = UIButton()
+        linkButton.setImage(UIImage(named: "icLink"), for: .normal)
+        linkButton.contentEdgeInsets.left = 12
+        linkButton.contentEdgeInsets.right = 20
+        linkButton.contentEdgeInsets.top = 21
+        linkButton.contentEdgeInsets.bottom = 21
+        linkButton.translatesAutoresizingMaskIntoConstraints = false
+        linkButton.addTarget(self, action: #selector(openSiteLink), for: .touchUpInside)
+        descriptionView.addSubview(linkButton)
         
-        moreButton.rightAnchor.constraint(equalTo: label.rightAnchor, constant: -15).isActive = true
-        moreButton.centerYAnchor.constraint(equalTo: label.centerYAnchor).isActive = true
-        moreButton.widthAnchor.constraint(equalToConstant: 50).isActive = true
-        moreButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
-    
+        linkButton.topAnchor.constraint(equalTo: descriptionView.topAnchor, constant: 0).isActive = true
+        linkButton.trailingAnchor.constraint(equalTo: descriptionView.trailingAnchor, constant: 0).isActive = true
+        linkButton.leadingAnchor.constraint(equalTo: linkTextLabel.trailingAnchor, constant: 0).isActive = true
     }
-
+    
+    func configureDescriptionTextLabel() {
+        descriptionTextLabel = UILabel()
+        descriptionTextLabel.translatesAutoresizingMaskIntoConstraints = false
+        descriptionTextLabel.textColor = .white
+        descriptionTextLabel.font = UIFont.systemFont(ofSize: 14, weight: .bold)
+        descriptionTextLabel.numberOfLines = 0
+        descriptionView.addSubview(descriptionTextLabel)
+        
+        descriptionTextLabel.bottomAnchor.constraint(equalTo: descriptionView.bottomAnchor, constant: -20).isActive = true
+        descriptionTextLabel.leadingAnchor.constraint(equalTo: descriptionView.leadingAnchor, constant: 20).isActive = true
+        descriptionTextLabel.trailingAnchor.constraint(equalTo: descriptionView.trailingAnchor, constant: -20).isActive = true
+    }
+    
+    func configureTitleTextLabel() {
+        titleTextLabel = UILabel()
+        titleTextLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleTextLabel.textColor = .white
+        titleTextLabel.font = UIFont.systemFont(ofSize: 18, weight: .heavy)
+        titleTextLabel.numberOfLines = 0
+        descriptionView.addSubview(titleTextLabel)
+        
+        titleTextLabel.bottomAnchor.constraint(equalTo: descriptionTextLabel.topAnchor, constant: -16).isActive = true
+        titleTextLabel.leadingAnchor.constraint(equalTo: descriptionView.leadingAnchor, constant: 20).isActive = true
+        titleTextLabel.trailingAnchor.constraint(equalTo: descriptionView.trailingAnchor, constant: -20).isActive = true
+    }
+    
     func configureTapGesture() {
         addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTapGesture)))
     }
     
-    
-    func addPanGestureOnCards() {
+    func configurePanGestureOnCards() {
         self.isUserInteractionEnabled = true
         addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture)))
     }
-    
-    
-    
     //MARK: - Handlers
+    @objc func openSiteLink() {
+        if let url = URL(string: linkTextLabel.text ?? "") {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
     @objc func handlePanGesture(sender: UIPanGestureRecognizer){
         let card = sender.view as! SwipeCardView
         let point = sender.translation(in: self)
         let centerOfParentContainer = CGPoint(x: self.frame.width / 2, y: self.frame.height / 2)
         card.center = CGPoint(x: centerOfParentContainer.x + point.x, y: centerOfParentContainer.y + point.y)
         
-        let distanceFromCenter = ((UIScreen.main.bounds.width / 2) - card.center.x)
-        divisor = ((UIScreen.main.bounds.width / 2) / 0.61)
-       
         switch sender.state {
         case .ended:
-            if (card.center.x) > 400 {
+            if card.center.x > 350 {
                 delegate?.swipeDidEnd(on: card)
                 UIView.animate(withDuration: 0.2) {
                     card.center = CGPoint(x: centerOfParentContainer.x + point.x + 200, y: centerOfParentContainer.y + point.y + 75)
@@ -165,12 +180,28 @@ class SwipeCardView : UIView {
                     self.layoutIfNeeded()
                 }
                 return
-            }else if card.center.x < -65 {
+            } else if card.center.x < 60 {
                 delegate?.swipeDidEnd(on: card)
                 UIView.animate(withDuration: 0.2) {
                     card.center = CGPoint(x: centerOfParentContainer.x + point.x - 200, y: centerOfParentContainer.y + point.y + 75)
                     card.alpha = 0
                     self.layoutIfNeeded()
+                }
+                return
+            } else if card.center.y > 400 {
+                delegate?.swipeDidEnd(on: card)
+                UIView.animate(withDuration: 0.2) {
+                  card.center = CGPoint(x: centerOfParentContainer.x + point.x, y: centerOfParentContainer.y + point.y + 300)
+                  card.alpha = 0
+                  self.layoutIfNeeded()
+                }
+                return
+            } else if card.center.y < 40 {
+                delegate?.swipeDidEnd(on: card)
+                UIView.animate(withDuration: 0.2) {
+                  card.center = CGPoint(x: centerOfParentContainer.x + point.x, y: centerOfParentContainer.y + point.y - 300)
+                  card.alpha = 0
+                  self.layoutIfNeeded()
                 }
                 return
             }
@@ -188,9 +219,13 @@ class SwipeCardView : UIView {
         }
     }
     
-    @objc func handleTapGesture(sender: UITapGestureRecognizer){
-        print("hi")
+    @objc func handleTapGesture(sender: UITapGestureRecognizer) {
+        tapFlag = !tapFlag
+        if tapFlag {
+            descriptionView.isHidden = true
+        } else {
+            descriptionView.isHidden = false
+        }
     }
-    
-  
+
 }

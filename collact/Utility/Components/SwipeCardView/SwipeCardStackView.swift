@@ -1,16 +1,23 @@
 //
-//  StackContainerController.swift
-//  TinderStack
+//  SwipeCardStackView.swift
+//  collact
 //
-//  Created by Osama Naeem on 16/03/2019.
+//  Edited by minjae on 2019/10/28.
+//  Created by Osama Naeem on 2019/03/16.
 //  Copyright © 2019 NexThings. All rights reserved.
 //
 
 import UIKit
 
+protocol SwipeCardsDataSource {
+    func numberOfCardsToShow() -> Int
+    func card(at index: Int) -> SwipeCardView
+    func emptyView() -> UIView?
+    
+}
 
-class StackContainerView: UIView, SwipeCardsDelegate {
-
+class SwipeCardStackView: UIView {
+    
     //MARK: - Properties
     var numberOfCardsToShow: Int = 0
     var cardsToBeVisible: Int = 3
@@ -23,23 +30,23 @@ class StackContainerView: UIView, SwipeCardsDelegate {
     var visibleCards: [SwipeCardView] {
         return subviews as? [SwipeCardView] ?? []
     }
+    
     var dataSource: SwipeCardsDataSource? {
         didSet {
             reloadData()
         }
     }
+    
     //MARK: - Init
     override init(frame: CGRect) {
-        super.init(frame: frame)
+        super.init(frame: .zero)
         backgroundColor = .clear
         
     }
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
         fatalError("init(coder:) has not been implemented")
     }
-
     
     func reloadData() {
         removeAllCardViews()
@@ -54,14 +61,12 @@ class StackContainerView: UIView, SwipeCardsDelegate {
             
         }
     }
-
     //MARK: - Configurations
-
     private func addCardView(cardView: SwipeCardView, atIndex index: Int) {
         cardView.delegate = self
         addCardFrame(index: index, cardView: cardView)
         cardViews.append(cardView)
-        insertSubview(cardView, at: 0)
+        self.insertSubview(cardView, at: 0)
         remainingcards -= 1
     }
     
@@ -70,9 +75,9 @@ class StackContainerView: UIView, SwipeCardsDelegate {
         let horizontalInset = (CGFloat(index) * self.horizontalInset)
         let verticalInset = CGFloat(index) * self.verticalInset
         
-//        cardViewFrame.size.width -= 2 * horizontalInset
-//        cardViewFrame.origin.x += horizontalInset
-//        cardViewFrame.origin.y += verticalInset
+        cardViewFrame.size.width -= 2 * horizontalInset
+        cardViewFrame.origin.x += horizontalInset
+        cardViewFrame.origin.y += verticalInset
         
         cardView.frame = cardViewFrame
     }
@@ -84,6 +89,9 @@ class StackContainerView: UIView, SwipeCardsDelegate {
         cardViews = []
     }
     
+}
+
+extension SwipeCardStackView: SwipeCardsDelegate {
     func swipeDidEnd(on view: SwipeCardView) {
         guard let datasource = dataSource else { return }
         view.removeFromSuperview()
@@ -99,7 +107,7 @@ class StackContainerView: UIView, SwipeCardsDelegate {
                 })
             }
 
-        } else {
+        }else {
             for (cardIndex, cardView) in visibleCards.reversed().enumerated() {
                 UIView.animate(withDuration: 0.2, animations: {
                     cardView.center = self.center
@@ -109,7 +117,4 @@ class StackContainerView: UIView, SwipeCardsDelegate {
             }
         }
     }
-    
-
 }
-

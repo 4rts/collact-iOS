@@ -15,7 +15,7 @@ class ProfilePopupVC: BaseVC {
     @IBOutlet weak var historyCountLabel: UILabel!
     @IBOutlet weak var collectorCountLabel: UILabel!
     @IBOutlet weak var chatableLabel: UILabel!
-    var swipeCardView: MJSwipeCardView!
+    var swipeCardView: SwipeCardView!
     
     override func loadView() {
         super.loadView()
@@ -33,7 +33,7 @@ class ProfilePopupVC: BaseVC {
     
     
     func configureSwipeCardView() {
-        swipeCardView = MJSwipeCardView()
+        swipeCardView = SwipeCardView()
         swipeCardView.translatesAutoresizingMaskIntoConstraints = false
         swipeCardContainerView.addSubview(swipeCardView)
         
