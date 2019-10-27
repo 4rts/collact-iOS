@@ -32,6 +32,7 @@
 		B5491CBA2360DE62009EDCB7 /* SwipeCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5491CB92360DE62009EDCB7 /* SwipeCardModel.swift */; };
 		B5491CBE236368A0009EDCB7 /* SwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5491CBC2363689F009EDCB7 /* SwipeCardView.swift */; };
 		B5491CBF236368A0009EDCB7 /* StackContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5491CBD236368A0009EDCB7 /* StackContainerView.swift */; };
+		B55C5CA723658CA300AE449E /* ProfilePopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55C5CA623658CA300AE449E /* ProfilePopupVC.swift */; };
 		B56A903423525B390077443B /* TodayArtistView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B56A903323525B390077443B /* TodayArtistView.xib */; };
 		B56A903623525B4B0077443B /* TodayArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56A903523525B4B0077443B /* TodayArtistView.swift */; };
 		B5710E07234FA6F30099FCFA /* SignUp8VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5710E06234FA6F30099FCFA /* SignUp8VC.swift */; };
@@ -129,6 +130,7 @@
 		B5491CB92360DE62009EDCB7 /* SwipeCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardModel.swift; sourceTree = "<group>"; };
 		B5491CBC2363689F009EDCB7 /* SwipeCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeCardView.swift; sourceTree = "<group>"; };
 		B5491CBD236368A0009EDCB7 /* StackContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackContainerView.swift; sourceTree = "<group>"; };
+		B55C5CA623658CA300AE449E /* ProfilePopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePopupVC.swift; sourceTree = "<group>"; };
 		B56A903323525B390077443B /* TodayArtistView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayArtistView.xib; sourceTree = "<group>"; };
 		B56A903523525B4B0077443B /* TodayArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayArtistView.swift; sourceTree = "<group>"; };
 		B5710E06234FA6F30099FCFA /* SignUp8VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp8VC.swift; sourceTree = "<group>"; };
@@ -372,6 +374,7 @@
 			children = (
 				B57ABB6923409EA90057964E /* Profile.storyboard */,
 				B57ABB7723409F440057964E /* ProfileVC.swift */,
+				B55C5CA623658CA300AE449E /* ProfilePopupVC.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -756,6 +759,7 @@
 				B5710E07234FA6F30099FCFA /* SignUp8VC.swift in Sources */,
 				B5710E0E2351C4D80099FCFA /* ChatVC.swift in Sources */,
 				B540716023531F1C006F57F0 /* EnumModel.swift in Sources */,
+				B55C5CA723658CA300AE449E /* ProfilePopupVC.swift in Sources */,
 				B51E1D632340ADFE004AFDA2 /* NetworkAPI.swift in Sources */,
 				B5192879233C7AA300BBFBCD /* AppDelegate.swift in Sources */,
 				B5407163235322BF006F57F0 /* RecentlyCollaboView.swift in Sources */,
