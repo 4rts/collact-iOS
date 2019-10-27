@@ -40,6 +40,8 @@
 		B5710E0C2351C4CE0099FCFA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5710E0B2351C4CE0099FCFA /* Home.storyboard */; };
 		B5710E0E2351C4D80099FCFA /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5710E0D2351C4D80099FCFA /* ChatVC.swift */; };
 		B572A2F82340D66100C3C88E /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572A2F72340D66100C3C88E /* BaseVC.swift */; };
+		B57366B12365D299009D34FA /* MJSwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57366B02365D299009D34FA /* MJSwipeCardView.swift */; };
+		B57366B32365FACE009D34FA /* MJSwipeCardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57366B22365FACE009D34FA /* MJSwipeCardStackView.swift */; };
 		B57ABB6A23409EA90057964E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57ABB6923409EA90057964E /* Profile.storyboard */; };
 		B57ABB6C23409EB60057964E /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57ABB6B23409EB60057964E /* Search.storyboard */; };
 		B57ABB6E23409EBF0057964E /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57ABB6D23409EBF0057964E /* Chat.storyboard */; };
@@ -138,6 +140,8 @@
 		B5710E0B2351C4CE0099FCFA /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		B5710E0D2351C4D80099FCFA /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		B572A2F72340D66100C3C88E /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		B57366B02365D299009D34FA /* MJSwipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJSwipeCardView.swift; sourceTree = "<group>"; };
+		B57366B22365FACE009D34FA /* MJSwipeCardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJSwipeCardStackView.swift; sourceTree = "<group>"; };
 		B57ABB6923409EA90057964E /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		B57ABB6B23409EB60057964E /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		B57ABB6D23409EBF0057964E /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
@@ -375,6 +379,8 @@
 				B57ABB6923409EA90057964E /* Profile.storyboard */,
 				B57ABB7723409F440057964E /* ProfileVC.swift */,
 				B55C5CA623658CA300AE449E /* ProfilePopupVC.swift */,
+				B57366B02365D299009D34FA /* MJSwipeCardView.swift */,
+				B57366B22365FACE009D34FA /* MJSwipeCardStackView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -770,9 +776,11 @@
 				B57ABB7423409F140057964E /* HomeVC.swift in Sources */,
 				B57ABB7823409F440057964E /* ProfileVC.swift in Sources */,
 				B519287B233C7AA300BBFBCD /* SceneDelegate.swift in Sources */,
+				B57366B32365FACE009D34FA /* MJSwipeCardStackView.swift in Sources */,
 				B51E1D652340AE67004AFDA2 /* CodePreference.swift in Sources */,
 				B57ABB7223409EFD0057964E /* SignInVC.swift in Sources */,
 				B56A903623525B4B0077443B /* TodayArtistView.swift in Sources */,
+				B57366B12365D299009D34FA /* MJSwipeCardView.swift in Sources */,
 				B5AF433D23422A1E00EFAA7E /* ColorExtension.swift in Sources */,
 				B5AF43972349CFCA00EFAA7E /* SignUp6VC.swift in Sources */,
 				B5710E09234FA72E0099FCFA /* SignUp9VC.swift in Sources */,
