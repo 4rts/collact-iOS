@@ -2,9 +2,8 @@
 //  SwipeCardView.swift
 //  collact
 //
-//  Edited by minjae on 2019/10/28.
-//  Created by Osama Naeem on 2019/03/16.
-//  Copyright © 2019 NexThings. All rights reserved.
+//  Created by minjae on 09/09/2019.
+//  Copyright © 2019 minjae. All rights reserved.
 //
 
 import UIKit
@@ -61,10 +60,10 @@ class SwipeCardView: UIView {
     //MARK: - Configuration
     
     func configureViewSize() {
-        if UIDevice.current.isiPhoneXS || UIDevice.current.isiPhoneXSMAX  {
+        if (UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.phone) && UIScreen.main.bounds.size.height >= 812 {
             viewSize = CGSize(width: 280, height: 420)
         } else {
-            viewSize = CGSize(width: 233, height: 340)
+            viewSize = CGSize(width: 233, height: 360)
         }
     }
     
@@ -122,6 +121,7 @@ class SwipeCardView: UIView {
         linkButton.topAnchor.constraint(equalTo: descriptionView.topAnchor, constant: 0).isActive = true
         linkButton.trailingAnchor.constraint(equalTo: descriptionView.trailingAnchor, constant: 0).isActive = true
         linkButton.leadingAnchor.constraint(equalTo: linkTextLabel.trailingAnchor, constant: 0).isActive = true
+        linkButton.widthAnchor.constraint(equalToConstant: 52).isActive = true
     }
     
     func configureDescriptionTextLabel() {

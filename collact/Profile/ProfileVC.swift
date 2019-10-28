@@ -8,10 +8,9 @@
 
 import UIKit
 
-class ProfileVC: UIViewController {
-    
-    @IBOutlet weak var swipeCardContainerView: UIView!
+class ProfileVC: BaseVC {
 
+    @IBOutlet weak var swipeCardContainerView: UIView!
     var swipeCardStackView: SwipeCardStackView!
     
     var viewModelData = [SwipeCardModel(bgColor: UIColor(red:0.96, green:0.81, blue:0.46, alpha:1.0), text: "Hamburger", image: "demoImage1"),
@@ -23,24 +22,23 @@ class ProfileVC: UIViewController {
 
     override func loadView() {
         super.loadView()
-        
-        self.setSwipeCardContainerView()
+        setSwipeCardContainerView()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-    
+
     func setSwipeCardContainerView() {
         swipeCardStackView = SwipeCardStackView()
         swipeCardStackView.dataSource = self
         swipeCardStackView.translatesAutoresizingMaskIntoConstraints = false
         swipeCardContainerView.addSubview(swipeCardStackView)
         
-        swipeCardStackView.topAnchor.constraint(equalTo: swipeCardContainerView.topAnchor).isActive = true
-        swipeCardStackView.leadingAnchor.constraint(equalTo: swipeCardContainerView.leadingAnchor).isActive = true
+        swipeCardStackView.topAnchor.constraint(equalTo: swipeCardContainerView.topAnchor,constant: 100).isActive = true
+        swipeCardStackView.leadingAnchor.constraint(equalTo: swipeCardContainerView.leadingAnchor,constant: 100).isActive = true
         swipeCardStackView.trailingAnchor.constraint(equalTo: swipeCardContainerView.trailingAnchor).isActive = true
-        swipeCardStackView.bottomAnchor.constraint(equalTo: swipeCardContainerView.bottomAnchor).isActive = true
+        swipeCardStackView.bottomAnchor.constraint(equalTo: swipeCardContainerView.centerYAnchor).isActive = true
 
     }
     

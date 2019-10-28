@@ -2,9 +2,8 @@
 //  SwipeCardStackView.swift
 //  collact
 //
-//  Edited by minjae on 2019/10/28.
-//  Created by Osama Naeem on 2019/03/16.
-//  Copyright © 2019 NexThings. All rights reserved.
+//  Created by minjae on 09/09/2019.
+//  Copyright © 2019 minjae. All rights reserved.
 //
 
 import UIKit
@@ -58,7 +57,6 @@ class SwipeCardStackView: UIView {
         
         for i in 0..<min(numberOfCardsToShow,cardsToBeVisible) {
             addCardView(cardView: datasource.card(at: i), atIndex: i )
-            
         }
     }
     //MARK: - Configurations
@@ -75,9 +73,9 @@ class SwipeCardStackView: UIView {
         let horizontalInset = (CGFloat(index) * self.horizontalInset)
         let verticalInset = CGFloat(index) * self.verticalInset
         
-        cardViewFrame.size.width -= 2 * horizontalInset
-        cardViewFrame.origin.x += horizontalInset
-        cardViewFrame.origin.y += verticalInset
+//        cardViewFrame.size.width -= 2 * horizontalInset
+//        cardViewFrame.origin.x += horizontalInset
+//        cardViewFrame.origin.y += verticalInset
         
         cardView.frame = cardViewFrame
     }
