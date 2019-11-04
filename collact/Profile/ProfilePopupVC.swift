@@ -15,8 +15,9 @@ class ProfilePopupVC: BaseVC {
     @IBOutlet weak var historyCountLabel: UILabel!
     @IBOutlet weak var collectorCountLabel: UILabel!
     @IBOutlet weak var chatableLabel: UILabel!
-//    var swipeCardView: SwipeCardView!
     
+    var swipeCardView: SwipeCardView!
+    var aaa = [1,2,3,4]
     override func loadView() {
         super.loadView()
         configureSwipeCardView()
@@ -34,8 +35,10 @@ class ProfilePopupVC: BaseVC {
     
     func configureSwipeCardView() {
         let array = [0,7,-7,0]
-        for i in array {
+        for (index,i) in array.enumerated() {
             let swipeCardView = SwipeCardView()
+            swipeCardView.tag = aaa[index]
+            swipeCardView.delegate = self
             swipeCardView.transform = CGAffineTransform(rotationAngle: (CGFloat(i) * .pi) / 180.0)
             swipeCardView.translatesAutoresizingMaskIntoConstraints = false
             swipeCardContainerView.addSubview(swipeCardView)
@@ -52,4 +55,14 @@ class ProfilePopupVC: BaseVC {
     }
     
 
+}
+
+extension ProfilePopupVC: SwipeCardsDelegate {
+    func swipeDidEnd(on view: SwipeCardView) {
+        view.removeFromSuperview()
+//        aaa.remove(at: view)
+        aaa.append(view.tag)
+        configureSwipeCardView()
+        print("\(view.tag)")
+    }
 }
