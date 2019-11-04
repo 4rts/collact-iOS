@@ -65,4 +65,24 @@ class BaseVC: UIViewController {
             callback()
         }
     }
+    
+    func startPopupAnimation(_ animations : @escaping () -> Void){
+        UIView.animate(withDuration: 0.4,
+                       delay: 0,
+                       usingSpringWithDamping: 1.0,
+                       initialSpringVelocity: 1.0,
+                       options: .curveEaseInOut,
+                       animations: animations,
+                       completion: nil)
+    }
+    
+    func dismissPopupAnimation(_ animations : @escaping () -> Void, _ completion : @escaping (Bool) -> Void){
+        UIView.animate(withDuration: 0.4,
+                       delay: 0,
+                       usingSpringWithDamping: 1.0,
+                       initialSpringVelocity: 1.0,
+                       options: .curveEaseInOut,
+                       animations: animations,
+                       completion: completion)
+    }
 }
