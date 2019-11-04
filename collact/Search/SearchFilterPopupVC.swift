@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchFilterPopupVC: BaseVC {
+class SearchFilterPopupVC: PopupVC {
 
     @IBOutlet weak var alphaView: UIView!
     @IBOutlet weak var popupView: UIView!

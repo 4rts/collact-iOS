@@ -40,7 +40,11 @@
 		B572A2F82340D66100C3C88E /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572A2F72340D66100C3C88E /* BaseVC.swift */; };
 		B57366B12365D299009D34FA /* SwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57366B02365D299009D34FA /* SwipeCardView.swift */; };
 		B57366B32365FACE009D34FA /* SwipeCardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57366B22365FACE009D34FA /* SwipeCardStackView.swift */; };
+		B57366B62370A577009D34FA /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57366B52370A577009D34FA /* RangeSlider.swift */; };
+		B57366B82370A59B009D34FA /* RangeSliderThumbLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57366B72370A59B009D34FA /* RangeSliderThumbLayer.swift */; };
+		B57366BA2370A5A8009D34FA /* RangeSliderTrackLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57366B92370A5A8009D34FA /* RangeSliderTrackLayer.swift */; };
 		B57366BC2370A9DC009D34FA /* SearchFilterPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57366BB2370A9DC009D34FA /* SearchFilterPopupVC.swift */; };
+		B57366BE2370AE02009D34FA /* PopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57366BD2370AE02009D34FA /* PopupVC.swift */; };
 		B57ABB6A23409EA90057964E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57ABB6923409EA90057964E /* Profile.storyboard */; };
 		B57ABB6C23409EB60057964E /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57ABB6B23409EB60057964E /* Search.storyboard */; };
 		B57ABB6E23409EBF0057964E /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57ABB6D23409EBF0057964E /* Chat.storyboard */; };
@@ -139,7 +143,11 @@
 		B572A2F72340D66100C3C88E /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		B57366B02365D299009D34FA /* SwipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardView.swift; sourceTree = "<group>"; };
 		B57366B22365FACE009D34FA /* SwipeCardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardStackView.swift; sourceTree = "<group>"; };
+		B57366B52370A577009D34FA /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
+		B57366B72370A59B009D34FA /* RangeSliderThumbLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSliderThumbLayer.swift; sourceTree = "<group>"; };
+		B57366B92370A5A8009D34FA /* RangeSliderTrackLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSliderTrackLayer.swift; sourceTree = "<group>"; };
 		B57366BB2370A9DC009D34FA /* SearchFilterPopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilterPopupVC.swift; sourceTree = "<group>"; };
+		B57366BD2370AE02009D34FA /* PopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupVC.swift; sourceTree = "<group>"; };
 		B57ABB6923409EA90057964E /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		B57ABB6B23409EB60057964E /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		B57ABB6D23409EBF0057964E /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
@@ -342,6 +350,16 @@
 			path = Chat;
 			sourceTree = "<group>";
 		};
+		B57366B42370A53B009D34FA /* RangeSlider */ = {
+			isa = PBXGroup;
+			children = (
+				B57366B52370A577009D34FA /* RangeSlider.swift */,
+				B57366B72370A59B009D34FA /* RangeSliderThumbLayer.swift */,
+				B57366B92370A5A8009D34FA /* RangeSliderTrackLayer.swift */,
+			);
+			path = RangeSlider;
+			sourceTree = "<group>";
+		};
 		B57ABB6023409A630057964E /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,6 +367,7 @@
 				B5AF433323422A1E00EFAA7E /* Extension */,
 				B51E1D642340AE67004AFDA2 /* CodePreference.swift */,
 				B572A2F72340D66100C3C88E /* BaseVC.swift */,
+				B57366BD2370AE02009D34FA /* PopupVC.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -441,6 +460,7 @@
 		B5AF434123422E2200EFAA7E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B57366B42370A53B009D34FA /* RangeSlider */,
 				B5AF43A2234CD54D00EFAA7E /* CustomSlider */,
 				B5AF43912349C88F00EFAA7E /* GenrePickerCVC */,
 				B5491CBB2363687A009EDCB7 /* SwipeCardView */,
@@ -762,6 +782,8 @@
 				B5710E07234FA6F30099FCFA /* SignUp8VC.swift in Sources */,
 				B5710E0E2351C4D80099FCFA /* ChatVC.swift in Sources */,
 				B540716023531F1C006F57F0 /* EnumModel.swift in Sources */,
+				B57366B62370A577009D34FA /* RangeSlider.swift in Sources */,
+				B57366B82370A59B009D34FA /* RangeSliderThumbLayer.swift in Sources */,
 				B55C5CA723658CA300AE449E /* ProfilePopupVC.swift in Sources */,
 				B51E1D632340ADFE004AFDA2 /* NetworkAPI.swift in Sources */,
 				B5192879233C7AA300BBFBCD /* AppDelegate.swift in Sources */,
@@ -785,6 +807,7 @@
 				B5AF4387234905FC00EFAA7E /* SignUp4VC.swift in Sources */,
 				B57366BC2370A9DC009D34FA /* SearchFilterPopupVC.swift in Sources */,
 				B5FFB7C02340A84E0098B113 /* BaseForm.swift in Sources */,
+				B57366BE2370AE02009D34FA /* PopupVC.swift in Sources */,
 				B540716F235349F2006F57F0 /* CollaboCardCVC.swift in Sources */,
 				B5FFB7C12340A84E0098B113 /* BaseResponse.swift in Sources */,
 				B5117AC72360B51B008F4273 /* CollaboDetailWatchingVC.swift in Sources */,
@@ -793,6 +816,7 @@
 				B5FFB7C22340A84E0098B113 /* BaseController.swift in Sources */,
 				B5E7A431235641B6004C66C7 /* CollaboDetailVC.swift in Sources */,
 				B57ABB7623409F2F0057964E /* SearchVC.swift in Sources */,
+				B57366BA2370A5A8009D34FA /* RangeSliderTrackLayer.swift in Sources */,
 				B5AF43812348E48B00EFAA7E /* SignUp2VC.swift in Sources */,
 				B51E1D692340B1C7004AFDA2 /* MainVC.swift in Sources */,
 				B5AF433B23422A1E00EFAA7E /* LabelExtension.swift in Sources */,
