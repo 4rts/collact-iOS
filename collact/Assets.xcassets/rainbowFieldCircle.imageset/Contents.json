@@ -3,17 +3,17 @@
     {
       "scale" : "1x",
       "idiom" : "universal",
-      "filename" : "icSearch.png"
+      "filename" : "rainbowFieldCircle.png"
     },
     {
       "scale" : "2x",
       "idiom" : "universal",
-      "filename" : "icSearch@2x.png"
+      "filename" : "rainbowFieldCircle@2x.png"
     },
     {
       "scale" : "3x",
       "idiom" : "universal",
-      "filename" : "icSearch@3x.png"
+      "filename" : "rainbowFieldCircle@3x.png"
     }
   ],
   "info" : {
