@@ -15,13 +15,10 @@ class SearchFilterPopupVC: PopupVC {
     
     let rangeSlider = RangeSlider(frame: .zero)
     
-    override func loadView() {
-        super.loadView()
-        setRangeSlider()
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setRangeSlider()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -45,15 +42,15 @@ class SearchFilterPopupVC: PopupVC {
     }
     
     func setRangeSlider() {
-        rangeSlider.frame = CGRect(x: 0, y: 0, width: popupView.frame.width, height: 90)
+        rangeSlider.frame = CGRect(x: 0, y: 0, width: popupView.frame.width - 48, height: 42)
         rangeSlider.translatesAutoresizingMaskIntoConstraints = false
         rangeSlider.addTarget(self, action: #selector(rangeSliderValueChanged(rangeSlider:)), for: .valueChanged)
         popupView.addSubview(rangeSlider)
         
-        rangeSlider.leftAnchor.constraint(equalTo: popupView.leftAnchor).isActive = true
-        rangeSlider.rightAnchor.constraint(equalTo: popupView.rightAnchor).isActive = true
-        rangeSlider.bottomAnchor.constraint(equalTo: popupView.bottomAnchor).isActive = true
-        rangeSlider.heightAnchor.constraint(equalToConstant: 90).isActive = true
+        rangeSlider.leftAnchor.constraint(equalTo: popupView.leftAnchor, constant: 24).isActive = true
+        rangeSlider.rightAnchor.constraint(equalTo: popupView.rightAnchor, constant: -24).isActive = true
+        rangeSlider.bottomAnchor.constraint(equalTo: popupView.bottomAnchor, constant: -40).isActive = true
+        rangeSlider.heightAnchor.constraint(equalToConstant: 42).isActive = true
     }
     
     @objc func rangeSliderValueChanged(rangeSlider: RangeSlider) {

@@ -11,7 +11,16 @@ import QuartzCore
 
 class RangeSliderThumbLayer: CALayer {
     
-    var dd = CATextLayer()
+    var thumbValueTextLayer: CATextLayer = {
+        let textLayer = CATextLayer()
+        textLayer.string = "3"
+        textLayer.font = UIFont(name: "Mont", size: 14)
+        textLayer.fontSize = 14
+        textLayer.alignmentMode = .center
+        textLayer.foregroundColor = UIColor.black.cgColor
+        return textLayer
+    }()
+    
     var highlighted: Bool = false {
         didSet {
             setNeedsDisplay()
@@ -21,27 +30,26 @@ class RangeSliderThumbLayer: CALayer {
     weak var rangeSlider: RangeSlider?
     
     override func draw(in ctx: CGContext) {
-        dd.frame = CGRect(x: 0, y: -100, width: 100, height: 50)
-        dd.string = "afaf"
-        dd.foregroundColor = CGColor.init(srgbRed: 100, green: 0, blue: 0, alpha: 1.0)
-        self.addSublayer(dd)
+        thumbValueTextLayer.frame = CGRect(x: 0, y: -16, width: self.frame.width, height: 17)
+        self.addSublayer(thumbValueTextLayer)
+        
         if let slider = rangeSlider {
-            
-            let thumbFrame = bounds.insetBy(dx: 2.0, dy: 2.0)
+
+            let thumbFrame = bounds
             let cornerRadius = thumbFrame.height * slider.curvaceousness / 2.0
             let thumbPath = UIBezierPath(roundedRect: thumbFrame, cornerRadius: cornerRadius)
             
             // Fill - with a subtle shadow
             let shadowColor = UIColor.white
-            ctx.setShadow(offset: CGSize(width: 0.0, height: 2.0), blur: 1.0, color: shadowColor.cgColor)
+            ctx.setShadow(offset: CGSize(width: 0.0, height: 0.0), blur: 1.0, color: shadowColor.cgColor)
             ctx.setFillColor(slider.thumbTintColor.cgColor)
             ctx.addPath(thumbPath.cgPath)
             ctx.fillPath()
             
             // Outline
-            
+        
             ctx.setStrokeColor(shadowColor.cgColor)
-            ctx.setLineWidth(0.5)
+            ctx.setLineWidth(5)
             ctx.addPath(thumbPath.cgPath)
             ctx.strokePath()
             

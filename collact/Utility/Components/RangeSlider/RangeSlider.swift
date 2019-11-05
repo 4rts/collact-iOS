@@ -15,9 +15,6 @@ class RangeSlider: UIControl {
     let lowerThumbLayer: RangeSliderThumbLayer = RangeSliderThumbLayer()
     let upperThumbLayer: RangeSliderThumbLayer = RangeSliderThumbLayer()
     var previousLocation: CGPoint = CGPoint()
-    var thumbWidth: CGFloat {
-        return CGFloat(bounds.height)
-    }
     
     override var frame: CGRect {
         didSet {
@@ -30,6 +27,7 @@ class RangeSlider: UIControl {
     var trackHighlightTintColor: UIColor = UIColor(hex: "#000000")
     var thumbTintColor: UIColor = .black
     var curvaceousness: CGFloat = 1.0
+    var thumbWidth: CGFloat = 28
     
     var minimumValue = 0.0
     var maximumValue = 1.0
@@ -62,17 +60,17 @@ class RangeSlider: UIControl {
     }
 
     func updateLayerFrames() {
-        trackLayer.frame = bounds.insetBy(dx: 0.0, dy: bounds.height/3)
+        trackLayer.frame = CGRect(x: 0, y: self.frame.height/2 - 4,
+                                  width: self.frame.width, height: 4)
         trackLayer.setNeedsDisplay()
         
         let lowerThumbCenter = CGFloat(positionForValue(value: lowerValue))
-        
-        lowerThumbLayer.frame = CGRect(x: lowerThumbCenter - thumbWidth / 2.0, y: 0.0,
+        lowerThumbLayer.frame = CGRect(x: lowerThumbCenter - thumbWidth / 2.0, y: 4,
                                        width: thumbWidth, height: thumbWidth)
         lowerThumbLayer.setNeedsDisplay()
         
         let upperThumbCenter = CGFloat(positionForValue(value: upperValue))
-        upperThumbLayer.frame = CGRect(x: upperThumbCenter - thumbWidth / 2.0, y: 0.0,
+        upperThumbLayer.frame = CGRect(x: upperThumbCenter - thumbWidth / 2.0, y: 4,
                                        width: thumbWidth, height: thumbWidth)
         upperThumbLayer.setNeedsDisplay()
     }
