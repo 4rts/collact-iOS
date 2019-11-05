@@ -21,25 +21,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchTitle" translatesAutoresizingMaskIntoConstraints="NO" id="F2h-wa-qhq">
-                                <rect key="frame" x="24" y="274" width="138" height="26"/>
+                                <rect key="frame" x="24" y="274" width="276" height="52"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RqW-R3-jcM">
-                                <rect key="frame" x="24" y="320" width="82" height="32.5"/>
+                                <rect key="frame" x="24" y="346" width="67" height="42"/>
                                 <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5F-Ho-IAr">
-                                <rect key="frame" x="0.0" y="352.5" width="253" height="120"/>
+                                <rect key="frame" x="0.0" y="388" width="506" height="240"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBb-3w-Oxi">
-                                        <rect key="frame" x="0.0" y="0.0" width="253" height="120"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="506" height="240"/>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rainbowField" translatesAutoresizingMaskIntoConstraints="NO" id="ogS-gM-Zvc">
-                                        <rect key="frame" x="0.0" y="0.0" width="253.00000000000006" height="120"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="506" height="240"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Fields" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFJ-NW-pY4">
-                                        <rect key="frame" x="80.5" y="51" width="92" height="18"/>
+                                        <rect key="frame" x="213" y="108.5" width="80.5" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -60,7 +60,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPO-Jh-0fs">
-                                <rect key="frame" x="287" y="382.5" width="60" height="60"/>
+                                <rect key="frame" x="238" y="466" width="84" height="84"/>
                                 <inset key="contentEdgeInsets" minX="18" minY="18" maxX="18" maxY="18"/>
                                 <state key="normal" image="icFilter"/>
                                 <connections>
@@ -68,12 +68,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYk-bp-em9">
-                                <rect key="frame" x="347" y="382.5" width="61" height="60"/>
+                                <rect key="frame" x="322" y="466" width="86" height="84"/>
                                 <inset key="contentEdgeInsets" minX="18" minY="18" maxX="18" maxY="18"/>
                                 <state key="normal" image="icSearch"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDO-L8-Vpe">
-                                <rect key="frame" x="350" y="44" width="56" height="58"/>
+                                <rect key="frame" x="330" y="44" width="76" height="76"/>
                                 <inset key="contentEdgeInsets" minX="18" minY="18" maxX="18" maxY="18"/>
                                 <state key="normal" image="icHelpGray3"/>
                             </button>
@@ -178,11 +178,11 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="CUc-Gv-yDo">
                                                 <rect key="frame" x="24" y="51.5" width="318" height="30"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZf-nu-YR1">
+                                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZf-nu-YR1">
                                                         <rect key="frame" x="0.0" y="0.0" width="102.5" height="30"/>
                                                         <color key="backgroundColor" red="0.89411764705882346" green="0.90980392156862744" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
-                                                        <state key="normal" title="Button">
+                                                        <state key="normal" title="대중예술">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -190,12 +190,15 @@
                                                                 <real key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="pickArtTaste:" destination="igd-Ym-Hka" eventType="touchUpInside" id="fuw-y0-Da2"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2C-mU-jJX">
                                                         <rect key="frame" x="107.5" y="0.0" width="103" height="30"/>
                                                         <color key="backgroundColor" red="0.89411764709999997" green="0.90980392160000001" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
-                                                        <state key="normal" title="Button">
+                                                        <state key="normal" title="상관없음">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -203,12 +206,15 @@
                                                                 <real key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="pickArtTaste:" destination="igd-Ym-Hka" eventType="touchUpInside" id="rgq-Q1-uS1"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDr-sb-qp6">
+                                                    <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDr-sb-qp6">
                                                         <rect key="frame" x="215.5" y="0.0" width="102.5" height="30"/>
                                                         <color key="backgroundColor" red="0.89411764709999997" green="0.90980392160000001" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
-                                                        <state key="normal" title="Button">
+                                                        <state key="normal" title="순수예술">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <userDefinedRuntimeAttributes>
@@ -216,6 +222,9 @@
                                                                 <real key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="pickArtTaste:" destination="igd-Ym-Hka" eventType="touchUpInside" id="PkQ-31-hWQ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -276,6 +285,9 @@
                     <navigationItem key="navigationItem" id="FXi-Q1-b9R"/>
                     <connections>
                         <outlet property="alphaView" destination="R8L-Zx-bRE" id="qhC-QL-hHt"/>
+                        <outlet property="anythingButton" destination="t2C-mU-jJX" id="bVl-Ge-9ja"/>
+                        <outlet property="commercialArtButton" destination="JZf-nu-YR1" id="Dcp-nL-ekX"/>
+                        <outlet property="fineArtButton" destination="XDr-sb-qp6" id="Nx5-vv-85s"/>
                         <outlet property="popupView" destination="FsJ-as-bVr" id="sSP-B2-ctW"/>
                     </connections>
                 </viewController>

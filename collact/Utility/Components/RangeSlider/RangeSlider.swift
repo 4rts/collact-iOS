@@ -69,11 +69,13 @@ class RangeSlider: UIControl {
         let lowerThumbCenter = CGFloat(positionForValue(value: lowerValue))
         lowerThumbLayer.frame = CGRect(x: lowerThumbCenter - thumbWidth / 2.0, y: 4,
                                        width: thumbWidth, height: thumbWidth)
+        lowerThumbLayer.locationValue = lowerValue
         lowerThumbLayer.setNeedsDisplay()
         
         let upperThumbCenter = CGFloat(positionForValue(value: upperValue))
         upperThumbLayer.frame = CGRect(x: upperThumbCenter - thumbWidth / 2.0, y: 4,
                                        width: thumbWidth, height: thumbWidth)
+        upperThumbLayer.locationValue = upperValue
         upperThumbLayer.setNeedsDisplay()
     }
 
@@ -108,11 +110,9 @@ class RangeSlider: UIControl {
         if lowerThumbLayer.highlighted {
             lowerValue += deltaValue
             lowerValue = boundValue(value: lowerValue, toLowerValue: minimumValue, upperValue: upperValue - 0.1)
-            lowerThumbLayer.locationValue = lowerValue
         } else if upperThumbLayer.highlighted {
             upperValue += deltaValue
             upperValue = boundValue(value: upperValue, toLowerValue: lowerValue + 0.1, upperValue: maximumValue)
-            upperThumbLayer.locationValue = upperValue
         }
         
         CATransaction.begin()

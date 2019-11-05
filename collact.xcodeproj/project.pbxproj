@@ -22,7 +22,6 @@
 		B51E1D652340AE67004AFDA2 /* CodePreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E1D642340AE67004AFDA2 /* CodePreference.swift */; };
 		B51E1D672340B163004AFDA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51E1D662340B163004AFDA2 /* Main.storyboard */; };
 		B51E1D692340B1C7004AFDA2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E1D682340B1C7004AFDA2 /* MainVC.swift */; };
-		B540716023531F1C006F57F0 /* EnumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540715F23531F1C006F57F0 /* EnumModel.swift */; };
 		B5407163235322BF006F57F0 /* RecentlyCollaboView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5407162235322BF006F57F0 /* RecentlyCollaboView.swift */; };
 		B5407165235322D4006F57F0 /* RecentlyCollaboView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5407164235322D4006F57F0 /* RecentlyCollaboView.xib */; };
 		B540716F235349F2006F57F0 /* CollaboCardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540716D235349F2006F57F0 /* CollaboCardCVC.swift */; };
@@ -45,6 +44,7 @@
 		B57366BA2370A5A8009D34FA /* RangeSliderTrackLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57366B92370A5A8009D34FA /* RangeSliderTrackLayer.swift */; };
 		B57366BC2370A9DC009D34FA /* SearchFilterPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57366BB2370A9DC009D34FA /* SearchFilterPopupVC.swift */; };
 		B57366BE2370AE02009D34FA /* PopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57366BD2370AE02009D34FA /* PopupVC.swift */; };
+		B57366C02371AC5F009D34FA /* EnumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57366BF2371AC5F009D34FA /* EnumModel.swift */; };
 		B57ABB6A23409EA90057964E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57ABB6923409EA90057964E /* Profile.storyboard */; };
 		B57ABB6C23409EB60057964E /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57ABB6B23409EB60057964E /* Search.storyboard */; };
 		B57ABB6E23409EBF0057964E /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57ABB6D23409EBF0057964E /* Chat.storyboard */; };
@@ -124,7 +124,6 @@
 		B51E1D642340AE67004AFDA2 /* CodePreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePreference.swift; sourceTree = "<group>"; };
 		B51E1D662340B163004AFDA2 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B51E1D682340B1C7004AFDA2 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
-		B540715F23531F1C006F57F0 /* EnumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumModel.swift; sourceTree = "<group>"; };
 		B5407162235322BF006F57F0 /* RecentlyCollaboView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyCollaboView.swift; sourceTree = "<group>"; };
 		B5407164235322D4006F57F0 /* RecentlyCollaboView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentlyCollaboView.xib; sourceTree = "<group>"; };
 		B540716D235349F2006F57F0 /* CollaboCardCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaboCardCVC.swift; sourceTree = "<group>"; };
@@ -147,6 +146,7 @@
 		B57366B92370A5A8009D34FA /* RangeSliderTrackLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSliderTrackLayer.swift; sourceTree = "<group>"; };
 		B57366BB2370A9DC009D34FA /* SearchFilterPopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilterPopupVC.swift; sourceTree = "<group>"; };
 		B57366BD2370AE02009D34FA /* PopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupVC.swift; sourceTree = "<group>"; };
+		B57366BF2371AC5F009D34FA /* EnumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumModel.swift; sourceTree = "<group>"; };
 		B57ABB6923409EA90057964E /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		B57ABB6B23409EB60057964E /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		B57ABB6D23409EBF0057964E /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
@@ -364,6 +364,7 @@
 				B5AF434123422E2200EFAA7E /* Components */,
 				B5AF433323422A1E00EFAA7E /* Extension */,
 				B51E1D642340AE67004AFDA2 /* CodePreference.swift */,
+				B57366BF2371AC5F009D34FA /* EnumModel.swift */,
 				B572A2F72340D66100C3C88E /* BaseVC.swift */,
 				B57366BD2370AE02009D34FA /* PopupVC.swift */,
 			);
@@ -463,7 +464,6 @@
 				B5491CBB2363687A009EDCB7 /* SwipeCardView */,
 				B5AF433523422A1E00EFAA7E /* BorderView.swift */,
 				B5AF434223422E9000EFAA7E /* MontTextFieldView.swift */,
-				B540715F23531F1C006F57F0 /* EnumModel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -769,8 +769,8 @@
 				B5AF43832348E49600EFAA7E /* SignUp3VC.swift in Sources */,
 				B5710E07234FA6F30099FCFA /* SignUp8VC.swift in Sources */,
 				B5710E0E2351C4D80099FCFA /* ChatVC.swift in Sources */,
-				B540716023531F1C006F57F0 /* EnumModel.swift in Sources */,
 				B57366B62370A577009D34FA /* RangeSlider.swift in Sources */,
+				B57366C02371AC5F009D34FA /* EnumModel.swift in Sources */,
 				B57366B82370A59B009D34FA /* RangeSliderThumbLayer.swift in Sources */,
 				B55C5CA723658CA300AE449E /* ProfilePopupVC.swift in Sources */,
 				B51E1D632340ADFE004AFDA2 /* NetworkAPI.swift in Sources */,
