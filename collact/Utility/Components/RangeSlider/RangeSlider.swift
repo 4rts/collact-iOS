@@ -31,8 +31,8 @@ class RangeSlider: UIControl {
     
     var minimumValue = 0.0
     var maximumValue = 1.0
-    var lowerValue = 0.2
-    var upperValue = 0.8
+    var lowerValue = 0.0
+    var upperValue = 1.0
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -107,11 +107,11 @@ class RangeSlider: UIControl {
         
         if lowerThumbLayer.highlighted {
             lowerValue += deltaValue
-            lowerValue = boundValue(value: lowerValue, toLowerValue: minimumValue, upperValue: upperValue)
+            lowerValue = boundValue(value: lowerValue, toLowerValue: minimumValue, upperValue: upperValue - 0.1)
             lowerThumbLayer.locationValue = lowerValue
         } else if upperThumbLayer.highlighted {
             upperValue += deltaValue
-            upperValue = boundValue(value: upperValue, toLowerValue: lowerValue, upperValue: maximumValue)
+            upperValue = boundValue(value: upperValue, toLowerValue: lowerValue + 0.1, upperValue: maximumValue)
             upperThumbLayer.locationValue = upperValue
         }
         

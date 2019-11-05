@@ -14,11 +14,11 @@ class SearchFilterPopupVC: PopupVC {
     @IBOutlet weak var popupView: UIView!
     
     let rangeSlider = RangeSlider(frame: .zero)
+    var rangeValue: [Int] = [0, 10]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setRangeSlider()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -29,6 +29,8 @@ class SearchFilterPopupVC: PopupVC {
             self.popupView.alpha = 1
             self.view.layoutIfNeeded()
         }
+        
+        setRangeSlider()
     }
     
     @IBAction func closePopupAction(_ sender: Any) {
@@ -54,7 +56,11 @@ class SearchFilterPopupVC: PopupVC {
     }
     
     @objc func rangeSliderValueChanged(rangeSlider: RangeSlider) {
-        print("Range slider value changed: (\(rangeSlider.lowerValue) \(rangeSlider.upperValue))")
+        rangeValue = [getRoundsValue(rangeSlider.lowerValue * 10), getRoundsValue(rangeSlider.lowerValue * 10)]
+    }
+    
+    func getRoundsValue(_ value: Double) -> Int {
+        return Int(ceil(value))
     }
     
 }
