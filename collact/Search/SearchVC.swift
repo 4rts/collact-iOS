@@ -10,7 +10,7 @@
 import UIKit
 
 class SearchVC: BaseVC {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -128,7 +128,7 @@
                                 </constraints>
                             </view>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FsJ-as-bVr">
-                                <rect key="frame" x="24" y="312" width="366" height="282"/>
+                                <rect key="frame" x="24" y="303" width="366" height="300"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTa-0p-b6w">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="80"/>
@@ -243,7 +243,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="282" id="1rK-6L-fzt"/>
+                                    <constraint firstAttribute="height" constant="300" id="1rK-6L-fzt"/>
                                     <constraint firstAttribute="trailing" secondItem="A2G-p2-Vhm" secondAttribute="trailing" id="3Qe-ff-EFl"/>
                                     <constraint firstAttribute="trailing" secondItem="rTa-0p-b6w" secondAttribute="trailing" id="JOY-ck-dcC"/>
                                     <constraint firstItem="iUX-6u-GqW" firstAttribute="leading" secondItem="FsJ-as-bVr" secondAttribute="leading" constant="24" id="PHz-gH-XA6"/>
