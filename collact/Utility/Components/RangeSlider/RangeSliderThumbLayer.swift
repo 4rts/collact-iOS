@@ -11,9 +11,9 @@ import QuartzCore
 
 class RangeSliderThumbLayer: CALayer {
     
-    var thumbValueTextLayer: CATextLayer = {
+    lazy var thumbValueTextLayer: CATextLayer = {
         let textLayer = CATextLayer()
-        textLayer.string = "3"
+        textLayer.string = "\(Int(ceil(locationValue * 10)))"
         textLayer.font = UIFont(name: "Mont", size: 14)
         textLayer.fontSize = 14
         textLayer.alignmentMode = .center
@@ -27,10 +27,12 @@ class RangeSliderThumbLayer: CALayer {
         }
     }
     
+    var locationValue: Double = 0
     weak var rangeSlider: RangeSlider?
     
     override func draw(in ctx: CGContext) {
         thumbValueTextLayer.frame = CGRect(x: 0, y: -16, width: self.frame.width, height: 17)
+        thumbValueTextLayer.string = "\(Int(ceil(locationValue * 10)))"
         self.addSublayer(thumbValueTextLayer)
         
         if let slider = rangeSlider {

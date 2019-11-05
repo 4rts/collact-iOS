@@ -43,10 +43,12 @@ class RangeSlider: UIControl {
         
         lowerThumbLayer.rangeSlider = self
         lowerThumbLayer.contentsScale = UIScreen.main.scale
+        lowerThumbLayer.locationValue = lowerValue
         layer.addSublayer(lowerThumbLayer)
         
         upperThumbLayer.rangeSlider = self
         upperThumbLayer.contentsScale = UIScreen.main.scale
+        upperThumbLayer.locationValue = upperValue
         layer.addSublayer(upperThumbLayer)
         
         updateLayerFrames()
@@ -106,9 +108,11 @@ class RangeSlider: UIControl {
         if lowerThumbLayer.highlighted {
             lowerValue += deltaValue
             lowerValue = boundValue(value: lowerValue, toLowerValue: minimumValue, upperValue: upperValue)
+            lowerThumbLayer.locationValue = lowerValue
         } else if upperThumbLayer.highlighted {
             upperValue += deltaValue
             upperValue = boundValue(value: upperValue, toLowerValue: lowerValue, upperValue: maximumValue)
+            upperThumbLayer.locationValue = upperValue
         }
         
         CATransaction.begin()
