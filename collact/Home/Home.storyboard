@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ecc-8m-LHs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ecc-8m-LHs">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -37,13 +37,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="collection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UQ-Nr-QhG">
-                                <rect key="frame" x="24" y="100" width="188.5" height="32.5"/>
+                                <rect key="frame" x="24" y="84" width="188.5" height="32.5"/>
                                 <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4C-kJ-HVC">
-                                <rect key="frame" x="190" y="152.5" width="13" height="36"/>
+                                <rect key="frame" x="190" y="132.5" width="13" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="yG7-cg-CgL"/>
                                 </constraints>
@@ -52,7 +52,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="of" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbu-jJ-O0b">
-                                <rect key="frame" x="24" y="152.5" width="39" height="36"/>
+                                <rect key="frame" x="24" y="132.5" width="39" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="jKz-XB-dhR"/>
                                 </constraints>
@@ -61,7 +61,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZN-Hm-Ppi">
-                                <rect key="frame" x="75" y="152.5" width="103" height="36"/>
+                                <rect key="frame" x="75" y="132.5" width="103" height="36"/>
                                 <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="36"/>
                                 <state key="normal" title="artist">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -71,7 +71,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4he-7d-WRJ">
-                                <rect key="frame" x="213" y="148" width="142" height="45"/>
+                                <rect key="frame" x="213" y="128" width="142" height="45"/>
                                 <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="36"/>
                                 <state key="normal" title="collabo">
                                     <color key="titleColor" white="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -81,7 +81,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8aA-h5-acn">
-                                <rect key="frame" x="24" y="218" width="327" height="36"/>
+                                <rect key="frame" x="24" y="198" width="327" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today’s Image artists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiZ-Qt-hPU">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="36"/>
@@ -101,7 +101,7 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRZ-wQ-BcC">
-                                <rect key="frame" x="0.0" y="274" width="375" height="393"/>
+                                <rect key="frame" x="0.0" y="254" width="375" height="413"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Gpg-cD-Qw5">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="330"/>
@@ -181,7 +181,7 @@
                                 </constraints>
                             </scrollView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gK0-b5-1Su">
-                                <rect key="frame" x="24" y="274" width="327" height="1"/>
+                                <rect key="frame" x="24" y="254" width="327" height="1"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XcW-nP-9FN">
                                         <rect key="frame" x="0.0" y="0.0" width="327" height="1"/>
@@ -210,8 +210,8 @@
                             <constraint firstItem="nRZ-wQ-BcC" firstAttribute="centerX" secondItem="8V3-Cc-aID" secondAttribute="centerX" id="TX9-MA-xId"/>
                             <constraint firstItem="gK0-b5-1Su" firstAttribute="top" secondItem="8aA-h5-acn" secondAttribute="bottom" constant="20" id="WPD-nl-vMv"/>
                             <constraint firstItem="8aA-h5-acn" firstAttribute="top" secondItem="4he-7d-WRJ" secondAttribute="bottom" constant="25" id="aDk-N2-7zZ"/>
-                            <constraint firstItem="Rbu-jJ-O0b" firstAttribute="top" secondItem="0UQ-Nr-QhG" secondAttribute="bottom" constant="20" id="cvg-vN-yBb"/>
-                            <constraint firstItem="0UQ-Nr-QhG" firstAttribute="top" secondItem="8V3-Cc-aID" secondAttribute="top" constant="56" id="eA9-dh-QNR"/>
+                            <constraint firstItem="Rbu-jJ-O0b" firstAttribute="top" secondItem="0UQ-Nr-QhG" secondAttribute="bottom" constant="16" id="cvg-vN-yBb"/>
+                            <constraint firstItem="0UQ-Nr-QhG" firstAttribute="top" secondItem="8V3-Cc-aID" secondAttribute="top" constant="40" id="eA9-dh-QNR"/>
                             <constraint firstItem="nRZ-wQ-BcC" firstAttribute="top" secondItem="8aA-h5-acn" secondAttribute="bottom" constant="20" id="ioB-Ng-8uP"/>
                             <constraint firstItem="8V3-Cc-aID" firstAttribute="trailing" secondItem="8aA-h5-acn" secondAttribute="trailing" constant="24" id="nke-et-olr"/>
                             <constraint firstItem="Rbu-jJ-O0b" firstAttribute="leading" secondItem="8V3-Cc-aID" secondAttribute="leading" constant="24" id="ogY-qt-RUY"/>
@@ -599,7 +599,7 @@
                                         <rect key="frame" x="24" y="672" width="327" height="409.5"/>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <mutableString key="content">날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  </mutableString>
+                                                <string key="content">날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  </string>
                                                 <attributes>
                                                     <font key="NSFont" size="14" name="AppleSDGothicNeo-Bold"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
@@ -659,6 +659,6 @@
         <image name="icCollect" width="24" height="24"/>
         <image name="icCollectionClick" width="26" height="22"/>
         <image name="icDelete20Px" width="18" height="19"/>
-        <image name="icLink" width="20" height="10"/>
+        <image name="icLink" width="20" height="21"/>
     </resources>
 </document>

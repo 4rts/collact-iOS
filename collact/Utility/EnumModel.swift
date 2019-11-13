@@ -15,3 +15,7 @@ enum ViewType: String {
 enum ArtTaste: String {
     case COMMERCIAL, FINE, ANYTHING
 }
+
+enum ChatStatus {
+    case REQUEST, PROGRESSED, COMPLETED
+}

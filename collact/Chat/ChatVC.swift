@@ -8,23 +8,59 @@
 
 import UIKit
 
+
+
 class ChatVC: UIViewController {
 
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        collectionView.delegate = self
+        collectionView.dataSource = self
+    }
 
-        // Do any additional setup after loading the view.
+}
+
+extension ChatVC: UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 50
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChatListItem", for: indexPath) as! ChatListItemCVC
+        return cell
     }
-    */
+}
 
+extension ChatVC: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: self.view.frame.width, height: 60)
+    }
+}
+
+class ChatListStatusCVC: UICollectionViewCell {
+    
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var statusCountLabel: UILabel!
+    @IBOutlet weak var statusImageView: UIImageView!
+    
+    func config(chatStatus: ChatStatus) {
+        
+    }
+}
+
+class ChatListItemCVC: UICollectionViewCell {
+    
+    @IBOutlet weak var statusImageView: UIImageView!
+    @IBOutlet weak var artistImageView: UIImageView!
+    @IBOutlet weak var artistNameLabel: UILabel!
+    @IBOutlet weak var artistDescriptionLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var notificationView: UIView!
+    
+    func config() {
+        
+    }
 }
