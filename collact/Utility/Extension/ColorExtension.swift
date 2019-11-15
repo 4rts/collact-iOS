@@ -46,7 +46,7 @@ extension UIColor {
     }()
     
     static var veryLightBlue: UIColor = {
-        return UIColor(red: 213, green: 220, blue: 227, alpha: 1)
+        return UIColor(hex: "#e3e8ee")
     }()
 }
 

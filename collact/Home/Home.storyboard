@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ecc-8m-LHs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ecc-8m-LHs">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -43,7 +43,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4C-kJ-HVC">
-                                <rect key="frame" x="190" y="152.5" width="13" height="36"/>
+                                <rect key="frame" x="190" y="148.5" width="13" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="yG7-cg-CgL"/>
                                 </constraints>
@@ -52,7 +52,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="of" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbu-jJ-O0b">
-                                <rect key="frame" x="24" y="152.5" width="39" height="36"/>
+                                <rect key="frame" x="24" y="148.5" width="39" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="jKz-XB-dhR"/>
                                 </constraints>
@@ -61,7 +61,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZN-Hm-Ppi">
-                                <rect key="frame" x="75" y="152.5" width="103" height="36"/>
+                                <rect key="frame" x="75" y="148.5" width="103" height="36"/>
                                 <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="36"/>
                                 <state key="normal" title="artist">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -71,7 +71,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4he-7d-WRJ">
-                                <rect key="frame" x="213" y="148" width="142" height="45"/>
+                                <rect key="frame" x="213" y="144" width="142" height="45"/>
                                 <fontDescription key="fontDescription" name="Mont-HeavyDEMO" family="Mont" pointSize="36"/>
                                 <state key="normal" title="collabo">
                                     <color key="titleColor" white="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -81,7 +81,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8aA-h5-acn">
-                                <rect key="frame" x="24" y="218" width="327" height="36"/>
+                                <rect key="frame" x="24" y="214" width="351" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today’s Image artists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiZ-Qt-hPU">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="36"/>
@@ -92,16 +92,23 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpO-e9-512">
+                                        <rect key="frame" x="289" y="-1" width="62" height="38"/>
+                                        <inset key="contentEdgeInsets" minX="24" minY="8" maxX="24" maxY="8"/>
+                                        <state key="normal" image="filter"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="JiZ-Qt-hPU" firstAttribute="leading" secondItem="8aA-h5-acn" secondAttribute="leading" id="2Ag-8G-pw6"/>
                                     <constraint firstAttribute="bottom" secondItem="JiZ-Qt-hPU" secondAttribute="bottom" id="QTw-aG-oe3"/>
+                                    <constraint firstAttribute="trailing" secondItem="LpO-e9-512" secondAttribute="trailing" id="RS9-KD-8y1"/>
                                     <constraint firstItem="JiZ-Qt-hPU" firstAttribute="top" secondItem="8aA-h5-acn" secondAttribute="top" id="at8-hm-L3G"/>
+                                    <constraint firstItem="LpO-e9-512" firstAttribute="centerY" secondItem="JiZ-Qt-hPU" secondAttribute="centerY" id="iyh-3C-kUH"/>
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRZ-wQ-BcC">
-                                <rect key="frame" x="0.0" y="274" width="375" height="393"/>
+                                <rect key="frame" x="0.0" y="270" width="375" height="397"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Gpg-cD-Qw5">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="330"/>
@@ -113,9 +120,9 @@
                                                 </constraints>
                                             </view>
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnc-fN-yNP">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="360"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="360" id="sKZ-7n-axH"/>
+                                                    <constraint firstAttribute="height" constant="300" id="sKZ-7n-axH"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -150,8 +157,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXf-Ja-uIJ">
-                                                <rect key="frame" x="335" y="21.5" width="16" height="22"/>
-                                                <state key="normal" image="combinedShape"/>
+                                                <rect key="frame" x="307" y="13.5" width="68" height="38"/>
+                                                <inset key="contentEdgeInsets" minX="24" minY="8" maxX="24" maxY="8"/>
+                                                <state key="normal" image="trash"/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -161,7 +169,7 @@
                                             <constraint firstItem="Xmi-SJ-be7" firstAttribute="leading" secondItem="uda-hS-mNq" secondAttribute="trailing" constant="6" id="N16-4o-oLc"/>
                                             <constraint firstItem="uda-hS-mNq" firstAttribute="leading" secondItem="5SB-Ue-zj5" secondAttribute="leading" constant="25" id="Rtx-Xf-sMJ"/>
                                             <constraint firstAttribute="height" constant="75" id="bUz-GN-NdF"/>
-                                            <constraint firstAttribute="trailing" secondItem="YXf-Ja-uIJ" secondAttribute="trailing" constant="24" id="feV-YO-yTK"/>
+                                            <constraint firstAttribute="trailing" secondItem="YXf-Ja-uIJ" secondAttribute="trailing" id="feV-YO-yTK"/>
                                             <constraint firstItem="YXf-Ja-uIJ" firstAttribute="centerY" secondItem="uda-hS-mNq" secondAttribute="centerY" id="vxE-F2-lG8"/>
                                         </constraints>
                                     </view>
@@ -181,9 +189,9 @@
                                 </constraints>
                             </scrollView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gK0-b5-1Su">
-                                <rect key="frame" x="24" y="274" width="327" height="1"/>
+                                <rect key="frame" x="24" y="270" width="327" height="0.0"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XcW-nP-9FN">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XcW-nP-9FN">
                                         <rect key="frame" x="0.0" y="0.0" width="327" height="1"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -210,10 +218,10 @@
                             <constraint firstItem="nRZ-wQ-BcC" firstAttribute="centerX" secondItem="8V3-Cc-aID" secondAttribute="centerX" id="TX9-MA-xId"/>
                             <constraint firstItem="gK0-b5-1Su" firstAttribute="top" secondItem="8aA-h5-acn" secondAttribute="bottom" constant="20" id="WPD-nl-vMv"/>
                             <constraint firstItem="8aA-h5-acn" firstAttribute="top" secondItem="4he-7d-WRJ" secondAttribute="bottom" constant="25" id="aDk-N2-7zZ"/>
-                            <constraint firstItem="Rbu-jJ-O0b" firstAttribute="top" secondItem="0UQ-Nr-QhG" secondAttribute="bottom" constant="20" id="cvg-vN-yBb"/>
+                            <constraint firstItem="Rbu-jJ-O0b" firstAttribute="top" secondItem="0UQ-Nr-QhG" secondAttribute="bottom" constant="16" id="cvg-vN-yBb"/>
                             <constraint firstItem="0UQ-Nr-QhG" firstAttribute="top" secondItem="8V3-Cc-aID" secondAttribute="top" constant="56" id="eA9-dh-QNR"/>
                             <constraint firstItem="nRZ-wQ-BcC" firstAttribute="top" secondItem="8aA-h5-acn" secondAttribute="bottom" constant="20" id="ioB-Ng-8uP"/>
-                            <constraint firstItem="8V3-Cc-aID" firstAttribute="trailing" secondItem="8aA-h5-acn" secondAttribute="trailing" constant="24" id="nke-et-olr"/>
+                            <constraint firstItem="8V3-Cc-aID" firstAttribute="trailing" secondItem="8aA-h5-acn" secondAttribute="trailing" id="nke-et-olr"/>
                             <constraint firstItem="Rbu-jJ-O0b" firstAttribute="leading" secondItem="8V3-Cc-aID" secondAttribute="leading" constant="24" id="ogY-qt-RUY"/>
                             <constraint firstItem="0UQ-Nr-QhG" firstAttribute="leading" secondItem="8V3-Cc-aID" secondAttribute="leading" constant="24" id="ueZ-ol-pUy"/>
                             <constraint firstItem="4he-7d-WRJ" firstAttribute="firstBaseline" secondItem="SZN-Hm-Ppi" secondAttribute="firstBaseline" id="utx-FG-kkt"/>
@@ -229,6 +237,8 @@
                         <outlet property="collaboButton" destination="4he-7d-WRJ" id="TM2-yi-Vde"/>
                         <outlet property="collaboView" destination="gnc-fN-yNP" id="4jU-Xd-NGI"/>
                         <outlet property="collectionView" destination="iPl-QO-rNN" id="9xm-FP-mqJ"/>
+                        <outlet property="mainBannerLabel" destination="JiZ-Qt-hPU" id="0Cm-An-hxY"/>
+                        <outlet property="myCollaboLabel" destination="uda-hS-mNq" id="oAa-1l-Ucf"/>
                         <outlet property="scrollView" destination="nRZ-wQ-BcC" id="5nC-IA-scn"/>
                         <outlet property="svBorderView" destination="XcW-nP-9FN" id="g7p-Ha-R1U"/>
                         <segue destination="rrf-rh-HYy" kind="show" identifier="CollaboDetail" id="09I-Ds-a5R"/>
@@ -236,7 +246,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEJ-Iz-CiU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="198.55072463768118" y="-242.41071428571428"/>
+            <point key="canvasLocation" x="197.59999999999999" y="-242.42878560719643"/>
         </scene>
         <!--Collabo DetailVC-->
         <scene sceneID="ngc-fo-rKN">
@@ -599,7 +609,7 @@
                                         <rect key="frame" x="24" y="672" width="327" height="409.5"/>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <mutableString key="content">날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  </mutableString>
+                                                <string key="content">날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  </string>
                                                 <attributes>
                                                     <font key="NSFont" size="14" name="AppleSDGothicNeo-Bold"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
@@ -652,13 +662,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="combinedShape" width="16" height="16"/>
         <image name="demoImage1" width="106" height="159"/>
         <image name="demoImage2" width="106" height="159"/>
+        <image name="filter" width="14" height="15"/>
         <image name="icBack" width="10" height="18"/>
         <image name="icCollect" width="24" height="24"/>
         <image name="icCollectionClick" width="26" height="22"/>
         <image name="icDelete20Px" width="18" height="19"/>
-        <image name="icLink" width="20" height="10"/>
+        <image name="icLink" width="20" height="21"/>
+        <image name="trash" width="20" height="20"/>
     </resources>
 </document>
