@@ -21,6 +21,8 @@ class HomeVC: BaseVC {
     @IBOutlet weak var collaboView: UIView!
     @IBOutlet weak var svBorderView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var mainBannerLabel: UILabel!
+    @IBOutlet weak var myCollaboLabel: UILabel!
     
     var viewType: ViewType = .ARTIST
     let artistCardCVC = UINib(nibName: "ArtistCardCVC", bundle: nil)
@@ -43,7 +45,7 @@ class HomeVC: BaseVC {
 
     func setTodayArtistView() {
         let view = Bundle.main.loadNibNamed("TodayArtistView", owner: self, options: nil)?.first as! TodayArtistView
-        view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 330)
+        view.frame = CGRect(x: 0, y: 0, width: artistView.frame.width, height: 330)
         artistView.addSubview(view)
     }
     
@@ -73,12 +75,16 @@ class HomeVC: BaseVC {
             self.artistButton.setTitleColor(UIColor.black, for: .normal)
             self.artistView.isHidden = false
             self.collaboButton.setTitleColor(UIColor.black15, for: .normal)
+            self.mainBannerLabel.text = "Today's Image artists"
+            self.myCollaboLabel.text = "My artist collection"
             self.collaboView.isHidden = true
             self.viewType = .ARTIST
         case 1:
             self.artistButton.setTitleColor(UIColor.black15, for: .normal)
             self.artistView.isHidden = true
             self.collaboButton.setTitleColor(UIColor.black, for: .normal)
+            self.mainBannerLabel.text = "Latest Collaboration"
+            self.myCollaboLabel.text = "My collabo collection"
             self.collaboView.isHidden = false
             self.viewType = .COLLABO
         default:
@@ -146,7 +152,7 @@ extension HomeVC: UIScrollViewDelegate {
                 svBorderView.isHidden = false
             }
         } else {
-            if offsetY < 360 {
+            if offsetY < 280 {
                 svBorderView.isHidden = true
             } else {
                 svBorderView.isHidden = false
