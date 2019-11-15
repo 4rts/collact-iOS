@@ -11,57 +11,32 @@ import UIKit
 class ProfileVC: BaseVC {
 
     @IBOutlet weak var swipeCardContainerView: UIView!
-    var swipeCardStackView: SwipeCardStackView!
-    
-    var viewModelData = [SwipeCardModel(bgColor: UIColor(red:0.96, green:0.81, blue:0.46, alpha:1.0), text: "Hamburger", image: "demoImage1"),
-    SwipeCardModel(bgColor: UIColor(red:0.29, green:0.64, blue:0.96, alpha:1.0), text: "Puppy", image: "demoImage1"),
-    SwipeCardModel(bgColor: UIColor(red:0.29, green:0.63, blue:0.49, alpha:1.0), text: "Poop", image: "demoImage1"),
-    SwipeCardModel(bgColor: UIColor(red:0.69, green:0.52, blue:0.38, alpha:1.0), text: "Panda", image: "demoImage1"),
-    SwipeCardModel(bgColor: UIColor(red:0.90, green:0.99, blue:0.97, alpha:1.0), text: "Subway", image: "demoImage1"),
-    SwipeCardModel(bgColor: UIColor(red:0.83, green:0.82, blue:0.69, alpha:1.0), text: "Robot", image: "demoImage1")]
 
     override func loadView() {
         super.loadView()
-        setSwipeCardContainerView()
+        configureSwipeCardView()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setConstraintForDevice(swipeCardContainerView, NotchO: 420, NotchX: 340, identifier: "height")
     }
 
-    func setSwipeCardContainerView() {
-        swipeCardStackView = SwipeCardStackView()
-        swipeCardStackView.dataSource = self
-        swipeCardStackView.translatesAutoresizingMaskIntoConstraints = false
-        swipeCardContainerView.addSubview(swipeCardStackView)
-        
-        swipeCardStackView.topAnchor.constraint(equalTo: swipeCardContainerView.topAnchor,constant: 100).isActive = true
-        swipeCardStackView.leadingAnchor.constraint(equalTo: swipeCardContainerView.leadingAnchor,constant: 100).isActive = true
-        swipeCardStackView.trailingAnchor.constraint(equalTo: swipeCardContainerView.trailingAnchor).isActive = true
-        swipeCardStackView.bottomAnchor.constraint(equalTo: swipeCardContainerView.centerYAnchor).isActive = true
-
+    func configureSwipeCardView() {
+        let array = [0,7,-7,0]
+        for i in array {
+            let swipeCardView = SwipeCardView()
+            swipeCardView.transform = CGAffineTransform(rotationAngle: (CGFloat(i) * .pi) / 180.0)
+            swipeCardView.translatesAutoresizingMaskIntoConstraints = false
+            swipeCardContainerView.addSubview(swipeCardView)
+            
+            swipeCardView.topAnchor.constraint(equalTo: swipeCardContainerView.topAnchor).isActive = true
+            swipeCardView.leftAnchor.constraint(equalTo: swipeCardContainerView.leftAnchor).isActive = true
+            swipeCardView.rightAnchor.constraint(equalTo: swipeCardContainerView.rightAnchor).isActive = true
+            swipeCardView.bottomAnchor.constraint(equalTo: swipeCardContainerView.bottomAnchor).isActive = true
+        }
     }
     
     @IBAction func artWorkRegisterAction(_ sender: Any) {
         
     }
-}
-
-extension ProfileVC : SwipeCardsDataSource {
-
-    func numberOfCardsToShow() -> Int {
-        return viewModelData.count
-    }
-
-    func card(at index: Int) -> SwipeCardView {
-        let card = SwipeCardView()
-        card.dataSource = viewModelData[index]
-        return card
-    }
-
-    func emptyView() -> UIView? {
-        return nil
-    }
-
-
 }
