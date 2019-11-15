@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ecc-8m-LHs">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -289,6 +289,12 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mxe-Pt-g6U">
                                                         <rect key="frame" x="0.0" y="0.0" width="159.5" height="234.5"/>
                                                         <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skA-He-W6d">
+                                                                <rect key="frame" x="0.0" y="0.0" width="159.5" height="234.5"/>
+                                                                <connections>
+                                                                    <action selector="profilePopupAction:" destination="rrf-rh-HYy" eventType="touchUpInside" id="fz4-4d-mM3"/>
+                                                                </connections>
+                                                            </button>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demoImage1" translatesAutoresizingMaskIntoConstraints="NO" id="kgv-1E-8TE">
                                                                 <rect key="frame" x="0.0" y="0.0" width="159.5" height="234.5"/>
                                                             </imageView>
@@ -302,17 +308,27 @@
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
                                                             <constraint firstItem="kgv-1E-8TE" firstAttribute="top" secondItem="mxe-Pt-g6U" secondAttribute="top" id="H7C-0A-qgK"/>
+                                                            <constraint firstItem="skA-He-W6d" firstAttribute="leading" secondItem="mxe-Pt-g6U" secondAttribute="leading" id="Ufv-FR-bCT"/>
                                                             <constraint firstItem="mgy-v7-UHO" firstAttribute="leading" secondItem="mxe-Pt-g6U" secondAttribute="leading" constant="13" id="Vlc-O2-1qA"/>
                                                             <constraint firstAttribute="width" secondItem="mxe-Pt-g6U" secondAttribute="height" multiplier="53:78" id="W6K-eO-0iw"/>
                                                             <constraint firstItem="kgv-1E-8TE" firstAttribute="leading" secondItem="mxe-Pt-g6U" secondAttribute="leading" id="Xfd-ug-fD9"/>
+                                                            <constraint firstItem="skA-He-W6d" firstAttribute="top" secondItem="mxe-Pt-g6U" secondAttribute="top" id="a9V-JO-ywN"/>
                                                             <constraint firstAttribute="trailing" secondItem="kgv-1E-8TE" secondAttribute="trailing" id="coH-G0-0b9"/>
                                                             <constraint firstAttribute="bottom" secondItem="kgv-1E-8TE" secondAttribute="bottom" id="mgI-Pp-qak"/>
+                                                            <constraint firstAttribute="trailing" secondItem="skA-He-W6d" secondAttribute="trailing" id="u4v-gH-hTT"/>
                                                             <constraint firstAttribute="bottom" secondItem="mgy-v7-UHO" secondAttribute="bottom" constant="8" id="wPr-5i-83U"/>
+                                                            <constraint firstAttribute="bottom" secondItem="skA-He-W6d" secondAttribute="bottom" id="wXz-xl-fGd"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="27E-HG-ktq">
                                                         <rect key="frame" x="167.5" y="0.0" width="159.5" height="234.5"/>
                                                         <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCb-jX-4up">
+                                                                <rect key="frame" x="0.0" y="0.0" width="159.5" height="234.5"/>
+                                                                <connections>
+                                                                    <action selector="profilePopupAction:" destination="rrf-rh-HYy" eventType="touchUpInside" id="pSX-w0-Dde"/>
+                                                                </connections>
+                                                            </button>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demoImage2" translatesAutoresizingMaskIntoConstraints="NO" id="IVT-4P-kiA">
                                                                 <rect key="frame" x="0.0" y="0.0" width="159.5" height="234.5"/>
                                                             </imageView>
@@ -326,11 +342,15 @@
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="bottom" secondItem="Bh6-PJ-wyU" secondAttribute="bottom" constant="8" id="78r-f3-Zjq"/>
+                                                            <constraint firstItem="oCb-jX-4up" firstAttribute="leading" secondItem="27E-HG-ktq" secondAttribute="leading" id="8T9-4Q-Uje"/>
                                                             <constraint firstAttribute="bottom" secondItem="IVT-4P-kiA" secondAttribute="bottom" id="WiO-xz-e67"/>
+                                                            <constraint firstAttribute="trailing" secondItem="oCb-jX-4up" secondAttribute="trailing" id="cNO-x9-443"/>
+                                                            <constraint firstAttribute="bottom" secondItem="oCb-jX-4up" secondAttribute="bottom" id="dH9-hr-Ksp"/>
                                                             <constraint firstItem="IVT-4P-kiA" firstAttribute="leading" secondItem="27E-HG-ktq" secondAttribute="leading" id="gxp-18-TAc"/>
                                                             <constraint firstAttribute="width" secondItem="27E-HG-ktq" secondAttribute="height" multiplier="53:78" id="nb5-GN-tSe"/>
                                                             <constraint firstItem="Bh6-PJ-wyU" firstAttribute="leading" secondItem="27E-HG-ktq" secondAttribute="leading" constant="13" id="qC1-zO-slQ"/>
                                                             <constraint firstItem="IVT-4P-kiA" firstAttribute="top" secondItem="27E-HG-ktq" secondAttribute="top" id="smn-xq-CzQ"/>
+                                                            <constraint firstItem="oCb-jX-4up" firstAttribute="top" secondItem="27E-HG-ktq" secondAttribute="top" id="y3B-ju-Kxb"/>
                                                             <constraint firstAttribute="trailing" secondItem="IVT-4P-kiA" secondAttribute="trailing" id="yBh-DA-Gke"/>
                                                         </constraints>
                                                     </view>
@@ -540,11 +560,22 @@
                         <outlet property="partner2Image" destination="IVT-4P-kiA" id="0zd-N7-inH"/>
                         <outlet property="partner2Label" destination="Bh6-PJ-wyU" id="oaN-Sk-npg"/>
                         <segue destination="xuW-Oy-4GV" kind="show" identifier="CollaboDetailWatching" animates="NO" id="1do-aw-AKY"/>
+                        <segue destination="GcG-Cm-GeW" kind="presentation" identifier="ProfilePopup" modalPresentationStyle="overFullScreen" id="Ra2-Nc-msX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PAE-Lg-hV0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="960.79999999999995" y="-242.42878560719643"/>
+        </scene>
+        <!--ProfilePopup-->
+        <scene sceneID="Af5-7I-ZbE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="ProfilePopup" id="GcG-Cm-GeW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="k6A-vd-NKh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cNB-Qd-u92" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="961" y="197"/>
         </scene>
         <!--Collabo Detail WatchingVC-->
         <scene sceneID="lHE-iq-Cnj">
