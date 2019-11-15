@@ -59,9 +59,19 @@ class CollaboDetailVC: BaseVC {
             self.heartButton.alpha = 0.4
         }
     }
+    @IBAction func profilePopupAction(_ sender: Any) {
+        // 이후 segue 인자 sender에 넣어 값 넘겨야함
+        self.performSegue(withIdentifier: "ProfilePopup", sender: nil)
+    }
     
     @IBAction func collaboWatchingAction(_ sender: Any) {
         self.performSegue(withIdentifier: "CollaboDetailWatching", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ProfilePopup" {
+//            let popupVC = segue.destination as! ProfilePopupVC
+        }
     }
     
 }
