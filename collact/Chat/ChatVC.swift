@@ -30,6 +30,7 @@ extension ChatVC: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChatListItem", for: indexPath) as! ChatListItemCVC
+        cell.config()
         return cell
     }
 }
@@ -37,6 +38,12 @@ extension ChatVC: UICollectionViewDataSource {
 extension ChatVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: self.view.frame.width, height: 60)
+    }
+}
+
+extension ChatVC: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "ChatDetail", sender: nil)
     }
 }
 
@@ -61,6 +68,7 @@ class ChatListItemCVC: UICollectionViewCell {
     @IBOutlet weak var notificationView: UIView!
     
     func config() {
-        
+        let randomNo = Int.random(in: 1 ..< 6)
+        artistImageView.image = UIImage(named: "demo_image_\(randomNo)")
     }
 }

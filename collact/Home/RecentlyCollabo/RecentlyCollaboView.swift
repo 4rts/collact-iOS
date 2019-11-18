@@ -14,7 +14,8 @@ class RecentlyCollaboView: UIView {
     @IBOutlet weak var pageControl: UIPageControl!
     
     var collaboDetailDelegate: CollaboDetailDelegate?
-    var recentlyCollaboList = [["demoImage1","demoImage2"],["demoImage1","demoImage2"],["demoImage1","demoImage2"]]
+    var recentlyCollaboList = [["demo_Image_artist_3","demo_Image_artist_5"],["demo_Image_artist_10","demo_Image_artist_30"],["demo_Image_artist_32","demo_Image_artist_22"], ["demo_Image_artist_38","demo_Image_artist_25"]]
+    var colorArr = [UIColor.red, UIColor.orange, UIColor.yellow, UIColor.green, UIColor.blue, UIColor.cyan]
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -51,7 +52,7 @@ class RecentlyCollaboView: UIView {
             view.addSubview(foregroundView)
             
             let gradationColorView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
-            leftToRightGradientColor(gradationColorView, colorArray: [UIColor.green, UIColor.blue])
+            leftToRightGradientColor(gradationColorView, colorArray: [colorArr[Int.random(in: 0 ..< 6)], colorArr[Int.random(in: 0 ..< 6)]])
             gradationColorView.alpha = 0.5
             view.addSubview(gradationColorView)
             

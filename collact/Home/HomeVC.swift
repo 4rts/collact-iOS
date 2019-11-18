@@ -27,8 +27,8 @@ class HomeVC: BaseVC {
     var viewType: ViewType = .ARTIST
     let artistCardCVC = UINib(nibName: "ArtistCardCVC", bundle: nil)
     let collaboCardCVC = UINib(nibName: "CollaboCardCVC", bundle: nil)
-    let myArtistCount = Int(ceil(15 / 3))
-    let mycollaboCount = Int(ceil(17 / 2))
+    let myArtistCount = Int(ceil(14 / 3))
+    let mycollaboCount = Int(ceil(14 / 2))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,9 +63,9 @@ class HomeVC: BaseVC {
         self.collectionView.register(artistCardCVC, forCellWithReuseIdentifier: "ArtistCard")
         self.collectionView.register(collaboCardCVC, forCellWithReuseIdentifier: "CollaboCard")
         if viewType == .ARTIST {
-            self.setConstraint(collectionView, value: CGFloat(160 * myArtistCount))
+            self.setConstraint(collectionView, value: CGFloat(160 * myArtistCount + 50))
         } else {
-            self.setConstraint(collectionView, value: CGFloat(160 * mycollaboCount))
+            self.setConstraint(collectionView, value: CGFloat(160 * mycollaboCount + 50))
         }
     }
     
@@ -91,7 +91,7 @@ class HomeVC: BaseVC {
             break
         }
         if viewType == .ARTIST {
-            self.setConstraint(collectionView, value: CGFloat(160 * myArtistCount))
+            self.setConstraint(collectionView, value: CGFloat(16 * myArtistCount))
         } else {
             self.setConstraint(collectionView, value: CGFloat(160 * mycollaboCount))
         }
@@ -102,20 +102,20 @@ class HomeVC: BaseVC {
 extension HomeVC: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 15
+        return 14
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if viewType == .ARTIST {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ArtistCard", for: indexPath) as! ArtistCardCVC
             setConstraint(cell.imageView, value: (self.collectionView.frame.width - 16) / 3)
-//            cell.imageView.image = UIImage(named: "demoImage1")
+            cell.imageView.image = UIImage(named: "demo_Image_artist_\(Int.random(in: 1 ..< 41))")
             return cell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollaboCard", for: indexPath) as! CollaboCardCVC
             setConstraint(cell.imageContainer, value: (self.collectionView.frame.width - 8) / 2)
-//            cell.leftImageView.image = UIImage(named: "demoImage1")
-//            cell.rightImageView.image = UIImage(named: "demoImage2")
+            cell.leftImageView.image = UIImage(named: "demo_Image_artist_\(Int.random(in: 1 ..< 41))")
+            cell.rightImageView.image = UIImage(named: "demo_Image_artist_\(Int.random(in: 1 ..< 41))")
             return cell
         }
     }

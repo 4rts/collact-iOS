@@ -11,6 +11,7 @@ target 'collact' do
   pod 'Toast-Swift', '~> 5.0.0'
   pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
   pod 'lottie-ios', '~> 3.1.3'
+  pod 'SwiftyGif', '~> 5.2.0'
 
   target 'collactTests' do
     inherit! :search_paths

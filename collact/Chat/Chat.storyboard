@@ -251,11 +251,28 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="p6f-eZ-TUR" id="DMk-zH-J3e"/>
+                        <segue destination="LqQ-K5-pGh" kind="show" identifier="ChatDetail" id="TQn-cn-SL6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KMy-9H-OAf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="501.60000000000002" y="-242.36453201970446"/>
+        </scene>
+        <!--Chat DetailVC-->
+        <scene sceneID="Ud2-aM-PdQ">
+            <objects>
+                <viewController id="LqQ-K5-pGh" customClass="ChatDetailVC" customModule="collact" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="psI-pO-rNT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="XCx-va-YMl"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kB2-ZC-rqe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mEb-Tj-0Sk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1293.5999999999999" y="-242.36453201970446"/>
         </scene>
     </scenes>
     <resources>

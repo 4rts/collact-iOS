@@ -31,7 +31,8 @@ extension TodayArtistView: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WorkCard", for: indexPath) as! WorkCardCVC
-        cell.workImageView.image = UIImage(named: "demoImage2")
+        let randomNo = Int.random(in: 1 ..< 41)
+        cell.workImageView.image = UIImage(named: "demo_Image_artist_\(randomNo)")
         return cell
     }
     

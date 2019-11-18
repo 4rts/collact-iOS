@@ -23,6 +23,8 @@
 		B51E1D672340B163004AFDA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51E1D662340B163004AFDA2 /* Main.storyboard */; };
 		B51E1D692340B1C7004AFDA2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E1D682340B1C7004AFDA2 /* MainVC.swift */; };
 		B53C871F2382ED1900B6A268 /* SearchDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C871E2382ED1900B6A268 /* SearchDetailVC.swift */; };
+		B53C87212383068600B6A268 /* ChatDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C87202383068600B6A268 /* ChatDetailVC.swift */; };
+		B53C87232383081400B6A268 /* chat_gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = B53C87222383081400B6A268 /* chat_gif.gif */; };
 		B5407163235322BF006F57F0 /* RecentlyCollaboView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5407162235322BF006F57F0 /* RecentlyCollaboView.swift */; };
 		B5407165235322D4006F57F0 /* RecentlyCollaboView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5407164235322D4006F57F0 /* RecentlyCollaboView.xib */; };
 		B540716F235349F2006F57F0 /* CollaboCardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540716D235349F2006F57F0 /* CollaboCardCVC.swift */; };
@@ -126,6 +128,8 @@
 		B51E1D662340B163004AFDA2 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B51E1D682340B1C7004AFDA2 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B53C871E2382ED1900B6A268 /* SearchDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailVC.swift; sourceTree = "<group>"; };
+		B53C87202383068600B6A268 /* ChatDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailVC.swift; sourceTree = "<group>"; };
+		B53C87222383081400B6A268 /* chat_gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chat_gif.gif; sourceTree = "<group>"; };
 		B5407162235322BF006F57F0 /* RecentlyCollaboView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyCollaboView.swift; sourceTree = "<group>"; };
 		B5407164235322D4006F57F0 /* RecentlyCollaboView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentlyCollaboView.xib; sourceTree = "<group>"; };
 		B540716D235349F2006F57F0 /* CollaboCardCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaboCardCVC.swift; sourceTree = "<group>"; };
@@ -346,6 +350,7 @@
 			children = (
 				B57ABB6D23409EBF0057964E /* Chat.storyboard */,
 				B5710E0D2351C4D80099FCFA /* ChatVC.swift */,
+				B53C87202383068600B6A268 /* ChatDetailVC.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -434,6 +439,7 @@
 				B5AF433E23422A3700EFAA7E /* Font */,
 				B5192886233C7AA500BBFBCD /* LaunchScreen.storyboard */,
 				B5AF439B2349D4FF00EFAA7E /* ProfileColor.json */,
+				B53C87222383081400B6A268 /* chat_gif.gif */,
 				B5192884233C7AA500BBFBCD /* Assets.xcassets */,
 				B5192881233C7AA300BBFBCD /* collact.xcdatamodeld */,
 			);
@@ -643,6 +649,7 @@
 				B51E1D672340B163004AFDA2 /* Main.storyboard in Resources */,
 				B5710E0C2351C4CE0099FCFA /* Home.storyboard in Resources */,
 				B5407165235322D4006F57F0 /* RecentlyCollaboView.xib in Resources */,
+				B53C87232383081400B6A268 /* chat_gif.gif in Resources */,
 				B57ABB7023409ECA0057964E /* Sign.storyboard in Resources */,
 				B56A903423525B390077443B /* TodayArtistView.xib in Resources */,
 				B5192888233C7AA500BBFBCD /* LaunchScreen.storyboard in Resources */,
@@ -800,6 +807,7 @@
 				B5FFB7C02340A84E0098B113 /* BaseForm.swift in Sources */,
 				B57366BE2370AE02009D34FA /* PopupVC.swift in Sources */,
 				B540716F235349F2006F57F0 /* CollaboCardCVC.swift in Sources */,
+				B53C87212383068600B6A268 /* ChatDetailVC.swift in Sources */,
 				B5FFB7C12340A84E0098B113 /* BaseResponse.swift in Sources */,
 				B5117AC72360B51B008F4273 /* CollaboDetailWatchingVC.swift in Sources */,
 				B5AF433C23422A1E00EFAA7E /* ViewExtension.swift in Sources */,
