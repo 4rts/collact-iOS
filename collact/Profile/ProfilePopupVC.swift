@@ -17,7 +17,7 @@ class ProfilePopupVC: BaseVC {
     @IBOutlet weak var chatableLabel: UILabel!
     
     var swipeCardView: SwipeCardView!
-    var aaa = [1,2,3,4]
+    var aaa = [0,1,2]
     override func loadView() {
         super.loadView()
         configureSwipeCardView()
@@ -34,12 +34,11 @@ class ProfilePopupVC: BaseVC {
     
     
     func configureSwipeCardView() {
-        let array = [0,7,-7,0]
-        for (index,i) in array.enumerated() {
+        let array = [7,-7,0]
+        for (index, i) in array.enumerated() {
             let swipeCardView = SwipeCardView()
-            swipeCardView.tag = aaa[index]
-            swipeCardView.delegate = self
             swipeCardView.transform = CGAffineTransform(rotationAngle: (CGFloat(i) * .pi) / 180.0)
+            swipeCardView.artWorkImageView.image = UIImage(named: "demo_Image_malikafavre_\(index + 1)")
             swipeCardView.translatesAutoresizingMaskIntoConstraints = false
             swipeCardContainerView.addSubview(swipeCardView)
             

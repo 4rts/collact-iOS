@@ -22,6 +22,7 @@
 		B51E1D652340AE67004AFDA2 /* CodePreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E1D642340AE67004AFDA2 /* CodePreference.swift */; };
 		B51E1D672340B163004AFDA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51E1D662340B163004AFDA2 /* Main.storyboard */; };
 		B51E1D692340B1C7004AFDA2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E1D682340B1C7004AFDA2 /* MainVC.swift */; };
+		B53C871F2382ED1900B6A268 /* SearchDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C871E2382ED1900B6A268 /* SearchDetailVC.swift */; };
 		B5407163235322BF006F57F0 /* RecentlyCollaboView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5407162235322BF006F57F0 /* RecentlyCollaboView.swift */; };
 		B5407165235322D4006F57F0 /* RecentlyCollaboView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5407164235322D4006F57F0 /* RecentlyCollaboView.xib */; };
 		B540716F235349F2006F57F0 /* CollaboCardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540716D235349F2006F57F0 /* CollaboCardCVC.swift */; };
@@ -124,6 +125,7 @@
 		B51E1D642340AE67004AFDA2 /* CodePreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePreference.swift; sourceTree = "<group>"; };
 		B51E1D662340B163004AFDA2 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B51E1D682340B1C7004AFDA2 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		B53C871E2382ED1900B6A268 /* SearchDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailVC.swift; sourceTree = "<group>"; };
 		B5407162235322BF006F57F0 /* RecentlyCollaboView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyCollaboView.swift; sourceTree = "<group>"; };
 		B5407164235322D4006F57F0 /* RecentlyCollaboView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentlyCollaboView.xib; sourceTree = "<group>"; };
 		B540716D235349F2006F57F0 /* CollaboCardCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaboCardCVC.swift; sourceTree = "<group>"; };
@@ -421,6 +423,7 @@
 				B57ABB6B23409EB60057964E /* Search.storyboard */,
 				B57ABB7523409F2F0057964E /* SearchVC.swift */,
 				B57366BB2370A9DC009D34FA /* SearchFilterPopupVC.swift */,
+				B53C871E2382ED1900B6A268 /* SearchDetailVC.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -808,6 +811,7 @@
 				B5AF43812348E48B00EFAA7E /* SignUp2VC.swift in Sources */,
 				B51E1D692340B1C7004AFDA2 /* MainVC.swift in Sources */,
 				B5AF433B23422A1E00EFAA7E /* LabelExtension.swift in Sources */,
+				B53C871F2382ED1900B6A268 /* SearchDetailVC.swift in Sources */,
 				B5491CBA2360DE62009EDCB7 /* SwipeCardModel.swift in Sources */,
 				B5AF434023422AE300EFAA7E /* SignUp1VC.swift in Sources */,
 				B5AF433A23422A1E00EFAA7E /* BorderView.swift in Sources */,

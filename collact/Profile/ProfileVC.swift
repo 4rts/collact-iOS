@@ -22,10 +22,11 @@ class ProfileVC: BaseVC {
     }
 
     func configureSwipeCardView() {
-        let array = [0,7,-7,0]
-        for i in array {
+        let array = [7,-7,0]
+        for (index, i) in array.enumerated() {
             let swipeCardView = SwipeCardView()
             swipeCardView.transform = CGAffineTransform(rotationAngle: (CGFloat(i) * .pi) / 180.0)
+            swipeCardView.artWorkImageView.image = UIImage(named: "demo_Image_malikafavre_\(index + 1)")
             swipeCardView.translatesAutoresizingMaskIntoConstraints = false
             swipeCardContainerView.addSubview(swipeCardView)
             
