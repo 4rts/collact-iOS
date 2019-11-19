@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gr7-o0-AQm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gr7-o0-AQm">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -598,11 +598,11 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UC4-na-4pl">
-                                        <rect key="frame" x="24" y="580" width="255" height="80"/>
+                                        <rect key="frame" x="24" y="580" width="255" height="74.666666666666629"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Grabit X Jvdas BerraGrabit X Jvdas BerraGrabit X Jvdas BerraGrabit X Jvdas Berra">
                                                 <attributes>
-                                                    <font key="NSFont" size="18" name="Mont-HeavyDEMO"/>
+                                                    <font key="NSFont" metaFont="system" size="18"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -610,7 +610,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ik6-bQ-HWG">
-                                        <rect key="frame" x="303" y="585" width="72" height="70"/>
+                                        <rect key="frame" x="303" y="582.33333333333337" width="72" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="72" id="Iqk-GY-012"/>
                                         </constraints>
@@ -621,7 +621,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jcs-AB-7kj">
-                                        <rect key="frame" x="24" y="672" width="327" height="409.33333333333326"/>
+                                        <rect key="frame" x="24" y="666.66666666666663" width="327" height="409.33333333333337"/>
                                         <attributedString key="attributedText">
                                             <fragment>
                                                 <string key="content">날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  날아오르는 봉황과 빨간 새를 은은한 느낌으로 봄을 나타내는 꽃과 함께 아름답게 표현하였다.께 아름답게 표현하였다. 함께 아름답게 표현하였다.께 아름답게 표현하였다표현하였다.  </string>

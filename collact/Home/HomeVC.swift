@@ -45,7 +45,7 @@ class HomeVC: BaseVC {
 
     func setTodayArtistView() {
         let view = Bundle.main.loadNibNamed("TodayArtistView", owner: self, options: nil)?.first as! TodayArtistView
-        view.frame = CGRect(x: 0, y: 0, width: artistView.frame.width, height: 330)
+        view.frame = CGRect(x: 0, y: 0, width: artistView.frame.width, height: 320)
         artistView.addSubview(view)
     }
     
@@ -91,13 +91,12 @@ class HomeVC: BaseVC {
             break
         }
         if viewType == .ARTIST {
-            self.setConstraint(collectionView, value: CGFloat(16 * myArtistCount))
+            self.setConstraint(collectionView, value: CGFloat(160 * myArtistCount + 50))
         } else {
-            self.setConstraint(collectionView, value: CGFloat(160 * mycollaboCount))
+            self.setConstraint(collectionView, value: CGFloat(160 * mycollaboCount + 50))
         }
         collectionView.reloadData()
     }
-    
 }
 extension HomeVC: UICollectionViewDataSource {
     
@@ -113,7 +112,7 @@ extension HomeVC: UICollectionViewDataSource {
             return cell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollaboCard", for: indexPath) as! CollaboCardCVC
-            setConstraint(cell.imageContainer, value: (self.collectionView.frame.width - 8) / 2)
+            setConstraint(cell.imageContainer, value: (self.collectionView.frame.width - 16) / 2)
             cell.leftImageView.image = UIImage(named: "demo_Image_artist_\(Int.random(in: 1 ..< 41))")
             cell.rightImageView.image = UIImage(named: "demo_Image_artist_\(Int.random(in: 1 ..< 41))")
             return cell
@@ -146,7 +145,7 @@ extension HomeVC: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsetY = scrollView.contentOffset.y
         if viewType == .ARTIST {
-            if offsetY < 330 {
+            if offsetY < 320 {
                 svBorderView.isHidden = true
             } else {
                 svBorderView.isHidden = false
